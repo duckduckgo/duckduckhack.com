@@ -350,7 +350,7 @@ $midnight-light: #2C4B62;
             margin-bottom: 0;
         }
         
-        & > .ddgsi {
+        & > .ddgsi, .fa {
             font-size: 3em;
         }
     }
@@ -359,9 +359,9 @@ $midnight-light: #2C4B62;
         font-size: 1.2em;
         margin-bottom: 0.5em;
         
-        & > .ddgsi {
+        & > .ddgsi, .fa {
             color: $blue-light;
-            font-size: .7em;
+            font-size: 1em;
         }
     }
 
