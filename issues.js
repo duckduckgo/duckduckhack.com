@@ -10,13 +10,9 @@ function program1(depth0,data) {
   
   var buffer = "", stack1, helper;
   buffer += "\n      <li class=\"";
-  stack1 = helpers.each.call(depth0, (depth0 && depth0.tags), {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
+  stack1 = helpers.each.call(depth0, (depth0 && depth0.labels), {hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += " clearfix\" data-repo=\"";
-  if (helper = helpers.repo) { stack1 = helper.call(depth0, {hash:{},data:data}); }
-  else { helper = (depth0 && depth0.repo); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
-  buffer += escapeExpression(stack1)
-    + "\">\n	<span>\n	  <a class=\"tx-clr--dk one-line issue-name\" href=\"https://github.com/duckduckgo/zeroclickinfo-";
+  buffer += " clearfix\">\n	<span>\n	  <a class=\"tx-clr--dk one-line issue-name\" href=\"https://github.com/duckduckgo/zeroclickinfo-";
   if (helper = helpers.repo) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.repo); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
