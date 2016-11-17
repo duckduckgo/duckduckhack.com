@@ -6,10 +6,8 @@ module.exports = function(grunt) {
     var templates_dir = 'src/templates/';
     var js_dir = 'src/js';
 
-
     // Libraries that we need.
     var moment = 'bower_components/moment/min/moment.min.js';
-
 
     var build_tasks = [
         'exec:bower',
@@ -42,12 +40,12 @@ module.exports = function(grunt) {
          */
         concat: {
             js: {
-                src: js_dir + 'issues.js',
+                src: [templates_dir + 'handlebars_tmp', js_dir + 'issues.js'],
                 dest: static_dir + 'js/issues.js'
             },
 	        libs_build: {
 		        src: [static_dir + 'js/issues.js', moment],
-		        dest: static_dir + 'js/issues.js'
+		        dest: static_dir + 'js/moment.js'
 	        },
         },
 
