@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         concat: {
             js: {
                 src: [templates_dir + 'handlebars_tmp', js_dir + 'issues.js'],
-                dest: static_dir + 'js/issues.js'
+                dest: 'issues.js'
             },
 	        libs_build: {
 		        src: [static_dir + 'js/issues.js', moment],
