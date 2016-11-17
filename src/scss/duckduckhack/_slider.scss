@@ -1,0 +1,62 @@
+/*
+	Slider
+	
+	Used via extends here because each slider on static pages
+	are a little bit different in styling and function.
+*/
+
+%static-slide-wrap {
+	margin: auto;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	overflow: visible;
+}
+
+%static-slide-item {
+	@include single-transition(opacity);
+	// this fixes a font-weight quirk in safari where
+	// text elsewhere on the page will change font-weight
+	// during the opacity transition.
+	@include transform(translate3d(0,0,0));
+	display: inline-block;
+	vertical-align: top;
+	white-space: normal;
+	width: 100%;
+	opacity: 0;
+	
+	.no-js &,
+	&.is-active {
+		opacity: 1;
+	}
+	
+	&.is-first {
+		@include transition(margin-left $default-transition-duration, opacity $default-transition-duration);
+	}
+}
+
+%static-slide-nav {
+	padding: 0;
+	margin: auto;
+	display: block;
+	list-style: none;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+	%static-slide-nav__item {
+		@include border-radius(50%);
+		margin: 0 $half-unit;
+		vertical-align: middle;
+		display: inline-block;
+		list-style: none;
+		cursor: pointer;
+		
+		font-size: 15px;
+		width: $base-unit;
+		height: $base-unit;
+		line-height: $base-unit;
+	}

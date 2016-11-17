@@ -1,0 +1,6781 @@
+@charset "UTF-8";
+/* line 5, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../scss/litestrap/_litestrap.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 12, ../scss/litestrap/_litestrap.scss */
+.site-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 16, ../scss/litestrap/_litestrap.scss */
+.content-wrap {
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 20, ../scss/litestrap/_litestrap.scss */
+.text-center, .text-mid {
+  text-align: center;
+}
+
+/* line 23, ../scss/litestrap/_litestrap.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 26, ../scss/litestrap/_litestrap.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 31, ../scss/litestrap/_litestrap.scss */
+.r-block {
+  display: block;
+}
+
+/* line 34, ../scss/litestrap/_litestrap.scss */
+.r-inline {
+  display: inline;
+}
+
+/* line 37, ../scss/litestrap/_litestrap.scss */
+.r-inline-block, .r-iblock {
+  display: inline-block;
+}
+
+/* line 42, ../scss/litestrap/_litestrap.scss */
+.r-valign--top {
+  vertical-align: top;
+}
+
+/* line 45, ../scss/litestrap/_litestrap.scss */
+.r-valign--mid {
+  vertical-align: middle;
+}
+
+/* line 48, ../scss/litestrap/_litestrap.scss */
+.r-valign--bottom {
+  vertical-align: bottom;
+}
+
+/* line 53, ../scss/litestrap/_litestrap.scss */
+.r-border-box, html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 62, ../scss/litestrap/_litestrap.scss */
+.r-content-box, .r-grid-pad {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 71, ../scss/litestrap/_litestrap.scss */
+.whole, .half, .third, .twothird, .twothirds, .quarter, .threequarter, .threequarters, .sixth, .eighth, .ninety, .eighty, .seventy, .sixty, .fifty, .forty, .thirty, .twenty, .ten {
+  float: left;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 81, ../scss/litestrap/_litestrap.scss */
+.whole {
+  width: 100%;
+}
+
+/* line 84, ../scss/litestrap/_litestrap.scss */
+.half, .fifty {
+  width: 50%;
+}
+
+/* line 87, ../scss/litestrap/_litestrap.scss */
+.third {
+  width: 33.3%;
+}
+
+/* line 90, ../scss/litestrap/_litestrap.scss */
+.twothird, .twothirds {
+  width: 66.6%;
+}
+
+/* line 93, ../scss/litestrap/_litestrap.scss */
+.quarter {
+  width: 25%;
+}
+
+/* line 96, ../scss/litestrap/_litestrap.scss */
+.threequarter, .threequarters {
+  width: 75%;
+}
+
+/* line 99, ../scss/litestrap/_litestrap.scss */
+.sixth {
+  width: 16.6%;
+}
+
+/* line 102, ../scss/litestrap/_litestrap.scss */
+.eighth {
+  width: 12.5%;
+}
+
+/* line 105, ../scss/litestrap/_litestrap.scss */
+.ninety {
+  width: 90%;
+}
+
+/* line 108, ../scss/litestrap/_litestrap.scss */
+.eighty {
+  width: 80%;
+}
+
+/* line 111, ../scss/litestrap/_litestrap.scss */
+.seventy {
+  width: 70%;
+}
+
+/* line 114, ../scss/litestrap/_litestrap.scss */
+.sixty {
+  width: 60%;
+}
+
+/* line 117, ../scss/litestrap/_litestrap.scss */
+.forty {
+  width: 40%;
+}
+
+/* line 120, ../scss/litestrap/_litestrap.scss */
+.thirty {
+  width: 30%;
+}
+
+/* line 123, ../scss/litestrap/_litestrap.scss */
+.twenty {
+  width: 20%;
+}
+
+/* line 126, ../scss/litestrap/_litestrap.scss */
+.ten {
+  width: 10%;
+}
+
+/* line 131, ../scss/litestrap/_litestrap.scss */
+.gw {
+  margin-left: -1em;
+  letter-spacing: -0.31em;
+}
+
+/* line 136, ../scss/litestrap/_litestrap.scss */
+.g {
+  padding-left: 1em;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  float: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 152, ../scss/litestrap/_litestrap.scss */
+.gw--h {
+  margin-left: -0.5em;
+}
+
+/* line 155, ../scss/litestrap/_litestrap.scss */
+.gw--h .g {
+  padding-left: 0.5em;
+}
+
+/* line 160, ../scss/litestrap/_litestrap.scss */
+.block-mid {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+}
+
+/* line 166, ../scss/litestrap/_litestrap.scss */
+.pull-left, .fl, .float--left {
+  float: left;
+}
+
+/* line 169, ../scss/litestrap/_litestrap.scss */
+.pull-right, .fr, .float--right {
+  float: right;
+}
+
+/* line 172, ../scss/litestrap/_litestrap.scss */
+.pull-none, .killfloat {
+  float: none;
+}
+
+/* line 175, ../scss/litestrap/_litestrap.scss */
+.clear, .r-clear {
+  clear: both;
+}
+
+/* line 178, ../scss/litestrap/_litestrap.scss */
+.hide, .r-hide {
+  display: none;
+}
+
+/* line 182, ../scss/litestrap/_litestrap.scss */
+.hide--important {
+  display: none !important;
+}
+
+/* line 185, ../scss/litestrap/_litestrap.scss */
+.allcaps {
+  text-transform: uppercase;
+}
+
+/* line 190, ../scss/litestrap/_litestrap.scss */
+.clearfix:after, .fix:after, .group:after, .row:after, .gw:after, .media:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media only screen and (min-width: 1079px) {
+  /* line 199, ../scss/litestrap/_litestrap.scss */
+  .hide--screen-l {
+    display: none;
+  }
+
+  /* line 202, ../scss/litestrap/_litestrap.scss */
+  .show--screen-l, .r-block--screen-l {
+    display: block;
+  }
+
+  /* line 205, ../scss/litestrap/_litestrap.scss */
+  .block-mid--screen-l {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+
+  /* line 211, ../scss/litestrap/_litestrap.scss */
+  .pull-left--screen-l, .fl--screen-l {
+    float: left;
+  }
+
+  /* line 214, ../scss/litestrap/_litestrap.scss */
+  .pull-right--screen-l, .fr--screen-l {
+    float: right;
+  }
+
+  /* line 217, ../scss/litestrap/_litestrap.scss */
+  .pull-none--screen-l, .killfloat--screen-l {
+    float: none;
+  }
+
+  /* line 220, ../scss/litestrap/_litestrap.scss */
+  .whole--screen-l {
+    width: 100%;
+  }
+
+  /* line 223, ../scss/litestrap/_litestrap.scss */
+  .ninety--screen-l {
+    width: 90%;
+  }
+
+  /* line 226, ../scss/litestrap/_litestrap.scss */
+  .eighty--screen-l {
+    width: 80%;
+  }
+
+  /* line 229, ../scss/litestrap/_litestrap.scss */
+  .seventy--screen-l {
+    width: 70%;
+  }
+
+  /* line 232, ../scss/litestrap/_litestrap.scss */
+  .sixty--screen-l {
+    width: 60%;
+  }
+
+  /* line 235, ../scss/litestrap/_litestrap.scss */
+  .half--screen-l, .fifty--screen-l {
+    width: 50%;
+  }
+
+  /* line 238, ../scss/litestrap/_litestrap.scss */
+  .forty--screen-l {
+    width: 40%;
+  }
+
+  /* line 241, ../scss/litestrap/_litestrap.scss */
+  .thirty--screen-l {
+    width: 30%;
+  }
+
+  /* line 244, ../scss/litestrap/_litestrap.scss */
+  .quarter--screen-l {
+    width: 25%;
+  }
+
+  /* line 247, ../scss/litestrap/_litestrap.scss */
+  .twenty--screen-l {
+    width: 20%;
+  }
+
+  /* line 250, ../scss/litestrap/_litestrap.scss */
+  .ten--screen-l {
+    width: 10%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* line 257, ../scss/litestrap/_litestrap.scss */
+  .hide--screen-xl {
+    display: none;
+  }
+
+  /* line 260, ../scss/litestrap/_litestrap.scss */
+  .show--screen-xl, .r-block--screen-xl {
+    display: block;
+  }
+
+  /* line 263, ../scss/litestrap/_litestrap.scss */
+  .block-mid--screen-xl {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+
+  /* line 269, ../scss/litestrap/_litestrap.scss */
+  .pull-left--screen-xl, .fl--screen-xl {
+    float: left;
+  }
+
+  /* line 272, ../scss/litestrap/_litestrap.scss */
+  .pull-right--screen-xl, .fr--screen-xl {
+    float: right;
+  }
+
+  /* line 275, ../scss/litestrap/_litestrap.scss */
+  .pull-none--screen-xl, .killfloat--screen-xl {
+    float: none;
+  }
+
+  /* line 278, ../scss/litestrap/_litestrap.scss */
+  .whole--screen-xl {
+    width: 100%;
+  }
+
+  /* line 281, ../scss/litestrap/_litestrap.scss */
+  .ninety--screen-xl {
+    width: 90%;
+  }
+
+  /* line 284, ../scss/litestrap/_litestrap.scss */
+  .eighty--screen-xl {
+    width: 80%;
+  }
+
+  /* line 287, ../scss/litestrap/_litestrap.scss */
+  .seventy--screen-xl {
+    width: 70%;
+  }
+
+  /* line 290, ../scss/litestrap/_litestrap.scss */
+  .sixty--screen-xl {
+    width: 60%;
+  }
+
+  /* line 293, ../scss/litestrap/_litestrap.scss */
+  .half--screen-xl, .fifty--screen-xl {
+    width: 50%;
+  }
+
+  /* line 296, ../scss/litestrap/_litestrap.scss */
+  .forty--screen-xl {
+    width: 40%;
+  }
+
+  /* line 299, ../scss/litestrap/_litestrap.scss */
+  .thirty--screen-xl {
+    width: 30%;
+  }
+
+  /* line 302, ../scss/litestrap/_litestrap.scss */
+  .quarter--screen-xl {
+    width: 25%;
+  }
+
+  /* line 305, ../scss/litestrap/_litestrap.scss */
+  .twenty--screen-xl {
+    width: 20%;
+  }
+
+  /* line 308, ../scss/litestrap/_litestrap.scss */
+  .ten--screen-xl {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 864px) {
+  /* line 315, ../scss/litestrap/_litestrap.scss */
+  .port-half, .half--screen-m {
+    width: 50%;
+    float: left;
+    clear: none;
+  }
+
+  /* line 320, ../scss/litestrap/_litestrap.scss */
+  .block-mid--screen-m {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+
+  /* line 326, ../scss/litestrap/_litestrap.scss */
+  .port-hide, .hide--screen-m {
+    display: none;
+  }
+
+  /* line 329, ../scss/litestrap/_litestrap.scss */
+  .port-block, .show--screen-m, .r-block--screen-m {
+    display: block;
+  }
+
+  /* line 332, ../scss/litestrap/_litestrap.scss */
+  .port-clear, .clear--screen-m, .r-clear--screen-m {
+    clear: both;
+  }
+
+  /* line 335, ../scss/litestrap/_litestrap.scss */
+  .port-killfloat, .port-pull-none, .port-float--none, .pull-none--screen-m, .killfloat--screen-m {
+    float: none;
+  }
+
+  /* line 338, ../scss/litestrap/_litestrap.scss */
+  .whole--screen-m {
+    width: 100%;
+  }
+
+  /* line 341, ../scss/litestrap/_litestrap.scss */
+  .ninety--screen-m {
+    width: 90%;
+  }
+
+  /* line 344, ../scss/litestrap/_litestrap.scss */
+  .eighty--screen-m {
+    width: 80%;
+  }
+
+  /* line 347, ../scss/litestrap/_litestrap.scss */
+  .seventy--screen-m {
+    width: 70%;
+  }
+
+  /* line 350, ../scss/litestrap/_litestrap.scss */
+  .sixty--screen-m {
+    width: 60%;
+  }
+
+  /* line 353, ../scss/litestrap/_litestrap.scss */
+  .half--screen-m, .fifty--screen-m {
+    width: 50%;
+  }
+
+  /* line 356, ../scss/litestrap/_litestrap.scss */
+  .forty--screen-m {
+    width: 40%;
+  }
+
+  /* line 359, ../scss/litestrap/_litestrap.scss */
+  .thirty--screen-m {
+    width: 30%;
+  }
+
+  /* line 362, ../scss/litestrap/_litestrap.scss */
+  .quarter--screen-m {
+    width: 25%;
+  }
+
+  /* line 365, ../scss/litestrap/_litestrap.scss */
+  .twenty--screen-m {
+    width: 20%;
+  }
+
+  /* line 368, ../scss/litestrap/_litestrap.scss */
+  .ten--screen-m {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 634px) {
+  /* line 374, ../scss/litestrap/_litestrap.scss */
+  html {
+    min-width: initial;
+  }
+
+  /* line 378, ../scss/litestrap/_litestrap.scss */
+  .whole, .half, .third, .twothird, .twothirds, .quarter, .threequarter, .threequarters, .sixth, .eighth, .ninety, .eighty, .seventy, .sixty, .fifty, .forty, .thirty, .twenty, .ten {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 383, ../scss/litestrap/_litestrap.scss */
+  img.half, img.third, img.twothird, img.quarter, img.threequarter, img.sixth {
+    width: auto;
+  }
+
+  /* line 386, ../scss/litestrap/_litestrap.scss */
+  .palm-half, .half--screen-s {
+    width: 50%;
+    float: left;
+    clear: none;
+  }
+
+  /* line 392, ../scss/litestrap/_litestrap.scss */
+  .block-mid--screen-s {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+
+  /* line 398, ../scss/litestrap/_litestrap.scss */
+  .palm-hide, .hide--screen-s {
+    display: none;
+  }
+
+  /* line 401, ../scss/litestrap/_litestrap.scss */
+  .palm-block, .show--screen-s, .r-block--screen-s {
+    display: block;
+  }
+
+  /* line 404, ../scss/litestrap/_litestrap.scss */
+  .palm-clear, .clear--screen-s, .r-clear--screen-s {
+    clear: both;
+  }
+
+  /* line 407, ../scss/litestrap/_litestrap.scss */
+  .palm-killfloat, .palm-pull-none, .palm-float--none, .killfloat-s, .pull-none--screen-s {
+    float: none;
+  }
+
+  /* line 410, ../scss/litestrap/_litestrap.scss */
+  .whole--screen-s {
+    width: 100%;
+  }
+
+  /* line 413, ../scss/litestrap/_litestrap.scss */
+  .ninety--screen-s {
+    width: 90%;
+  }
+
+  /* line 416, ../scss/litestrap/_litestrap.scss */
+  .eighty--screen-s {
+    width: 80%;
+  }
+
+  /* line 419, ../scss/litestrap/_litestrap.scss */
+  .seventy--screen-s {
+    width: 70%;
+  }
+
+  /* line 422, ../scss/litestrap/_litestrap.scss */
+  .sixty--screen-s {
+    width: 60%;
+  }
+
+  /* line 425, ../scss/litestrap/_litestrap.scss */
+  .half--screen-s, .fifty--screen-s {
+    width: 50%;
+  }
+
+  /* line 428, ../scss/litestrap/_litestrap.scss */
+  .forty--screen-s {
+    width: 40%;
+  }
+
+  /* line 431, ../scss/litestrap/_litestrap.scss */
+  .thirty--screen-s {
+    width: 30%;
+  }
+
+  /* line 434, ../scss/litestrap/_litestrap.scss */
+  .quarter--screen-s {
+    width: 25%;
+  }
+
+  /* line 437, ../scss/litestrap/_litestrap.scss */
+  .twenty--screen-s {
+    width: 20%;
+  }
+
+  /* line 440, ../scss/litestrap/_litestrap.scss */
+  .ten--screen-s {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* line 447, ../scss/litestrap/_litestrap.scss */
+  .half--screen-xs {
+    width: 50%;
+    float: left;
+    clear: none;
+  }
+
+  /* line 452, ../scss/litestrap/_litestrap.scss */
+  .hide--screen-xs {
+    display: none;
+  }
+
+  /* line 455, ../scss/litestrap/_litestrap.scss */
+  .show--screen-xs, .r-block--screen-xs {
+    display: block;
+  }
+
+  /* line 458, ../scss/litestrap/_litestrap.scss */
+  .clear--screen-xs, .r-clear--screen-xs {
+    clear: both;
+  }
+
+  /* line 461, ../scss/litestrap/_litestrap.scss */
+  .killfloat-xs, .pull-none--screen-xs {
+    float: none;
+  }
+
+  /* line 464, ../scss/litestrap/_litestrap.scss */
+  .whole--screen-xs {
+    width: 100%;
+  }
+
+  /* line 467, ../scss/litestrap/_litestrap.scss */
+  .ninety--screen-xs {
+    width: 90%;
+  }
+
+  /* line 470, ../scss/litestrap/_litestrap.scss */
+  .eighty--screen-xs {
+    width: 80%;
+  }
+
+  /* line 473, ../scss/litestrap/_litestrap.scss */
+  .seventy--screen-xs {
+    width: 70%;
+  }
+
+  /* line 476, ../scss/litestrap/_litestrap.scss */
+  .sixty--screen-xs {
+    width: 60%;
+  }
+
+  /* line 479, ../scss/litestrap/_litestrap.scss */
+  .half--screen-xs, .fifty--screen-xs {
+    width: 50%;
+  }
+
+  /* line 482, ../scss/litestrap/_litestrap.scss */
+  .forty--screen-xs {
+    width: 40%;
+  }
+
+  /* line 485, ../scss/litestrap/_litestrap.scss */
+  .thirty--creen-xs {
+    width: 30%;
+  }
+
+  /* line 488, ../scss/litestrap/_litestrap.scss */
+  .quarter--screen-xs {
+    width: 25%;
+  }
+
+  /* line 491, ../scss/litestrap/_litestrap.scss */
+  .twenty--screen-xs {
+    width: 20%;
+  }
+
+  /* line 494, ../scss/litestrap/_litestrap.scss */
+  .ten--screen-xs {
+    width: 10%;
+  }
+}
+/* line 8, ../scss/litestrap/layout/_text.scss */
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* line 14, ../scss/litestrap/layout/_text.scss */
+h1, .h-xxl, .hd-lg, .t-xxxxl, .t-triple {
+  font-size: 3em;
+}
+
+/* line 17, ../scss/litestrap/layout/_text.scss */
+h2, .h-xl, .t-xxxl, .t-double {
+  font-size: 2em;
+}
+
+/* line 20, ../scss/litestrap/layout/_text.scss */
+h3, .h-l, .t-xxl {
+  font-size: 1.75em;
+}
+
+/* line 23, ../scss/litestrap/layout/_text.scss */
+h4, .h-m, .hd-md, .t-xl {
+  font-size: 1.5em;
+}
+
+/* line 26, ../scss/litestrap/layout/_text.scss */
+h5, .h-s, .t-l {
+  font-size: 1.33em;
+}
+
+/* line 29, ../scss/litestrap/layout/_text.scss */
+h6, .h-xs, .t-m {
+  font-size: 1.1667em;
+}
+
+/* line 32, ../scss/litestrap/layout/_text.scss */
+small, .t-s {
+  font-size: 0.9176em;
+}
+
+/* line 35, ../scss/litestrap/layout/_text.scss */
+.t-xs {
+  font-size: 0.8333em;
+}
+
+/* line 38, ../scss/litestrap/layout/_text.scss */
+.t-xxs {
+  font-size: 0.75em;
+}
+
+/* line 41, ../scss/litestrap/layout/_text.scss */
+.t-xxxs {
+  font-size: 0.66em;
+}
+
+/* line 44, ../scss/litestrap/layout/_text.scss */
+.t-xxxxs {
+  font-size: 0.5833em;
+}
+
+/* line 47, ../scss/litestrap/layout/_text.scss */
+.t-xxxxxs, .t-half {
+  font-size: 0.5em;
+}
+
+/* line 50, ../scss/litestrap/layout/_text.scss */
+.t-n {
+  font-size: 1em;
+}
+
+/* line 55, ../scss/litestrap/layout/_text.scss */
+.t-nat {
+  font-size: 1rem;
+}
+
+/* line 60, ../scss/litestrap/layout/_text.scss */
+.text-center, .text-mid, .t-mid, .t-center {
+  text-align: center;
+}
+
+/* line 64, ../scss/litestrap/layout/_text.scss */
+.t-left, .text-left {
+  text-align: left;
+}
+
+/* line 68, ../scss/litestrap/layout/_text.scss */
+.t-right, .text-right {
+  text-align: right;
+}
+
+/* line 72, ../scss/litestrap/layout/_text.scss */
+.t-bold {
+  font-weight: bold;
+}
+
+/* line 76, ../scss/litestrap/layout/_text.scss */
+.t-normal {
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 1079px) {
+  /* line 82, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-l, .t-xxxxl--screen-l, .t-triple--screen-l {
+    font-size: 3em;
+  }
+
+  /* line 85, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-l, .t-xxxl--screen-l, .t-double--screen-l {
+    font-size: 2em;
+  }
+
+  /* line 88, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-l, .t-xxl--screen-l {
+    font-size: 1.75em;
+  }
+
+  /* line 91, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-l, .t-xl--screen-l, .t-xl--screen-l {
+    font-size: 1.5em;
+  }
+
+  /* line 94, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-l, .t-l--screen-l {
+    font-size: 1.33em;
+  }
+
+  /* line 97, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-l, .t-m--screen-l {
+    font-size: 1.1667em;
+  }
+
+  /* line 100, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-l {
+    font-size: 0.9176em;
+  }
+
+  /* line 103, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-l {
+    font-size: 0.8333em;
+  }
+
+  /* line 106, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-l {
+    font-size: 1rem;
+  }
+
+  /* line 109, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-l {
+    font-size: 0.5em;
+  }
+
+  /* line 112, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-l {
+    font-size: 1em;
+  }
+
+  /* line 115, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-l, .t-center--screen-l {
+    text-align: center;
+  }
+
+  /* line 118, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-l {
+    text-align: left;
+  }
+
+  /* line 121, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-l {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* line 127, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-xl, .t-xxxxl--screen-xl, .t-triple--screen-xl {
+    font-size: 3em;
+  }
+
+  /* line 130, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-xl, .t-xxxl--screen-xl, .t-double--screen-xl {
+    font-size: 2em;
+  }
+
+  /* line 133, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-xl, .t-xxl--screen-xl {
+    font-size: 1.75em;
+  }
+
+  /* line 136, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-xl, .t-xl--screen-xl, .t-xl--screen-xl {
+    font-size: 1.5em;
+  }
+
+  /* line 139, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-xl, .t-l--screen-xl {
+    font-size: 1.33em;
+  }
+
+  /* line 142, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-xl, .t-m--screen-xl {
+    font-size: 1.1667em;
+  }
+
+  /* line 145, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-xl {
+    font-size: 0.9176em;
+  }
+
+  /* line 148, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-xl {
+    font-size: 0.8333em;
+  }
+
+  /* line 151, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-xl {
+    font-size: 1rem;
+  }
+
+  /* line 154, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-xl {
+    font-size: 0.5em;
+  }
+
+  /* line 157, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-xl {
+    font-size: 1em;
+  }
+
+  /* line 160, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-xl, .t-center--screen-xl {
+    text-align: center;
+  }
+
+  /* line 163, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-xl {
+    text-align: left;
+  }
+
+  /* line 166, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-xl {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 864px) {
+  /* line 172, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-m, .t-xxxxl--screen-m, .t-triple--screen-m {
+    font-size: 3em;
+  }
+
+  /* line 175, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-m, .t-xxxl--screen-m, .t-double--screen-m {
+    font-size: 2em;
+  }
+
+  /* line 178, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-m, .t-xxl--screen-m {
+    font-size: 1.75em;
+  }
+
+  /* line 181, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-m, .t-xl--screen-m, .t-xl--screen-m {
+    font-size: 1.5em;
+  }
+
+  /* line 184, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-m, .t-l--screen-m {
+    font-size: 1.33em;
+  }
+
+  /* line 187, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-m, .t-m--screen-m {
+    font-size: 1.1667em;
+  }
+
+  /* line 190, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-m {
+    font-size: 0.9176em;
+  }
+
+  /* line 193, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-m {
+    font-size: 0.8333em;
+  }
+
+  /* line 196, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-m {
+    font-size: 1rem;
+  }
+
+  /* line 199, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-m {
+    font-size: 0.5em;
+  }
+
+  /* line 202, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-m {
+    font-size: 1em;
+  }
+
+  /* line 205, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-m, .t-center--screen-m {
+    text-align: center;
+  }
+
+  /* line 208, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-m {
+    text-align: left;
+  }
+
+  /* line 211, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-m {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 634px) {
+  /* line 217, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-s, .t-xxxxl--screen-s, .t-triple--screen-s {
+    font-size: 3em;
+  }
+
+  /* line 220, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-s, .t-xxxl--screen-s, .t-double--screen-s {
+    font-size: 2em;
+  }
+
+  /* line 223, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-s, .t-xxl--screen-s {
+    font-size: 1.75em;
+  }
+
+  /* line 226, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-s, .t-xl--screen-s, .t-xl--screen-s {
+    font-size: 1.5em;
+  }
+
+  /* line 229, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-s, .t-l--screen-s {
+    font-size: 1.33em;
+  }
+
+  /* line 232, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-s, .t-m--screen-s {
+    font-size: 1.1667em;
+  }
+
+  /* line 235, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-s {
+    font-size: 0.9176em;
+  }
+
+  /* line 238, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-s {
+    font-size: 0.8333em;
+  }
+
+  /* line 241, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-s {
+    font-size: 1rem;
+  }
+
+  /* line 244, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-s {
+    font-size: 0.5em;
+  }
+
+  /* line 247, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-s {
+    font-size: 1em;
+  }
+
+  /* line 250, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-s, .t-center--screen-s {
+    text-align: center;
+  }
+
+  /* line 253, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-s {
+    text-align: left;
+  }
+
+  /* line 256, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-s {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* line 262, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-xs, .t-xxxxl--screen-xs, .t-triple--screen-xs {
+    font-size: 3em;
+  }
+
+  /* line 265, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-xs, .t-xxxl--screen-xs, .t-double--screen-xs {
+    font-size: 2em;
+  }
+
+  /* line 268, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-xs, .t-xxl--screen-xs {
+    font-size: 1.75em;
+  }
+
+  /* line 271, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-xs, .t-xl--screen-xs, .t-xl--screen-xs {
+    font-size: 1.5em;
+  }
+
+  /* line 274, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-xs, .t-l--screen-xs {
+    font-size: 1.33em;
+  }
+
+  /* line 277, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-xs, .t-m--screen-xs {
+    font-size: 1.1667em;
+  }
+
+  /* line 280, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-xs {
+    font-size: 0.9176em;
+  }
+
+  /* line 283, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-xs {
+    font-size: 0.8333em;
+  }
+
+  /* line 286, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-xs {
+    font-size: 1rem;
+  }
+
+  /* line 289, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-xs {
+    font-size: 0.5em;
+  }
+
+  /* line 292, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-xs {
+    font-size: 1em;
+  }
+
+  /* line 295, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-xs, .t-center--screen-xs {
+    text-align: center;
+  }
+
+  /* line 298, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-xs {
+    text-align: left;
+  }
+
+  /* line 301, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-xs {
+    text-align: right;
+  }
+}
+/* line 7, ../scss/litestrap/objects/_media.scss */
+.media {
+  display: block;
+}
+
+/* line 10, ../scss/litestrap/objects/_media.scss */
+.media__img {
+  float: left;
+  margin-right: 0.5em;
+}
+
+/* line 14, ../scss/litestrap/objects/_media.scss */
+.media__img--rev {
+  float: right;
+  margin-left: 0.5em;
+}
+
+/* line 18, ../scss/litestrap/objects/_media.scss */
+.media__img img, .media__img--rev img {
+  display: block;
+}
+
+/* line 21, ../scss/litestrap/objects/_media.scss */
+.media__body {
+  overflow: hidden;
+}
+
+/*
+    Media Query Mixin
+
+    Large (l) and Extra-Large (xl) are 'min-width' media queries,
+    meaning they'll only appear on screens that are big enough.
+    
+    Medium (m), Small (s), and Extra-Small (xs) are max-width queries,
+    meaning that they only appear on screens that are small enough.
+    
+    The 'density' queries are kind of heavy-duty, so use extra-sparingly. :)
+    
+    For high pixel-density images, you can use (retinahd), (retina) or (hdpi).
+    
+    
+    Usage:  @include media-query(size){ [styles here] }
+*/
+/*
+    DuckDuckGo Icons!
+    
+    Requires that you compile the icon font yourself and
+    serve it via @font-face under the name 'ddg-serp-icons'
+*/
+/*
+    Buttons
+    (Most of the basics are handled by litestrap - this is for custom stuff)    
+*/
+/* line 5, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn, .button,
+.btn--icon,
+.btn--top {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -moz-transition: none 1s;
+  -o-transition: none 1s;
+  -webkit-transition: none 1s;
+  transition: none 1s;
+  outline: none !important;
+  background-color: #fafafa;
+  border-color: #dddddd;
+  line-height: 2;
+  font-weight: normal;
+  font-size: 1em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #333333;
+}
+/* line 18, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn:hover, .button:hover, .btn:focus, .button:focus,
+.btn--icon:hover,
+.btn--top:hover,
+.btn--icon:focus,
+.btn--top:focus {
+  text-decoration: none !important;
+  color: #333333;
+}
+
+/* line 24, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn:active, .button:active {
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
+
+/* line 33, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn.is-disabled, .button.is-disabled {
+  border-color: #c3c3c3;
+  background-color: #c3c3c3;
+  color: #eee;
+}
+/* line 38, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn.is-active, .button.is-active {
+  border-color: transparent;
+  background: #666666;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+/* line 47, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary {
+  background-color: #60a5da;
+  border-color: #60a5da;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* line 54, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary:hover, .btn--primary:focus {
+  color: #ffffff;
+  background-color: #4495d4;
+  border-color: #4495d4;
+}
+/* line 59, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary:active {
+  background-color: #3a7fb4;
+  border-color: #3a7fb4;
+}
+
+/* line 69, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary--alt {
+  background-color: #4495d4;
+  border-color: #4495d4;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* line 76, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary--alt:hover, .btn--primary--alt:focus {
+  color: #ffffff;
+  background-color: #3a7fb4;
+  border-color: #3a7fb4;
+}
+/* line 81, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary--alt:active {
+  background-color: #27567a;
+  border-color: #27567a;
+}
+
+/* line 87, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--critical {
+  background-color: #e37151;
+  border-color: #e37151;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* line 94, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--critical:hover, .btn--critical:focus {
+  color: #ffffff;
+  background-color: #de5833;
+  border-color: #de5833;
+}
+/* line 99, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--critical:active {
+  background-color: #bd4b2b;
+  border-color: #bd4b2b;
+}
+
+/* line 106, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--secondary {
+  border-color: #dddddd;
+  background-color: #f2f2f2;
+  color: #666666;
+  font-weight: 600;
+}
+/* line 113, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: #60a5da;
+  border-color: #4495d4;
+  color: #ffffff;
+}
+/* line 118, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--secondary:active {
+  background-color: #4495d4;
+  color: #ffffff;
+}
+
+/* line 125, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--alt {
+  border-color: #c3c3c3;
+  background-color: #e5e5e5;
+  color: #666666;
+}
+/* line 130, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--alt:hover, .btn--alt:focus {
+  color: #666666;
+  background-color: #d8d8d8;
+}
+/* line 134, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--alt:active {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+/* line 140, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: none;
+  background-color: transparent;
+  font-weight: normal;
+  border: 1px solid #dddddd;
+  color: #aaaaaa;
+}
+/* line 148, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire:hover, .btn--wire:focus {
+  border-color: #aaaaaa;
+  background-color: #aaaaaa;
+  color: #ffffff;
+}
+
+/* line 155, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--hero {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+/* line 162, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--hero:hover, .btn--wire--hero:focus {
+  border-color: #ffffff;
+  background: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* line 170, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--dark {
+  border-color: #333333;
+  color: #333333;
+}
+/* line 174, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--dark:hover {
+  border-color: #333333;
+  background-color: #333333;
+}
+
+/* line 180, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--icon,
+.btn--top {
+  font-family: 'ddg-serp-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none !important;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: background-color 0.1s, color 0.1s;
+  -o-transition: background-color 0.1s, color 0.1s;
+  -webkit-transition: background-color 0.1s, color 0.1s;
+  transition: background-color 0.1s, color 0.1s;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  position: relative;
+  width: 33px;
+  height: 33px;
+  line-height: 34px;
+  text-indent: 1px;
+  font-size: 16px;
+}
+/* line 209, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.no-touch .btn--icon:hover,
+.no-touch .btn--top:hover, .no-touch .btn--icon:focus,
+.no-touch .btn--top:focus, .no-js .btn--icon:hover,
+.no-js .btn--top:hover, .no-js .btn--icon:focus,
+.no-js .btn--top:focus {
+  color: white;
+  background-color: #6d6d6d;
+}
+/* line 214, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.no-touch .btn--icon:active,
+.no-touch .btn--top:active, .no-js .btn--icon:active,
+.no-js .btn--top:active {
+  -moz-transition: none 1s;
+  -o-transition: none 1s;
+  -webkit-transition: none 1s;
+  transition: none 1s;
+  color: white;
+  background-color: #555555;
+}
+
+/* line 227, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn__icon,
+.btn__icon--sm {
+  margin-right: 0.125em;
+  vertical-align: middle;
+  margin-top: -0.125em;
+  max-height: 1em;
+  max-width: 1em;
+}
+
+/* line 235, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn__icon {
+  margin-left: -0.25em;
+  font-size: 1.5em;
+}
+
+/* line 239, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn__icon--sm {
+  font-size: 16px;
+  margin-left: -0.25em;
+  margin-right: 0.5em;
+  position: relative;
+  top: -0.05em;
+}
+
+/* line 247, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--inline {
+  display: inline;
+  line-height: inherit;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  top: -1px;
+}
+
+/* line 255, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn-stack {
+  margin-bottom: -0.5em;
+  padding: 0;
+}
+/* line 258, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn-stack .btn {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 4, ../scss/fa/scss/_core.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 5, ../scss/fa/scss/_larger.scss */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 10, ../scss/fa/scss/_larger.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 11, ../scss/fa/scss/_larger.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 12, ../scss/fa/scss/_larger.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 13, ../scss/fa/scss/_larger.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 3, ../scss/fa/scss/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
+/* line 4, ../scss/fa/scss/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+/* line 8, ../scss/fa/scss/_list.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 10, ../scss/fa/scss/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+/* line 16, ../scss/fa/scss/_list.scss */
+.fa-li.fa-lg {
+  left: -1.85714em;
+}
+
+/* line 4, ../scss/fa/scss/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+}
+
+/* line 10, ../scss/fa/scss/_bordered-pulled.scss */
+.fa-pull-left {
+  float: left;
+}
+
+/* line 11, ../scss/fa/scss/_bordered-pulled.scss */
+.fa-pull-right {
+  float: right;
+}
+
+/* line 14, ../scss/fa/scss/_bordered-pulled.scss */
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+/* line 15, ../scss/fa/scss/_bordered-pulled.scss */
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+
+/* Deprecated as of 4.4.0 */
+/* line 19, ../scss/fa/scss/_bordered-pulled.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 20, ../scss/fa/scss/_bordered-pulled.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 23, ../scss/fa/scss/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+/* line 24, ../scss/fa/scss/_bordered-pulled.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 4, ../scss/fa/scss/_animated.scss */
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 9, ../scss/fa/scss/_animated.scss */
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 4, ../scss/fa/scss/_rotated-flipped.scss */
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 5, ../scss/fa/scss/_rotated-flipped.scss */
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 6, ../scss/fa/scss/_rotated-flipped.scss */
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 8, ../scss/fa/scss/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 9, ../scss/fa/scss/_rotated-flipped.scss */
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 14, ../scss/fa/scss/_rotated-flipped.scss */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+
+/* line 4, ../scss/fa/scss/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 12, ../scss/fa/scss/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 18, ../scss/fa/scss/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 19, ../scss/fa/scss/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 20, ../scss/fa/scss/_stacked.scss */
+.fa-inverse {
+  color: #fff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, ../scss/fa/scss/_icons.scss */
+.fa-glass:before {
+  content: "";
+}
+
+/* line 5, ../scss/fa/scss/_icons.scss */
+.fa-music:before {
+  content: "";
+}
+
+/* line 6, ../scss/fa/scss/_icons.scss */
+.fa-search:before {
+  content: "";
+}
+
+/* line 7, ../scss/fa/scss/_icons.scss */
+.fa-envelope-o:before {
+  content: "";
+}
+
+/* line 8, ../scss/fa/scss/_icons.scss */
+.fa-heart:before {
+  content: "";
+}
+
+/* line 9, ../scss/fa/scss/_icons.scss */
+.fa-star:before {
+  content: "";
+}
+
+/* line 10, ../scss/fa/scss/_icons.scss */
+.fa-star-o:before {
+  content: "";
+}
+
+/* line 11, ../scss/fa/scss/_icons.scss */
+.fa-user:before {
+  content: "";
+}
+
+/* line 12, ../scss/fa/scss/_icons.scss */
+.fa-film:before {
+  content: "";
+}
+
+/* line 13, ../scss/fa/scss/_icons.scss */
+.fa-th-large:before {
+  content: "";
+}
+
+/* line 14, ../scss/fa/scss/_icons.scss */
+.fa-th:before {
+  content: "";
+}
+
+/* line 15, ../scss/fa/scss/_icons.scss */
+.fa-th-list:before {
+  content: "";
+}
+
+/* line 16, ../scss/fa/scss/_icons.scss */
+.fa-check:before {
+  content: "";
+}
+
+/* line 17, ../scss/fa/scss/_icons.scss */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "";
+}
+
+/* line 20, ../scss/fa/scss/_icons.scss */
+.fa-search-plus:before {
+  content: "";
+}
+
+/* line 21, ../scss/fa/scss/_icons.scss */
+.fa-search-minus:before {
+  content: "";
+}
+
+/* line 22, ../scss/fa/scss/_icons.scss */
+.fa-power-off:before {
+  content: "";
+}
+
+/* line 23, ../scss/fa/scss/_icons.scss */
+.fa-signal:before {
+  content: "";
+}
+
+/* line 24, ../scss/fa/scss/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "";
+}
+
+/* line 26, ../scss/fa/scss/_icons.scss */
+.fa-trash-o:before {
+  content: "";
+}
+
+/* line 27, ../scss/fa/scss/_icons.scss */
+.fa-home:before {
+  content: "";
+}
+
+/* line 28, ../scss/fa/scss/_icons.scss */
+.fa-file-o:before {
+  content: "";
+}
+
+/* line 29, ../scss/fa/scss/_icons.scss */
+.fa-clock-o:before {
+  content: "";
+}
+
+/* line 30, ../scss/fa/scss/_icons.scss */
+.fa-road:before {
+  content: "";
+}
+
+/* line 31, ../scss/fa/scss/_icons.scss */
+.fa-download:before {
+  content: "";
+}
+
+/* line 32, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: "";
+}
+
+/* line 33, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: "";
+}
+
+/* line 34, ../scss/fa/scss/_icons.scss */
+.fa-inbox:before {
+  content: "";
+}
+
+/* line 35, ../scss/fa/scss/_icons.scss */
+.fa-play-circle-o:before {
+  content: "";
+}
+
+/* line 36, ../scss/fa/scss/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "";
+}
+
+/* line 38, ../scss/fa/scss/_icons.scss */
+.fa-refresh:before {
+  content: "";
+}
+
+/* line 39, ../scss/fa/scss/_icons.scss */
+.fa-list-alt:before {
+  content: "";
+}
+
+/* line 40, ../scss/fa/scss/_icons.scss */
+.fa-lock:before {
+  content: "";
+}
+
+/* line 41, ../scss/fa/scss/_icons.scss */
+.fa-flag:before {
+  content: "";
+}
+
+/* line 42, ../scss/fa/scss/_icons.scss */
+.fa-headphones:before {
+  content: "";
+}
+
+/* line 43, ../scss/fa/scss/_icons.scss */
+.fa-volume-off:before {
+  content: "";
+}
+
+/* line 44, ../scss/fa/scss/_icons.scss */
+.fa-volume-down:before {
+  content: "";
+}
+
+/* line 45, ../scss/fa/scss/_icons.scss */
+.fa-volume-up:before {
+  content: "";
+}
+
+/* line 46, ../scss/fa/scss/_icons.scss */
+.fa-qrcode:before {
+  content: "";
+}
+
+/* line 47, ../scss/fa/scss/_icons.scss */
+.fa-barcode:before {
+  content: "";
+}
+
+/* line 48, ../scss/fa/scss/_icons.scss */
+.fa-tag:before {
+  content: "";
+}
+
+/* line 49, ../scss/fa/scss/_icons.scss */
+.fa-tags:before {
+  content: "";
+}
+
+/* line 50, ../scss/fa/scss/_icons.scss */
+.fa-book:before {
+  content: "";
+}
+
+/* line 51, ../scss/fa/scss/_icons.scss */
+.fa-bookmark:before {
+  content: "";
+}
+
+/* line 52, ../scss/fa/scss/_icons.scss */
+.fa-print:before {
+  content: "";
+}
+
+/* line 53, ../scss/fa/scss/_icons.scss */
+.fa-camera:before {
+  content: "";
+}
+
+/* line 54, ../scss/fa/scss/_icons.scss */
+.fa-font:before {
+  content: "";
+}
+
+/* line 55, ../scss/fa/scss/_icons.scss */
+.fa-bold:before {
+  content: "";
+}
+
+/* line 56, ../scss/fa/scss/_icons.scss */
+.fa-italic:before {
+  content: "";
+}
+
+/* line 57, ../scss/fa/scss/_icons.scss */
+.fa-text-height:before {
+  content: "";
+}
+
+/* line 58, ../scss/fa/scss/_icons.scss */
+.fa-text-width:before {
+  content: "";
+}
+
+/* line 59, ../scss/fa/scss/_icons.scss */
+.fa-align-left:before {
+  content: "";
+}
+
+/* line 60, ../scss/fa/scss/_icons.scss */
+.fa-align-center:before {
+  content: "";
+}
+
+/* line 61, ../scss/fa/scss/_icons.scss */
+.fa-align-right:before {
+  content: "";
+}
+
+/* line 62, ../scss/fa/scss/_icons.scss */
+.fa-align-justify:before {
+  content: "";
+}
+
+/* line 63, ../scss/fa/scss/_icons.scss */
+.fa-list:before {
+  content: "";
+}
+
+/* line 64, ../scss/fa/scss/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "";
+}
+
+/* line 66, ../scss/fa/scss/_icons.scss */
+.fa-indent:before {
+  content: "";
+}
+
+/* line 67, ../scss/fa/scss/_icons.scss */
+.fa-video-camera:before {
+  content: "";
+}
+
+/* line 68, ../scss/fa/scss/_icons.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "";
+}
+
+/* line 71, ../scss/fa/scss/_icons.scss */
+.fa-pencil:before {
+  content: "";
+}
+
+/* line 72, ../scss/fa/scss/_icons.scss */
+.fa-map-marker:before {
+  content: "";
+}
+
+/* line 73, ../scss/fa/scss/_icons.scss */
+.fa-adjust:before {
+  content: "";
+}
+
+/* line 74, ../scss/fa/scss/_icons.scss */
+.fa-tint:before {
+  content: "";
+}
+
+/* line 75, ../scss/fa/scss/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "";
+}
+
+/* line 77, ../scss/fa/scss/_icons.scss */
+.fa-share-square-o:before {
+  content: "";
+}
+
+/* line 78, ../scss/fa/scss/_icons.scss */
+.fa-check-square-o:before {
+  content: "";
+}
+
+/* line 79, ../scss/fa/scss/_icons.scss */
+.fa-arrows:before {
+  content: "";
+}
+
+/* line 80, ../scss/fa/scss/_icons.scss */
+.fa-step-backward:before {
+  content: "";
+}
+
+/* line 81, ../scss/fa/scss/_icons.scss */
+.fa-fast-backward:before {
+  content: "";
+}
+
+/* line 82, ../scss/fa/scss/_icons.scss */
+.fa-backward:before {
+  content: "";
+}
+
+/* line 83, ../scss/fa/scss/_icons.scss */
+.fa-play:before {
+  content: "";
+}
+
+/* line 84, ../scss/fa/scss/_icons.scss */
+.fa-pause:before {
+  content: "";
+}
+
+/* line 85, ../scss/fa/scss/_icons.scss */
+.fa-stop:before {
+  content: "";
+}
+
+/* line 86, ../scss/fa/scss/_icons.scss */
+.fa-forward:before {
+  content: "";
+}
+
+/* line 87, ../scss/fa/scss/_icons.scss */
+.fa-fast-forward:before {
+  content: "";
+}
+
+/* line 88, ../scss/fa/scss/_icons.scss */
+.fa-step-forward:before {
+  content: "";
+}
+
+/* line 89, ../scss/fa/scss/_icons.scss */
+.fa-eject:before {
+  content: "";
+}
+
+/* line 90, ../scss/fa/scss/_icons.scss */
+.fa-chevron-left:before {
+  content: "";
+}
+
+/* line 91, ../scss/fa/scss/_icons.scss */
+.fa-chevron-right:before {
+  content: "";
+}
+
+/* line 92, ../scss/fa/scss/_icons.scss */
+.fa-plus-circle:before {
+  content: "";
+}
+
+/* line 93, ../scss/fa/scss/_icons.scss */
+.fa-minus-circle:before {
+  content: "";
+}
+
+/* line 94, ../scss/fa/scss/_icons.scss */
+.fa-times-circle:before {
+  content: "";
+}
+
+/* line 95, ../scss/fa/scss/_icons.scss */
+.fa-check-circle:before {
+  content: "";
+}
+
+/* line 96, ../scss/fa/scss/_icons.scss */
+.fa-question-circle:before {
+  content: "";
+}
+
+/* line 97, ../scss/fa/scss/_icons.scss */
+.fa-info-circle:before {
+  content: "";
+}
+
+/* line 98, ../scss/fa/scss/_icons.scss */
+.fa-crosshairs:before {
+  content: "";
+}
+
+/* line 99, ../scss/fa/scss/_icons.scss */
+.fa-times-circle-o:before {
+  content: "";
+}
+
+/* line 100, ../scss/fa/scss/_icons.scss */
+.fa-check-circle-o:before {
+  content: "";
+}
+
+/* line 101, ../scss/fa/scss/_icons.scss */
+.fa-ban:before {
+  content: "";
+}
+
+/* line 102, ../scss/fa/scss/_icons.scss */
+.fa-arrow-left:before {
+  content: "";
+}
+
+/* line 103, ../scss/fa/scss/_icons.scss */
+.fa-arrow-right:before {
+  content: "";
+}
+
+/* line 104, ../scss/fa/scss/_icons.scss */
+.fa-arrow-up:before {
+  content: "";
+}
+
+/* line 105, ../scss/fa/scss/_icons.scss */
+.fa-arrow-down:before {
+  content: "";
+}
+
+/* line 106, ../scss/fa/scss/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "";
+}
+
+/* line 108, ../scss/fa/scss/_icons.scss */
+.fa-expand:before {
+  content: "";
+}
+
+/* line 109, ../scss/fa/scss/_icons.scss */
+.fa-compress:before {
+  content: "";
+}
+
+/* line 110, ../scss/fa/scss/_icons.scss */
+.fa-plus:before {
+  content: "";
+}
+
+/* line 111, ../scss/fa/scss/_icons.scss */
+.fa-minus:before {
+  content: "";
+}
+
+/* line 112, ../scss/fa/scss/_icons.scss */
+.fa-asterisk:before {
+  content: "";
+}
+
+/* line 113, ../scss/fa/scss/_icons.scss */
+.fa-exclamation-circle:before {
+  content: "";
+}
+
+/* line 114, ../scss/fa/scss/_icons.scss */
+.fa-gift:before {
+  content: "";
+}
+
+/* line 115, ../scss/fa/scss/_icons.scss */
+.fa-leaf:before {
+  content: "";
+}
+
+/* line 116, ../scss/fa/scss/_icons.scss */
+.fa-fire:before {
+  content: "";
+}
+
+/* line 117, ../scss/fa/scss/_icons.scss */
+.fa-eye:before {
+  content: "";
+}
+
+/* line 118, ../scss/fa/scss/_icons.scss */
+.fa-eye-slash:before {
+  content: "";
+}
+
+/* line 119, ../scss/fa/scss/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "";
+}
+
+/* line 121, ../scss/fa/scss/_icons.scss */
+.fa-plane:before {
+  content: "";
+}
+
+/* line 122, ../scss/fa/scss/_icons.scss */
+.fa-calendar:before {
+  content: "";
+}
+
+/* line 123, ../scss/fa/scss/_icons.scss */
+.fa-random:before {
+  content: "";
+}
+
+/* line 124, ../scss/fa/scss/_icons.scss */
+.fa-comment:before {
+  content: "";
+}
+
+/* line 125, ../scss/fa/scss/_icons.scss */
+.fa-magnet:before {
+  content: "";
+}
+
+/* line 126, ../scss/fa/scss/_icons.scss */
+.fa-chevron-up:before {
+  content: "";
+}
+
+/* line 127, ../scss/fa/scss/_icons.scss */
+.fa-chevron-down:before {
+  content: "";
+}
+
+/* line 128, ../scss/fa/scss/_icons.scss */
+.fa-retweet:before {
+  content: "";
+}
+
+/* line 129, ../scss/fa/scss/_icons.scss */
+.fa-shopping-cart:before {
+  content: "";
+}
+
+/* line 130, ../scss/fa/scss/_icons.scss */
+.fa-folder:before {
+  content: "";
+}
+
+/* line 131, ../scss/fa/scss/_icons.scss */
+.fa-folder-open:before {
+  content: "";
+}
+
+/* line 132, ../scss/fa/scss/_icons.scss */
+.fa-arrows-v:before {
+  content: "";
+}
+
+/* line 133, ../scss/fa/scss/_icons.scss */
+.fa-arrows-h:before {
+  content: "";
+}
+
+/* line 134, ../scss/fa/scss/_icons.scss */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "";
+}
+
+/* line 136, ../scss/fa/scss/_icons.scss */
+.fa-twitter-square:before {
+  content: "";
+}
+
+/* line 137, ../scss/fa/scss/_icons.scss */
+.fa-facebook-square:before {
+  content: "";
+}
+
+/* line 138, ../scss/fa/scss/_icons.scss */
+.fa-camera-retro:before {
+  content: "";
+}
+
+/* line 139, ../scss/fa/scss/_icons.scss */
+.fa-key:before {
+  content: "";
+}
+
+/* line 140, ../scss/fa/scss/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "";
+}
+
+/* line 142, ../scss/fa/scss/_icons.scss */
+.fa-comments:before {
+  content: "";
+}
+
+/* line 143, ../scss/fa/scss/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: "";
+}
+
+/* line 144, ../scss/fa/scss/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: "";
+}
+
+/* line 145, ../scss/fa/scss/_icons.scss */
+.fa-star-half:before {
+  content: "";
+}
+
+/* line 146, ../scss/fa/scss/_icons.scss */
+.fa-heart-o:before {
+  content: "";
+}
+
+/* line 147, ../scss/fa/scss/_icons.scss */
+.fa-sign-out:before {
+  content: "";
+}
+
+/* line 148, ../scss/fa/scss/_icons.scss */
+.fa-linkedin-square:before {
+  content: "";
+}
+
+/* line 149, ../scss/fa/scss/_icons.scss */
+.fa-thumb-tack:before {
+  content: "";
+}
+
+/* line 150, ../scss/fa/scss/_icons.scss */
+.fa-external-link:before {
+  content: "";
+}
+
+/* line 151, ../scss/fa/scss/_icons.scss */
+.fa-sign-in:before {
+  content: "";
+}
+
+/* line 152, ../scss/fa/scss/_icons.scss */
+.fa-trophy:before {
+  content: "";
+}
+
+/* line 153, ../scss/fa/scss/_icons.scss */
+.fa-github-square:before {
+  content: "";
+}
+
+/* line 154, ../scss/fa/scss/_icons.scss */
+.fa-upload:before {
+  content: "";
+}
+
+/* line 155, ../scss/fa/scss/_icons.scss */
+.fa-lemon-o:before {
+  content: "";
+}
+
+/* line 156, ../scss/fa/scss/_icons.scss */
+.fa-phone:before {
+  content: "";
+}
+
+/* line 157, ../scss/fa/scss/_icons.scss */
+.fa-square-o:before {
+  content: "";
+}
+
+/* line 158, ../scss/fa/scss/_icons.scss */
+.fa-bookmark-o:before {
+  content: "";
+}
+
+/* line 159, ../scss/fa/scss/_icons.scss */
+.fa-phone-square:before {
+  content: "";
+}
+
+/* line 160, ../scss/fa/scss/_icons.scss */
+.fa-twitter:before {
+  content: "";
+}
+
+/* line 161, ../scss/fa/scss/_icons.scss */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "";
+}
+
+/* line 163, ../scss/fa/scss/_icons.scss */
+.fa-github:before {
+  content: "";
+}
+
+/* line 164, ../scss/fa/scss/_icons.scss */
+.fa-unlock:before {
+  content: "";
+}
+
+/* line 165, ../scss/fa/scss/_icons.scss */
+.fa-credit-card:before {
+  content: "";
+}
+
+/* line 166, ../scss/fa/scss/_icons.scss */
+.fa-feed:before,
+.fa-rss:before {
+  content: "";
+}
+
+/* line 168, ../scss/fa/scss/_icons.scss */
+.fa-hdd-o:before {
+  content: "";
+}
+
+/* line 169, ../scss/fa/scss/_icons.scss */
+.fa-bullhorn:before {
+  content: "";
+}
+
+/* line 170, ../scss/fa/scss/_icons.scss */
+.fa-bell:before {
+  content: "";
+}
+
+/* line 171, ../scss/fa/scss/_icons.scss */
+.fa-certificate:before {
+  content: "";
+}
+
+/* line 172, ../scss/fa/scss/_icons.scss */
+.fa-hand-o-right:before {
+  content: "";
+}
+
+/* line 173, ../scss/fa/scss/_icons.scss */
+.fa-hand-o-left:before {
+  content: "";
+}
+
+/* line 174, ../scss/fa/scss/_icons.scss */
+.fa-hand-o-up:before {
+  content: "";
+}
+
+/* line 175, ../scss/fa/scss/_icons.scss */
+.fa-hand-o-down:before {
+  content: "";
+}
+
+/* line 176, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: "";
+}
+
+/* line 177, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: "";
+}
+
+/* line 178, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: "";
+}
+
+/* line 179, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: "";
+}
+
+/* line 180, ../scss/fa/scss/_icons.scss */
+.fa-globe:before {
+  content: "";
+}
+
+/* line 181, ../scss/fa/scss/_icons.scss */
+.fa-wrench:before {
+  content: "";
+}
+
+/* line 182, ../scss/fa/scss/_icons.scss */
+.fa-tasks:before {
+  content: "";
+}
+
+/* line 183, ../scss/fa/scss/_icons.scss */
+.fa-filter:before {
+  content: "";
+}
+
+/* line 184, ../scss/fa/scss/_icons.scss */
+.fa-briefcase:before {
+  content: "";
+}
+
+/* line 185, ../scss/fa/scss/_icons.scss */
+.fa-arrows-alt:before {
+  content: "";
+}
+
+/* line 186, ../scss/fa/scss/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "";
+}
+
+/* line 188, ../scss/fa/scss/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "";
+}
+
+/* line 190, ../scss/fa/scss/_icons.scss */
+.fa-cloud:before {
+  content: "";
+}
+
+/* line 191, ../scss/fa/scss/_icons.scss */
+.fa-flask:before {
+  content: "";
+}
+
+/* line 192, ../scss/fa/scss/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "";
+}
+
+/* line 194, ../scss/fa/scss/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "";
+}
+
+/* line 196, ../scss/fa/scss/_icons.scss */
+.fa-paperclip:before {
+  content: "";
+}
+
+/* line 197, ../scss/fa/scss/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "";
+}
+
+/* line 199, ../scss/fa/scss/_icons.scss */
+.fa-square:before {
+  content: "";
+}
+
+/* line 200, ../scss/fa/scss/_icons.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "";
+}
+
+/* line 203, ../scss/fa/scss/_icons.scss */
+.fa-list-ul:before {
+  content: "";
+}
+
+/* line 204, ../scss/fa/scss/_icons.scss */
+.fa-list-ol:before {
+  content: "";
+}
+
+/* line 205, ../scss/fa/scss/_icons.scss */
+.fa-strikethrough:before {
+  content: "";
+}
+
+/* line 206, ../scss/fa/scss/_icons.scss */
+.fa-underline:before {
+  content: "";
+}
+
+/* line 207, ../scss/fa/scss/_icons.scss */
+.fa-table:before {
+  content: "";
+}
+
+/* line 208, ../scss/fa/scss/_icons.scss */
+.fa-magic:before {
+  content: "";
+}
+
+/* line 209, ../scss/fa/scss/_icons.scss */
+.fa-truck:before {
+  content: "";
+}
+
+/* line 210, ../scss/fa/scss/_icons.scss */
+.fa-pinterest:before {
+  content: "";
+}
+
+/* line 211, ../scss/fa/scss/_icons.scss */
+.fa-pinterest-square:before {
+  content: "";
+}
+
+/* line 212, ../scss/fa/scss/_icons.scss */
+.fa-google-plus-square:before {
+  content: "";
+}
+
+/* line 213, ../scss/fa/scss/_icons.scss */
+.fa-google-plus:before {
+  content: "";
+}
+
+/* line 214, ../scss/fa/scss/_icons.scss */
+.fa-money:before {
+  content: "";
+}
+
+/* line 215, ../scss/fa/scss/_icons.scss */
+.fa-caret-down:before {
+  content: "";
+}
+
+/* line 216, ../scss/fa/scss/_icons.scss */
+.fa-caret-up:before {
+  content: "";
+}
+
+/* line 217, ../scss/fa/scss/_icons.scss */
+.fa-caret-left:before {
+  content: "";
+}
+
+/* line 218, ../scss/fa/scss/_icons.scss */
+.fa-caret-right:before {
+  content: "";
+}
+
+/* line 219, ../scss/fa/scss/_icons.scss */
+.fa-columns:before {
+  content: "";
+}
+
+/* line 220, ../scss/fa/scss/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "";
+}
+
+/* line 222, ../scss/fa/scss/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "";
+}
+
+/* line 224, ../scss/fa/scss/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "";
+}
+
+/* line 226, ../scss/fa/scss/_icons.scss */
+.fa-envelope:before {
+  content: "";
+}
+
+/* line 227, ../scss/fa/scss/_icons.scss */
+.fa-linkedin:before {
+  content: "";
+}
+
+/* line 228, ../scss/fa/scss/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "";
+}
+
+/* line 230, ../scss/fa/scss/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "";
+}
+
+/* line 232, ../scss/fa/scss/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "";
+}
+
+/* line 234, ../scss/fa/scss/_icons.scss */
+.fa-comment-o:before {
+  content: "";
+}
+
+/* line 235, ../scss/fa/scss/_icons.scss */
+.fa-comments-o:before {
+  content: "";
+}
+
+/* line 236, ../scss/fa/scss/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "";
+}
+
+/* line 238, ../scss/fa/scss/_icons.scss */
+.fa-sitemap:before {
+  content: "";
+}
+
+/* line 239, ../scss/fa/scss/_icons.scss */
+.fa-umbrella:before {
+  content: "";
+}
+
+/* line 240, ../scss/fa/scss/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "";
+}
+
+/* line 242, ../scss/fa/scss/_icons.scss */
+.fa-lightbulb-o:before {
+  content: "";
+}
+
+/* line 243, ../scss/fa/scss/_icons.scss */
+.fa-exchange:before {
+  content: "";
+}
+
+/* line 244, ../scss/fa/scss/_icons.scss */
+.fa-cloud-download:before {
+  content: "";
+}
+
+/* line 245, ../scss/fa/scss/_icons.scss */
+.fa-cloud-upload:before {
+  content: "";
+}
+
+/* line 246, ../scss/fa/scss/_icons.scss */
+.fa-user-md:before {
+  content: "";
+}
+
+/* line 247, ../scss/fa/scss/_icons.scss */
+.fa-stethoscope:before {
+  content: "";
+}
+
+/* line 248, ../scss/fa/scss/_icons.scss */
+.fa-suitcase:before {
+  content: "";
+}
+
+/* line 249, ../scss/fa/scss/_icons.scss */
+.fa-bell-o:before {
+  content: "";
+}
+
+/* line 250, ../scss/fa/scss/_icons.scss */
+.fa-coffee:before {
+  content: "";
+}
+
+/* line 251, ../scss/fa/scss/_icons.scss */
+.fa-cutlery:before {
+  content: "";
+}
+
+/* line 252, ../scss/fa/scss/_icons.scss */
+.fa-file-text-o:before {
+  content: "";
+}
+
+/* line 253, ../scss/fa/scss/_icons.scss */
+.fa-building-o:before {
+  content: "";
+}
+
+/* line 254, ../scss/fa/scss/_icons.scss */
+.fa-hospital-o:before {
+  content: "";
+}
+
+/* line 255, ../scss/fa/scss/_icons.scss */
+.fa-ambulance:before {
+  content: "";
+}
+
+/* line 256, ../scss/fa/scss/_icons.scss */
+.fa-medkit:before {
+  content: "";
+}
+
+/* line 257, ../scss/fa/scss/_icons.scss */
+.fa-fighter-jet:before {
+  content: "";
+}
+
+/* line 258, ../scss/fa/scss/_icons.scss */
+.fa-beer:before {
+  content: "";
+}
+
+/* line 259, ../scss/fa/scss/_icons.scss */
+.fa-h-square:before {
+  content: "";
+}
+
+/* line 260, ../scss/fa/scss/_icons.scss */
+.fa-plus-square:before {
+  content: "";
+}
+
+/* line 261, ../scss/fa/scss/_icons.scss */
+.fa-angle-double-left:before {
+  content: "";
+}
+
+/* line 262, ../scss/fa/scss/_icons.scss */
+.fa-angle-double-right:before {
+  content: "";
+}
+
+/* line 263, ../scss/fa/scss/_icons.scss */
+.fa-angle-double-up:before {
+  content: "";
+}
+
+/* line 264, ../scss/fa/scss/_icons.scss */
+.fa-angle-double-down:before {
+  content: "";
+}
+
+/* line 265, ../scss/fa/scss/_icons.scss */
+.fa-angle-left:before {
+  content: "";
+}
+
+/* line 266, ../scss/fa/scss/_icons.scss */
+.fa-angle-right:before {
+  content: "";
+}
+
+/* line 267, ../scss/fa/scss/_icons.scss */
+.fa-angle-up:before {
+  content: "";
+}
+
+/* line 268, ../scss/fa/scss/_icons.scss */
+.fa-angle-down:before {
+  content: "";
+}
+
+/* line 269, ../scss/fa/scss/_icons.scss */
+.fa-desktop:before {
+  content: "";
+}
+
+/* line 270, ../scss/fa/scss/_icons.scss */
+.fa-laptop:before {
+  content: "";
+}
+
+/* line 271, ../scss/fa/scss/_icons.scss */
+.fa-tablet:before {
+  content: "";
+}
+
+/* line 272, ../scss/fa/scss/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "";
+}
+
+/* line 274, ../scss/fa/scss/_icons.scss */
+.fa-circle-o:before {
+  content: "";
+}
+
+/* line 275, ../scss/fa/scss/_icons.scss */
+.fa-quote-left:before {
+  content: "";
+}
+
+/* line 276, ../scss/fa/scss/_icons.scss */
+.fa-quote-right:before {
+  content: "";
+}
+
+/* line 277, ../scss/fa/scss/_icons.scss */
+.fa-spinner:before {
+  content: "";
+}
+
+/* line 278, ../scss/fa/scss/_icons.scss */
+.fa-circle:before {
+  content: "";
+}
+
+/* line 279, ../scss/fa/scss/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "";
+}
+
+/* line 281, ../scss/fa/scss/_icons.scss */
+.fa-github-alt:before {
+  content: "";
+}
+
+/* line 282, ../scss/fa/scss/_icons.scss */
+.fa-folder-o:before {
+  content: "";
+}
+
+/* line 283, ../scss/fa/scss/_icons.scss */
+.fa-folder-open-o:before {
+  content: "";
+}
+
+/* line 284, ../scss/fa/scss/_icons.scss */
+.fa-smile-o:before {
+  content: "";
+}
+
+/* line 285, ../scss/fa/scss/_icons.scss */
+.fa-frown-o:before {
+  content: "";
+}
+
+/* line 286, ../scss/fa/scss/_icons.scss */
+.fa-meh-o:before {
+  content: "";
+}
+
+/* line 287, ../scss/fa/scss/_icons.scss */
+.fa-gamepad:before {
+  content: "";
+}
+
+/* line 288, ../scss/fa/scss/_icons.scss */
+.fa-keyboard-o:before {
+  content: "";
+}
+
+/* line 289, ../scss/fa/scss/_icons.scss */
+.fa-flag-o:before {
+  content: "";
+}
+
+/* line 290, ../scss/fa/scss/_icons.scss */
+.fa-flag-checkered:before {
+  content: "";
+}
+
+/* line 291, ../scss/fa/scss/_icons.scss */
+.fa-terminal:before {
+  content: "";
+}
+
+/* line 292, ../scss/fa/scss/_icons.scss */
+.fa-code:before {
+  content: "";
+}
+
+/* line 293, ../scss/fa/scss/_icons.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "";
+}
+
+/* line 295, ../scss/fa/scss/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "";
+}
+
+/* line 298, ../scss/fa/scss/_icons.scss */
+.fa-location-arrow:before {
+  content: "";
+}
+
+/* line 299, ../scss/fa/scss/_icons.scss */
+.fa-crop:before {
+  content: "";
+}
+
+/* line 300, ../scss/fa/scss/_icons.scss */
+.fa-code-fork:before {
+  content: "";
+}
+
+/* line 301, ../scss/fa/scss/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "";
+}
+
+/* line 303, ../scss/fa/scss/_icons.scss */
+.fa-question:before {
+  content: "";
+}
+
+/* line 304, ../scss/fa/scss/_icons.scss */
+.fa-info:before {
+  content: "";
+}
+
+/* line 305, ../scss/fa/scss/_icons.scss */
+.fa-exclamation:before {
+  content: "";
+}
+
+/* line 306, ../scss/fa/scss/_icons.scss */
+.fa-superscript:before {
+  content: "";
+}
+
+/* line 307, ../scss/fa/scss/_icons.scss */
+.fa-subscript:before {
+  content: "";
+}
+
+/* line 308, ../scss/fa/scss/_icons.scss */
+.fa-eraser:before {
+  content: "";
+}
+
+/* line 309, ../scss/fa/scss/_icons.scss */
+.fa-puzzle-piece:before {
+  content: "";
+}
+
+/* line 310, ../scss/fa/scss/_icons.scss */
+.fa-microphone:before {
+  content: "";
+}
+
+/* line 311, ../scss/fa/scss/_icons.scss */
+.fa-microphone-slash:before {
+  content: "";
+}
+
+/* line 312, ../scss/fa/scss/_icons.scss */
+.fa-shield:before {
+  content: "";
+}
+
+/* line 313, ../scss/fa/scss/_icons.scss */
+.fa-calendar-o:before {
+  content: "";
+}
+
+/* line 314, ../scss/fa/scss/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: "";
+}
+
+/* line 315, ../scss/fa/scss/_icons.scss */
+.fa-rocket:before {
+  content: "";
+}
+
+/* line 316, ../scss/fa/scss/_icons.scss */
+.fa-maxcdn:before {
+  content: "";
+}
+
+/* line 317, ../scss/fa/scss/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: "";
+}
+
+/* line 318, ../scss/fa/scss/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: "";
+}
+
+/* line 319, ../scss/fa/scss/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: "";
+}
+
+/* line 320, ../scss/fa/scss/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: "";
+}
+
+/* line 321, ../scss/fa/scss/_icons.scss */
+.fa-html5:before {
+  content: "";
+}
+
+/* line 322, ../scss/fa/scss/_icons.scss */
+.fa-css3:before {
+  content: "";
+}
+
+/* line 323, ../scss/fa/scss/_icons.scss */
+.fa-anchor:before {
+  content: "";
+}
+
+/* line 324, ../scss/fa/scss/_icons.scss */
+.fa-unlock-alt:before {
+  content: "";
+}
+
+/* line 325, ../scss/fa/scss/_icons.scss */
+.fa-bullseye:before {
+  content: "";
+}
+
+/* line 326, ../scss/fa/scss/_icons.scss */
+.fa-ellipsis-h:before {
+  content: "";
+}
+
+/* line 327, ../scss/fa/scss/_icons.scss */
+.fa-ellipsis-v:before {
+  content: "";
+}
+
+/* line 328, ../scss/fa/scss/_icons.scss */
+.fa-rss-square:before {
+  content: "";
+}
+
+/* line 329, ../scss/fa/scss/_icons.scss */
+.fa-play-circle:before {
+  content: "";
+}
+
+/* line 330, ../scss/fa/scss/_icons.scss */
+.fa-ticket:before {
+  content: "";
+}
+
+/* line 331, ../scss/fa/scss/_icons.scss */
+.fa-minus-square:before {
+  content: "";
+}
+
+/* line 332, ../scss/fa/scss/_icons.scss */
+.fa-minus-square-o:before {
+  content: "";
+}
+
+/* line 333, ../scss/fa/scss/_icons.scss */
+.fa-level-up:before {
+  content: "";
+}
+
+/* line 334, ../scss/fa/scss/_icons.scss */
+.fa-level-down:before {
+  content: "";
+}
+
+/* line 335, ../scss/fa/scss/_icons.scss */
+.fa-check-square:before {
+  content: "";
+}
+
+/* line 336, ../scss/fa/scss/_icons.scss */
+.fa-pencil-square:before {
+  content: "";
+}
+
+/* line 337, ../scss/fa/scss/_icons.scss */
+.fa-external-link-square:before {
+  content: "";
+}
+
+/* line 338, ../scss/fa/scss/_icons.scss */
+.fa-share-square:before {
+  content: "";
+}
+
+/* line 339, ../scss/fa/scss/_icons.scss */
+.fa-compass:before {
+  content: "";
+}
+
+/* line 340, ../scss/fa/scss/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "";
+}
+
+/* line 342, ../scss/fa/scss/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "";
+}
+
+/* line 344, ../scss/fa/scss/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "";
+}
+
+/* line 346, ../scss/fa/scss/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "";
+}
+
+/* line 348, ../scss/fa/scss/_icons.scss */
+.fa-gbp:before {
+  content: "";
+}
+
+/* line 349, ../scss/fa/scss/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "";
+}
+
+/* line 351, ../scss/fa/scss/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "";
+}
+
+/* line 353, ../scss/fa/scss/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "";
+}
+
+/* line 357, ../scss/fa/scss/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "";
+}
+
+/* line 360, ../scss/fa/scss/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "";
+}
+
+/* line 362, ../scss/fa/scss/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "";
+}
+
+/* line 364, ../scss/fa/scss/_icons.scss */
+.fa-file:before {
+  content: "";
+}
+
+/* line 365, ../scss/fa/scss/_icons.scss */
+.fa-file-text:before {
+  content: "";
+}
+
+/* line 366, ../scss/fa/scss/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: "";
+}
+
+/* line 367, ../scss/fa/scss/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: "";
+}
+
+/* line 368, ../scss/fa/scss/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: "";
+}
+
+/* line 369, ../scss/fa/scss/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: "";
+}
+
+/* line 370, ../scss/fa/scss/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: "";
+}
+
+/* line 371, ../scss/fa/scss/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: "";
+}
+
+/* line 372, ../scss/fa/scss/_icons.scss */
+.fa-thumbs-up:before {
+  content: "";
+}
+
+/* line 373, ../scss/fa/scss/_icons.scss */
+.fa-thumbs-down:before {
+  content: "";
+}
+
+/* line 374, ../scss/fa/scss/_icons.scss */
+.fa-youtube-square:before {
+  content: "";
+}
+
+/* line 375, ../scss/fa/scss/_icons.scss */
+.fa-youtube:before {
+  content: "";
+}
+
+/* line 376, ../scss/fa/scss/_icons.scss */
+.fa-xing:before {
+  content: "";
+}
+
+/* line 377, ../scss/fa/scss/_icons.scss */
+.fa-xing-square:before {
+  content: "";
+}
+
+/* line 378, ../scss/fa/scss/_icons.scss */
+.fa-youtube-play:before {
+  content: "";
+}
+
+/* line 379, ../scss/fa/scss/_icons.scss */
+.fa-dropbox:before {
+  content: "";
+}
+
+/* line 380, ../scss/fa/scss/_icons.scss */
+.fa-stack-overflow:before {
+  content: "";
+}
+
+/* line 381, ../scss/fa/scss/_icons.scss */
+.fa-instagram:before {
+  content: "";
+}
+
+/* line 382, ../scss/fa/scss/_icons.scss */
+.fa-flickr:before {
+  content: "";
+}
+
+/* line 383, ../scss/fa/scss/_icons.scss */
+.fa-adn:before {
+  content: "";
+}
+
+/* line 384, ../scss/fa/scss/_icons.scss */
+.fa-bitbucket:before {
+  content: "";
+}
+
+/* line 385, ../scss/fa/scss/_icons.scss */
+.fa-bitbucket-square:before {
+  content: "";
+}
+
+/* line 386, ../scss/fa/scss/_icons.scss */
+.fa-tumblr:before {
+  content: "";
+}
+
+/* line 387, ../scss/fa/scss/_icons.scss */
+.fa-tumblr-square:before {
+  content: "";
+}
+
+/* line 388, ../scss/fa/scss/_icons.scss */
+.fa-long-arrow-down:before {
+  content: "";
+}
+
+/* line 389, ../scss/fa/scss/_icons.scss */
+.fa-long-arrow-up:before {
+  content: "";
+}
+
+/* line 390, ../scss/fa/scss/_icons.scss */
+.fa-long-arrow-left:before {
+  content: "";
+}
+
+/* line 391, ../scss/fa/scss/_icons.scss */
+.fa-long-arrow-right:before {
+  content: "";
+}
+
+/* line 392, ../scss/fa/scss/_icons.scss */
+.fa-apple:before {
+  content: "";
+}
+
+/* line 393, ../scss/fa/scss/_icons.scss */
+.fa-windows:before {
+  content: "";
+}
+
+/* line 394, ../scss/fa/scss/_icons.scss */
+.fa-android:before {
+  content: "";
+}
+
+/* line 395, ../scss/fa/scss/_icons.scss */
+.fa-linux:before {
+  content: "";
+}
+
+/* line 396, ../scss/fa/scss/_icons.scss */
+.fa-dribbble:before {
+  content: "";
+}
+
+/* line 397, ../scss/fa/scss/_icons.scss */
+.fa-skype:before {
+  content: "";
+}
+
+/* line 398, ../scss/fa/scss/_icons.scss */
+.fa-foursquare:before {
+  content: "";
+}
+
+/* line 399, ../scss/fa/scss/_icons.scss */
+.fa-trello:before {
+  content: "";
+}
+
+/* line 400, ../scss/fa/scss/_icons.scss */
+.fa-female:before {
+  content: "";
+}
+
+/* line 401, ../scss/fa/scss/_icons.scss */
+.fa-male:before {
+  content: "";
+}
+
+/* line 402, ../scss/fa/scss/_icons.scss */
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "";
+}
+
+/* line 404, ../scss/fa/scss/_icons.scss */
+.fa-sun-o:before {
+  content: "";
+}
+
+/* line 405, ../scss/fa/scss/_icons.scss */
+.fa-moon-o:before {
+  content: "";
+}
+
+/* line 406, ../scss/fa/scss/_icons.scss */
+.fa-archive:before {
+  content: "";
+}
+
+/* line 407, ../scss/fa/scss/_icons.scss */
+.fa-bug:before {
+  content: "";
+}
+
+/* line 408, ../scss/fa/scss/_icons.scss */
+.fa-vk:before {
+  content: "";
+}
+
+/* line 409, ../scss/fa/scss/_icons.scss */
+.fa-weibo:before {
+  content: "";
+}
+
+/* line 410, ../scss/fa/scss/_icons.scss */
+.fa-renren:before {
+  content: "";
+}
+
+/* line 411, ../scss/fa/scss/_icons.scss */
+.fa-pagelines:before {
+  content: "";
+}
+
+/* line 412, ../scss/fa/scss/_icons.scss */
+.fa-stack-exchange:before {
+  content: "";
+}
+
+/* line 413, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: "";
+}
+
+/* line 414, ../scss/fa/scss/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: "";
+}
+
+/* line 415, ../scss/fa/scss/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "";
+}
+
+/* line 417, ../scss/fa/scss/_icons.scss */
+.fa-dot-circle-o:before {
+  content: "";
+}
+
+/* line 418, ../scss/fa/scss/_icons.scss */
+.fa-wheelchair:before {
+  content: "";
+}
+
+/* line 419, ../scss/fa/scss/_icons.scss */
+.fa-vimeo-square:before {
+  content: "";
+}
+
+/* line 420, ../scss/fa/scss/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "";
+}
+
+/* line 422, ../scss/fa/scss/_icons.scss */
+.fa-plus-square-o:before {
+  content: "";
+}
+
+/* line 423, ../scss/fa/scss/_icons.scss */
+.fa-space-shuttle:before {
+  content: "";
+}
+
+/* line 424, ../scss/fa/scss/_icons.scss */
+.fa-slack:before {
+  content: "";
+}
+
+/* line 425, ../scss/fa/scss/_icons.scss */
+.fa-envelope-square:before {
+  content: "";
+}
+
+/* line 426, ../scss/fa/scss/_icons.scss */
+.fa-wordpress:before {
+  content: "";
+}
+
+/* line 427, ../scss/fa/scss/_icons.scss */
+.fa-openid:before {
+  content: "";
+}
+
+/* line 428, ../scss/fa/scss/_icons.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "";
+}
+
+/* line 431, ../scss/fa/scss/_icons.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "";
+}
+
+/* line 433, ../scss/fa/scss/_icons.scss */
+.fa-yahoo:before {
+  content: "";
+}
+
+/* line 434, ../scss/fa/scss/_icons.scss */
+.fa-google:before {
+  content: "";
+}
+
+/* line 435, ../scss/fa/scss/_icons.scss */
+.fa-reddit:before {
+  content: "";
+}
+
+/* line 436, ../scss/fa/scss/_icons.scss */
+.fa-reddit-square:before {
+  content: "";
+}
+
+/* line 437, ../scss/fa/scss/_icons.scss */
+.fa-stumbleupon-circle:before {
+  content: "";
+}
+
+/* line 438, ../scss/fa/scss/_icons.scss */
+.fa-stumbleupon:before {
+  content: "";
+}
+
+/* line 439, ../scss/fa/scss/_icons.scss */
+.fa-delicious:before {
+  content: "";
+}
+
+/* line 440, ../scss/fa/scss/_icons.scss */
+.fa-digg:before {
+  content: "";
+}
+
+/* line 441, ../scss/fa/scss/_icons.scss */
+.fa-pied-piper-pp:before {
+  content: "";
+}
+
+/* line 442, ../scss/fa/scss/_icons.scss */
+.fa-pied-piper-alt:before {
+  content: "";
+}
+
+/* line 443, ../scss/fa/scss/_icons.scss */
+.fa-drupal:before {
+  content: "";
+}
+
+/* line 444, ../scss/fa/scss/_icons.scss */
+.fa-joomla:before {
+  content: "";
+}
+
+/* line 445, ../scss/fa/scss/_icons.scss */
+.fa-language:before {
+  content: "";
+}
+
+/* line 446, ../scss/fa/scss/_icons.scss */
+.fa-fax:before {
+  content: "";
+}
+
+/* line 447, ../scss/fa/scss/_icons.scss */
+.fa-building:before {
+  content: "";
+}
+
+/* line 448, ../scss/fa/scss/_icons.scss */
+.fa-child:before {
+  content: "";
+}
+
+/* line 449, ../scss/fa/scss/_icons.scss */
+.fa-paw:before {
+  content: "";
+}
+
+/* line 450, ../scss/fa/scss/_icons.scss */
+.fa-spoon:before {
+  content: "";
+}
+
+/* line 451, ../scss/fa/scss/_icons.scss */
+.fa-cube:before {
+  content: "";
+}
+
+/* line 452, ../scss/fa/scss/_icons.scss */
+.fa-cubes:before {
+  content: "";
+}
+
+/* line 453, ../scss/fa/scss/_icons.scss */
+.fa-behance:before {
+  content: "";
+}
+
+/* line 454, ../scss/fa/scss/_icons.scss */
+.fa-behance-square:before {
+  content: "";
+}
+
+/* line 455, ../scss/fa/scss/_icons.scss */
+.fa-steam:before {
+  content: "";
+}
+
+/* line 456, ../scss/fa/scss/_icons.scss */
+.fa-steam-square:before {
+  content: "";
+}
+
+/* line 457, ../scss/fa/scss/_icons.scss */
+.fa-recycle:before {
+  content: "";
+}
+
+/* line 458, ../scss/fa/scss/_icons.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: "";
+}
+
+/* line 460, ../scss/fa/scss/_icons.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "";
+}
+
+/* line 462, ../scss/fa/scss/_icons.scss */
+.fa-tree:before {
+  content: "";
+}
+
+/* line 463, ../scss/fa/scss/_icons.scss */
+.fa-spotify:before {
+  content: "";
+}
+
+/* line 464, ../scss/fa/scss/_icons.scss */
+.fa-deviantart:before {
+  content: "";
+}
+
+/* line 465, ../scss/fa/scss/_icons.scss */
+.fa-soundcloud:before {
+  content: "";
+}
+
+/* line 466, ../scss/fa/scss/_icons.scss */
+.fa-database:before {
+  content: "";
+}
+
+/* line 467, ../scss/fa/scss/_icons.scss */
+.fa-file-pdf-o:before {
+  content: "";
+}
+
+/* line 468, ../scss/fa/scss/_icons.scss */
+.fa-file-word-o:before {
+  content: "";
+}
+
+/* line 469, ../scss/fa/scss/_icons.scss */
+.fa-file-excel-o:before {
+  content: "";
+}
+
+/* line 470, ../scss/fa/scss/_icons.scss */
+.fa-file-powerpoint-o:before {
+  content: "";
+}
+
+/* line 471, ../scss/fa/scss/_icons.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "";
+}
+
+/* line 474, ../scss/fa/scss/_icons.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "";
+}
+
+/* line 476, ../scss/fa/scss/_icons.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "";
+}
+
+/* line 478, ../scss/fa/scss/_icons.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "";
+}
+
+/* line 480, ../scss/fa/scss/_icons.scss */
+.fa-file-code-o:before {
+  content: "";
+}
+
+/* line 481, ../scss/fa/scss/_icons.scss */
+.fa-vine:before {
+  content: "";
+}
+
+/* line 482, ../scss/fa/scss/_icons.scss */
+.fa-codepen:before {
+  content: "";
+}
+
+/* line 483, ../scss/fa/scss/_icons.scss */
+.fa-jsfiddle:before {
+  content: "";
+}
+
+/* line 484, ../scss/fa/scss/_icons.scss */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "";
+}
+
+/* line 489, ../scss/fa/scss/_icons.scss */
+.fa-circle-o-notch:before {
+  content: "";
+}
+
+/* line 490, ../scss/fa/scss/_icons.scss */
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
+  content: "";
+}
+
+/* line 493, ../scss/fa/scss/_icons.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: "";
+}
+
+/* line 495, ../scss/fa/scss/_icons.scss */
+.fa-git-square:before {
+  content: "";
+}
+
+/* line 496, ../scss/fa/scss/_icons.scss */
+.fa-git:before {
+  content: "";
+}
+
+/* line 497, ../scss/fa/scss/_icons.scss */
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "";
+}
+
+/* line 500, ../scss/fa/scss/_icons.scss */
+.fa-tencent-weibo:before {
+  content: "";
+}
+
+/* line 501, ../scss/fa/scss/_icons.scss */
+.fa-qq:before {
+  content: "";
+}
+
+/* line 502, ../scss/fa/scss/_icons.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "";
+}
+
+/* line 504, ../scss/fa/scss/_icons.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "";
+}
+
+/* line 506, ../scss/fa/scss/_icons.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "";
+}
+
+/* line 508, ../scss/fa/scss/_icons.scss */
+.fa-history:before {
+  content: "";
+}
+
+/* line 509, ../scss/fa/scss/_icons.scss */
+.fa-circle-thin:before {
+  content: "";
+}
+
+/* line 510, ../scss/fa/scss/_icons.scss */
+.fa-header:before {
+  content: "";
+}
+
+/* line 511, ../scss/fa/scss/_icons.scss */
+.fa-paragraph:before {
+  content: "";
+}
+
+/* line 512, ../scss/fa/scss/_icons.scss */
+.fa-sliders:before {
+  content: "";
+}
+
+/* line 513, ../scss/fa/scss/_icons.scss */
+.fa-share-alt:before {
+  content: "";
+}
+
+/* line 514, ../scss/fa/scss/_icons.scss */
+.fa-share-alt-square:before {
+  content: "";
+}
+
+/* line 515, ../scss/fa/scss/_icons.scss */
+.fa-bomb:before {
+  content: "";
+}
+
+/* line 516, ../scss/fa/scss/_icons.scss */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "";
+}
+
+/* line 518, ../scss/fa/scss/_icons.scss */
+.fa-tty:before {
+  content: "";
+}
+
+/* line 519, ../scss/fa/scss/_icons.scss */
+.fa-binoculars:before {
+  content: "";
+}
+
+/* line 520, ../scss/fa/scss/_icons.scss */
+.fa-plug:before {
+  content: "";
+}
+
+/* line 521, ../scss/fa/scss/_icons.scss */
+.fa-slideshare:before {
+  content: "";
+}
+
+/* line 522, ../scss/fa/scss/_icons.scss */
+.fa-twitch:before {
+  content: "";
+}
+
+/* line 523, ../scss/fa/scss/_icons.scss */
+.fa-yelp:before {
+  content: "";
+}
+
+/* line 524, ../scss/fa/scss/_icons.scss */
+.fa-newspaper-o:before {
+  content: "";
+}
+
+/* line 525, ../scss/fa/scss/_icons.scss */
+.fa-wifi:before {
+  content: "";
+}
+
+/* line 526, ../scss/fa/scss/_icons.scss */
+.fa-calculator:before {
+  content: "";
+}
+
+/* line 527, ../scss/fa/scss/_icons.scss */
+.fa-paypal:before {
+  content: "";
+}
+
+/* line 528, ../scss/fa/scss/_icons.scss */
+.fa-google-wallet:before {
+  content: "";
+}
+
+/* line 529, ../scss/fa/scss/_icons.scss */
+.fa-cc-visa:before {
+  content: "";
+}
+
+/* line 530, ../scss/fa/scss/_icons.scss */
+.fa-cc-mastercard:before {
+  content: "";
+}
+
+/* line 531, ../scss/fa/scss/_icons.scss */
+.fa-cc-discover:before {
+  content: "";
+}
+
+/* line 532, ../scss/fa/scss/_icons.scss */
+.fa-cc-amex:before {
+  content: "";
+}
+
+/* line 533, ../scss/fa/scss/_icons.scss */
+.fa-cc-paypal:before {
+  content: "";
+}
+
+/* line 534, ../scss/fa/scss/_icons.scss */
+.fa-cc-stripe:before {
+  content: "";
+}
+
+/* line 535, ../scss/fa/scss/_icons.scss */
+.fa-bell-slash:before {
+  content: "";
+}
+
+/* line 536, ../scss/fa/scss/_icons.scss */
+.fa-bell-slash-o:before {
+  content: "";
+}
+
+/* line 537, ../scss/fa/scss/_icons.scss */
+.fa-trash:before {
+  content: "";
+}
+
+/* line 538, ../scss/fa/scss/_icons.scss */
+.fa-copyright:before {
+  content: "";
+}
+
+/* line 539, ../scss/fa/scss/_icons.scss */
+.fa-at:before {
+  content: "";
+}
+
+/* line 540, ../scss/fa/scss/_icons.scss */
+.fa-eyedropper:before {
+  content: "";
+}
+
+/* line 541, ../scss/fa/scss/_icons.scss */
+.fa-paint-brush:before {
+  content: "";
+}
+
+/* line 542, ../scss/fa/scss/_icons.scss */
+.fa-birthday-cake:before {
+  content: "";
+}
+
+/* line 543, ../scss/fa/scss/_icons.scss */
+.fa-area-chart:before {
+  content: "";
+}
+
+/* line 544, ../scss/fa/scss/_icons.scss */
+.fa-pie-chart:before {
+  content: "";
+}
+
+/* line 545, ../scss/fa/scss/_icons.scss */
+.fa-line-chart:before {
+  content: "";
+}
+
+/* line 546, ../scss/fa/scss/_icons.scss */
+.fa-lastfm:before {
+  content: "";
+}
+
+/* line 547, ../scss/fa/scss/_icons.scss */
+.fa-lastfm-square:before {
+  content: "";
+}
+
+/* line 548, ../scss/fa/scss/_icons.scss */
+.fa-toggle-off:before {
+  content: "";
+}
+
+/* line 549, ../scss/fa/scss/_icons.scss */
+.fa-toggle-on:before {
+  content: "";
+}
+
+/* line 550, ../scss/fa/scss/_icons.scss */
+.fa-bicycle:before {
+  content: "";
+}
+
+/* line 551, ../scss/fa/scss/_icons.scss */
+.fa-bus:before {
+  content: "";
+}
+
+/* line 552, ../scss/fa/scss/_icons.scss */
+.fa-ioxhost:before {
+  content: "";
+}
+
+/* line 553, ../scss/fa/scss/_icons.scss */
+.fa-angellist:before {
+  content: "";
+}
+
+/* line 554, ../scss/fa/scss/_icons.scss */
+.fa-cc:before {
+  content: "";
+}
+
+/* line 555, ../scss/fa/scss/_icons.scss */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "";
+}
+
+/* line 558, ../scss/fa/scss/_icons.scss */
+.fa-meanpath:before {
+  content: "";
+}
+
+/* line 559, ../scss/fa/scss/_icons.scss */
+.fa-buysellads:before {
+  content: "";
+}
+
+/* line 560, ../scss/fa/scss/_icons.scss */
+.fa-connectdevelop:before {
+  content: "";
+}
+
+/* line 561, ../scss/fa/scss/_icons.scss */
+.fa-dashcube:before {
+  content: "";
+}
+
+/* line 562, ../scss/fa/scss/_icons.scss */
+.fa-forumbee:before {
+  content: "";
+}
+
+/* line 563, ../scss/fa/scss/_icons.scss */
+.fa-leanpub:before {
+  content: "";
+}
+
+/* line 564, ../scss/fa/scss/_icons.scss */
+.fa-sellsy:before {
+  content: "";
+}
+
+/* line 565, ../scss/fa/scss/_icons.scss */
+.fa-shirtsinbulk:before {
+  content: "";
+}
+
+/* line 566, ../scss/fa/scss/_icons.scss */
+.fa-simplybuilt:before {
+  content: "";
+}
+
+/* line 567, ../scss/fa/scss/_icons.scss */
+.fa-skyatlas:before {
+  content: "";
+}
+
+/* line 568, ../scss/fa/scss/_icons.scss */
+.fa-cart-plus:before {
+  content: "";
+}
+
+/* line 569, ../scss/fa/scss/_icons.scss */
+.fa-cart-arrow-down:before {
+  content: "";
+}
+
+/* line 570, ../scss/fa/scss/_icons.scss */
+.fa-diamond:before {
+  content: "";
+}
+
+/* line 571, ../scss/fa/scss/_icons.scss */
+.fa-ship:before {
+  content: "";
+}
+
+/* line 572, ../scss/fa/scss/_icons.scss */
+.fa-user-secret:before {
+  content: "";
+}
+
+/* line 573, ../scss/fa/scss/_icons.scss */
+.fa-motorcycle:before {
+  content: "";
+}
+
+/* line 574, ../scss/fa/scss/_icons.scss */
+.fa-street-view:before {
+  content: "";
+}
+
+/* line 575, ../scss/fa/scss/_icons.scss */
+.fa-heartbeat:before {
+  content: "";
+}
+
+/* line 576, ../scss/fa/scss/_icons.scss */
+.fa-venus:before {
+  content: "";
+}
+
+/* line 577, ../scss/fa/scss/_icons.scss */
+.fa-mars:before {
+  content: "";
+}
+
+/* line 578, ../scss/fa/scss/_icons.scss */
+.fa-mercury:before {
+  content: "";
+}
+
+/* line 579, ../scss/fa/scss/_icons.scss */
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "";
+}
+
+/* line 581, ../scss/fa/scss/_icons.scss */
+.fa-transgender-alt:before {
+  content: "";
+}
+
+/* line 582, ../scss/fa/scss/_icons.scss */
+.fa-venus-double:before {
+  content: "";
+}
+
+/* line 583, ../scss/fa/scss/_icons.scss */
+.fa-mars-double:before {
+  content: "";
+}
+
+/* line 584, ../scss/fa/scss/_icons.scss */
+.fa-venus-mars:before {
+  content: "";
+}
+
+/* line 585, ../scss/fa/scss/_icons.scss */
+.fa-mars-stroke:before {
+  content: "";
+}
+
+/* line 586, ../scss/fa/scss/_icons.scss */
+.fa-mars-stroke-v:before {
+  content: "";
+}
+
+/* line 587, ../scss/fa/scss/_icons.scss */
+.fa-mars-stroke-h:before {
+  content: "";
+}
+
+/* line 588, ../scss/fa/scss/_icons.scss */
+.fa-neuter:before {
+  content: "";
+}
+
+/* line 589, ../scss/fa/scss/_icons.scss */
+.fa-genderless:before {
+  content: "";
+}
+
+/* line 590, ../scss/fa/scss/_icons.scss */
+.fa-facebook-official:before {
+  content: "";
+}
+
+/* line 591, ../scss/fa/scss/_icons.scss */
+.fa-pinterest-p:before {
+  content: "";
+}
+
+/* line 592, ../scss/fa/scss/_icons.scss */
+.fa-whatsapp:before {
+  content: "";
+}
+
+/* line 593, ../scss/fa/scss/_icons.scss */
+.fa-server:before {
+  content: "";
+}
+
+/* line 594, ../scss/fa/scss/_icons.scss */
+.fa-user-plus:before {
+  content: "";
+}
+
+/* line 595, ../scss/fa/scss/_icons.scss */
+.fa-user-times:before {
+  content: "";
+}
+
+/* line 596, ../scss/fa/scss/_icons.scss */
+.fa-hotel:before,
+.fa-bed:before {
+  content: "";
+}
+
+/* line 598, ../scss/fa/scss/_icons.scss */
+.fa-viacoin:before {
+  content: "";
+}
+
+/* line 599, ../scss/fa/scss/_icons.scss */
+.fa-train:before {
+  content: "";
+}
+
+/* line 600, ../scss/fa/scss/_icons.scss */
+.fa-subway:before {
+  content: "";
+}
+
+/* line 601, ../scss/fa/scss/_icons.scss */
+.fa-medium:before {
+  content: "";
+}
+
+/* line 602, ../scss/fa/scss/_icons.scss */
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "";
+}
+
+/* line 604, ../scss/fa/scss/_icons.scss */
+.fa-optin-monster:before {
+  content: "";
+}
+
+/* line 605, ../scss/fa/scss/_icons.scss */
+.fa-opencart:before {
+  content: "";
+}
+
+/* line 606, ../scss/fa/scss/_icons.scss */
+.fa-expeditedssl:before {
+  content: "";
+}
+
+/* line 607, ../scss/fa/scss/_icons.scss */
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
+  content: "";
+}
+
+/* line 610, ../scss/fa/scss/_icons.scss */
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "";
+}
+
+/* line 612, ../scss/fa/scss/_icons.scss */
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "";
+}
+
+/* line 614, ../scss/fa/scss/_icons.scss */
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "";
+}
+
+/* line 616, ../scss/fa/scss/_icons.scss */
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "";
+}
+
+/* line 618, ../scss/fa/scss/_icons.scss */
+.fa-mouse-pointer:before {
+  content: "";
+}
+
+/* line 619, ../scss/fa/scss/_icons.scss */
+.fa-i-cursor:before {
+  content: "";
+}
+
+/* line 620, ../scss/fa/scss/_icons.scss */
+.fa-object-group:before {
+  content: "";
+}
+
+/* line 621, ../scss/fa/scss/_icons.scss */
+.fa-object-ungroup:before {
+  content: "";
+}
+
+/* line 622, ../scss/fa/scss/_icons.scss */
+.fa-sticky-note:before {
+  content: "";
+}
+
+/* line 623, ../scss/fa/scss/_icons.scss */
+.fa-sticky-note-o:before {
+  content: "";
+}
+
+/* line 624, ../scss/fa/scss/_icons.scss */
+.fa-cc-jcb:before {
+  content: "";
+}
+
+/* line 625, ../scss/fa/scss/_icons.scss */
+.fa-cc-diners-club:before {
+  content: "";
+}
+
+/* line 626, ../scss/fa/scss/_icons.scss */
+.fa-clone:before {
+  content: "";
+}
+
+/* line 627, ../scss/fa/scss/_icons.scss */
+.fa-balance-scale:before {
+  content: "";
+}
+
+/* line 628, ../scss/fa/scss/_icons.scss */
+.fa-hourglass-o:before {
+  content: "";
+}
+
+/* line 629, ../scss/fa/scss/_icons.scss */
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "";
+}
+
+/* line 631, ../scss/fa/scss/_icons.scss */
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "";
+}
+
+/* line 633, ../scss/fa/scss/_icons.scss */
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "";
+}
+
+/* line 635, ../scss/fa/scss/_icons.scss */
+.fa-hourglass:before {
+  content: "";
+}
+
+/* line 636, ../scss/fa/scss/_icons.scss */
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "";
+}
+
+/* line 638, ../scss/fa/scss/_icons.scss */
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "";
+}
+
+/* line 640, ../scss/fa/scss/_icons.scss */
+.fa-hand-scissors-o:before {
+  content: "";
+}
+
+/* line 641, ../scss/fa/scss/_icons.scss */
+.fa-hand-lizard-o:before {
+  content: "";
+}
+
+/* line 642, ../scss/fa/scss/_icons.scss */
+.fa-hand-spock-o:before {
+  content: "";
+}
+
+/* line 643, ../scss/fa/scss/_icons.scss */
+.fa-hand-pointer-o:before {
+  content: "";
+}
+
+/* line 644, ../scss/fa/scss/_icons.scss */
+.fa-hand-peace-o:before {
+  content: "";
+}
+
+/* line 645, ../scss/fa/scss/_icons.scss */
+.fa-trademark:before {
+  content: "";
+}
+
+/* line 646, ../scss/fa/scss/_icons.scss */
+.fa-registered:before {
+  content: "";
+}
+
+/* line 647, ../scss/fa/scss/_icons.scss */
+.fa-creative-commons:before {
+  content: "";
+}
+
+/* line 648, ../scss/fa/scss/_icons.scss */
+.fa-gg:before {
+  content: "";
+}
+
+/* line 649, ../scss/fa/scss/_icons.scss */
+.fa-gg-circle:before {
+  content: "";
+}
+
+/* line 650, ../scss/fa/scss/_icons.scss */
+.fa-tripadvisor:before {
+  content: "";
+}
+
+/* line 651, ../scss/fa/scss/_icons.scss */
+.fa-odnoklassniki:before {
+  content: "";
+}
+
+/* line 652, ../scss/fa/scss/_icons.scss */
+.fa-odnoklassniki-square:before {
+  content: "";
+}
+
+/* line 653, ../scss/fa/scss/_icons.scss */
+.fa-get-pocket:before {
+  content: "";
+}
+
+/* line 654, ../scss/fa/scss/_icons.scss */
+.fa-wikipedia-w:before {
+  content: "";
+}
+
+/* line 655, ../scss/fa/scss/_icons.scss */
+.fa-safari:before {
+  content: "";
+}
+
+/* line 656, ../scss/fa/scss/_icons.scss */
+.fa-chrome:before {
+  content: "";
+}
+
+/* line 657, ../scss/fa/scss/_icons.scss */
+.fa-firefox:before {
+  content: "";
+}
+
+/* line 658, ../scss/fa/scss/_icons.scss */
+.fa-opera:before {
+  content: "";
+}
+
+/* line 659, ../scss/fa/scss/_icons.scss */
+.fa-internet-explorer:before {
+  content: "";
+}
+
+/* line 660, ../scss/fa/scss/_icons.scss */
+.fa-tv:before,
+.fa-television:before {
+  content: "";
+}
+
+/* line 662, ../scss/fa/scss/_icons.scss */
+.fa-contao:before {
+  content: "";
+}
+
+/* line 663, ../scss/fa/scss/_icons.scss */
+.fa-500px:before {
+  content: "";
+}
+
+/* line 664, ../scss/fa/scss/_icons.scss */
+.fa-amazon:before {
+  content: "";
+}
+
+/* line 665, ../scss/fa/scss/_icons.scss */
+.fa-calendar-plus-o:before {
+  content: "";
+}
+
+/* line 666, ../scss/fa/scss/_icons.scss */
+.fa-calendar-minus-o:before {
+  content: "";
+}
+
+/* line 667, ../scss/fa/scss/_icons.scss */
+.fa-calendar-times-o:before {
+  content: "";
+}
+
+/* line 668, ../scss/fa/scss/_icons.scss */
+.fa-calendar-check-o:before {
+  content: "";
+}
+
+/* line 669, ../scss/fa/scss/_icons.scss */
+.fa-industry:before {
+  content: "";
+}
+
+/* line 670, ../scss/fa/scss/_icons.scss */
+.fa-map-pin:before {
+  content: "";
+}
+
+/* line 671, ../scss/fa/scss/_icons.scss */
+.fa-map-signs:before {
+  content: "";
+}
+
+/* line 672, ../scss/fa/scss/_icons.scss */
+.fa-map-o:before {
+  content: "";
+}
+
+/* line 673, ../scss/fa/scss/_icons.scss */
+.fa-map:before {
+  content: "";
+}
+
+/* line 674, ../scss/fa/scss/_icons.scss */
+.fa-commenting:before {
+  content: "";
+}
+
+/* line 675, ../scss/fa/scss/_icons.scss */
+.fa-commenting-o:before {
+  content: "";
+}
+
+/* line 676, ../scss/fa/scss/_icons.scss */
+.fa-houzz:before {
+  content: "";
+}
+
+/* line 677, ../scss/fa/scss/_icons.scss */
+.fa-vimeo:before {
+  content: "";
+}
+
+/* line 678, ../scss/fa/scss/_icons.scss */
+.fa-black-tie:before {
+  content: "";
+}
+
+/* line 679, ../scss/fa/scss/_icons.scss */
+.fa-fonticons:before {
+  content: "";
+}
+
+/* line 680, ../scss/fa/scss/_icons.scss */
+.fa-reddit-alien:before {
+  content: "";
+}
+
+/* line 681, ../scss/fa/scss/_icons.scss */
+.fa-edge:before {
+  content: "";
+}
+
+/* line 682, ../scss/fa/scss/_icons.scss */
+.fa-credit-card-alt:before {
+  content: "";
+}
+
+/* line 683, ../scss/fa/scss/_icons.scss */
+.fa-codiepie:before {
+  content: "";
+}
+
+/* line 684, ../scss/fa/scss/_icons.scss */
+.fa-modx:before {
+  content: "";
+}
+
+/* line 685, ../scss/fa/scss/_icons.scss */
+.fa-fort-awesome:before {
+  content: "";
+}
+
+/* line 686, ../scss/fa/scss/_icons.scss */
+.fa-usb:before {
+  content: "";
+}
+
+/* line 687, ../scss/fa/scss/_icons.scss */
+.fa-product-hunt:before {
+  content: "";
+}
+
+/* line 688, ../scss/fa/scss/_icons.scss */
+.fa-mixcloud:before {
+  content: "";
+}
+
+/* line 689, ../scss/fa/scss/_icons.scss */
+.fa-scribd:before {
+  content: "";
+}
+
+/* line 690, ../scss/fa/scss/_icons.scss */
+.fa-pause-circle:before {
+  content: "";
+}
+
+/* line 691, ../scss/fa/scss/_icons.scss */
+.fa-pause-circle-o:before {
+  content: "";
+}
+
+/* line 692, ../scss/fa/scss/_icons.scss */
+.fa-stop-circle:before {
+  content: "";
+}
+
+/* line 693, ../scss/fa/scss/_icons.scss */
+.fa-stop-circle-o:before {
+  content: "";
+}
+
+/* line 694, ../scss/fa/scss/_icons.scss */
+.fa-shopping-bag:before {
+  content: "";
+}
+
+/* line 695, ../scss/fa/scss/_icons.scss */
+.fa-shopping-basket:before {
+  content: "";
+}
+
+/* line 696, ../scss/fa/scss/_icons.scss */
+.fa-hashtag:before {
+  content: "";
+}
+
+/* line 697, ../scss/fa/scss/_icons.scss */
+.fa-bluetooth:before {
+  content: "";
+}
+
+/* line 698, ../scss/fa/scss/_icons.scss */
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+/* line 699, ../scss/fa/scss/_icons.scss */
+.fa-percent:before {
+  content: "";
+}
+
+/* line 700, ../scss/fa/scss/_icons.scss */
+.fa-gitlab:before {
+  content: "";
+}
+
+/* line 701, ../scss/fa/scss/_icons.scss */
+.fa-wpbeginner:before {
+  content: "";
+}
+
+/* line 702, ../scss/fa/scss/_icons.scss */
+.fa-wpforms:before {
+  content: "";
+}
+
+/* line 703, ../scss/fa/scss/_icons.scss */
+.fa-envira:before {
+  content: "";
+}
+
+/* line 704, ../scss/fa/scss/_icons.scss */
+.fa-universal-access:before {
+  content: "";
+}
+
+/* line 705, ../scss/fa/scss/_icons.scss */
+.fa-wheelchair-alt:before {
+  content: "";
+}
+
+/* line 706, ../scss/fa/scss/_icons.scss */
+.fa-question-circle-o:before {
+  content: "";
+}
+
+/* line 707, ../scss/fa/scss/_icons.scss */
+.fa-blind:before {
+  content: "";
+}
+
+/* line 708, ../scss/fa/scss/_icons.scss */
+.fa-audio-description:before {
+  content: "";
+}
+
+/* line 709, ../scss/fa/scss/_icons.scss */
+.fa-volume-control-phone:before {
+  content: "";
+}
+
+/* line 710, ../scss/fa/scss/_icons.scss */
+.fa-braille:before {
+  content: "";
+}
+
+/* line 711, ../scss/fa/scss/_icons.scss */
+.fa-assistive-listening-systems:before {
+  content: "";
+}
+
+/* line 712, ../scss/fa/scss/_icons.scss */
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "";
+}
+
+/* line 714, ../scss/fa/scss/_icons.scss */
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "";
+}
+
+/* line 717, ../scss/fa/scss/_icons.scss */
+.fa-glide:before {
+  content: "";
+}
+
+/* line 718, ../scss/fa/scss/_icons.scss */
+.fa-glide-g:before {
+  content: "";
+}
+
+/* line 719, ../scss/fa/scss/_icons.scss */
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "";
+}
+
+/* line 721, ../scss/fa/scss/_icons.scss */
+.fa-low-vision:before {
+  content: "";
+}
+
+/* line 722, ../scss/fa/scss/_icons.scss */
+.fa-viadeo:before {
+  content: "";
+}
+
+/* line 723, ../scss/fa/scss/_icons.scss */
+.fa-viadeo-square:before {
+  content: "";
+}
+
+/* line 724, ../scss/fa/scss/_icons.scss */
+.fa-snapchat:before {
+  content: "";
+}
+
+/* line 725, ../scss/fa/scss/_icons.scss */
+.fa-snapchat-ghost:before {
+  content: "";
+}
+
+/* line 726, ../scss/fa/scss/_icons.scss */
+.fa-snapchat-square:before {
+  content: "";
+}
+
+/* line 727, ../scss/fa/scss/_icons.scss */
+.fa-pied-piper:before {
+  content: "";
+}
+
+/* line 728, ../scss/fa/scss/_icons.scss */
+.fa-first-order:before {
+  content: "";
+}
+
+/* line 729, ../scss/fa/scss/_icons.scss */
+.fa-yoast:before {
+  content: "";
+}
+
+/* line 730, ../scss/fa/scss/_icons.scss */
+.fa-themeisle:before {
+  content: "";
+}
+
+/* line 731, ../scss/fa/scss/_icons.scss */
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "";
+}
+
+/* line 733, ../scss/fa/scss/_icons.scss */
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "";
+}
+
+/* line 735, ../scss/fa/scss/_icons.scss */
+.fa-handshake-o:before {
+  content: "";
+}
+
+/* line 736, ../scss/fa/scss/_icons.scss */
+.fa-envelope-open:before {
+  content: "";
+}
+
+/* line 737, ../scss/fa/scss/_icons.scss */
+.fa-envelope-open-o:before {
+  content: "";
+}
+
+/* line 738, ../scss/fa/scss/_icons.scss */
+.fa-linode:before {
+  content: "";
+}
+
+/* line 739, ../scss/fa/scss/_icons.scss */
+.fa-address-book:before {
+  content: "";
+}
+
+/* line 740, ../scss/fa/scss/_icons.scss */
+.fa-address-book-o:before {
+  content: "";
+}
+
+/* line 741, ../scss/fa/scss/_icons.scss */
+.fa-vcard:before,
+.fa-address-card:before {
+  content: "";
+}
+
+/* line 743, ../scss/fa/scss/_icons.scss */
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: "";
+}
+
+/* line 745, ../scss/fa/scss/_icons.scss */
+.fa-user-circle:before {
+  content: "";
+}
+
+/* line 746, ../scss/fa/scss/_icons.scss */
+.fa-user-circle-o:before {
+  content: "";
+}
+
+/* line 747, ../scss/fa/scss/_icons.scss */
+.fa-user-o:before {
+  content: "";
+}
+
+/* line 748, ../scss/fa/scss/_icons.scss */
+.fa-id-badge:before {
+  content: "";
+}
+
+/* line 749, ../scss/fa/scss/_icons.scss */
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: "";
+}
+
+/* line 751, ../scss/fa/scss/_icons.scss */
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: "";
+}
+
+/* line 753, ../scss/fa/scss/_icons.scss */
+.fa-quora:before {
+  content: "";
+}
+
+/* line 754, ../scss/fa/scss/_icons.scss */
+.fa-free-code-camp:before {
+  content: "";
+}
+
+/* line 755, ../scss/fa/scss/_icons.scss */
+.fa-telegram:before {
+  content: "";
+}
+
+/* line 756, ../scss/fa/scss/_icons.scss */
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: "";
+}
+
+/* line 759, ../scss/fa/scss/_icons.scss */
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: "";
+}
+
+/* line 761, ../scss/fa/scss/_icons.scss */
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: "";
+}
+
+/* line 763, ../scss/fa/scss/_icons.scss */
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: "";
+}
+
+/* line 765, ../scss/fa/scss/_icons.scss */
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: "";
+}
+
+/* line 767, ../scss/fa/scss/_icons.scss */
+.fa-shower:before {
+  content: "";
+}
+
+/* line 768, ../scss/fa/scss/_icons.scss */
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: "";
+}
+
+/* line 771, ../scss/fa/scss/_icons.scss */
+.fa-podcast:before {
+  content: "";
+}
+
+/* line 772, ../scss/fa/scss/_icons.scss */
+.fa-window-maximize:before {
+  content: "";
+}
+
+/* line 773, ../scss/fa/scss/_icons.scss */
+.fa-window-minimize:before {
+  content: "";
+}
+
+/* line 774, ../scss/fa/scss/_icons.scss */
+.fa-window-restore:before {
+  content: "";
+}
+
+/* line 775, ../scss/fa/scss/_icons.scss */
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: "";
+}
+
+/* line 777, ../scss/fa/scss/_icons.scss */
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: "";
+}
+
+/* line 779, ../scss/fa/scss/_icons.scss */
+.fa-bandcamp:before {
+  content: "";
+}
+
+/* line 780, ../scss/fa/scss/_icons.scss */
+.fa-grav:before {
+  content: "";
+}
+
+/* line 781, ../scss/fa/scss/_icons.scss */
+.fa-etsy:before {
+  content: "";
+}
+
+/* line 782, ../scss/fa/scss/_icons.scss */
+.fa-imdb:before {
+  content: "";
+}
+
+/* line 783, ../scss/fa/scss/_icons.scss */
+.fa-ravelry:before {
+  content: "";
+}
+
+/* line 784, ../scss/fa/scss/_icons.scss */
+.fa-eercast:before {
+  content: "";
+}
+
+/* line 785, ../scss/fa/scss/_icons.scss */
+.fa-microchip:before {
+  content: "";
+}
+
+/* line 786, ../scss/fa/scss/_icons.scss */
+.fa-snowflake-o:before {
+  content: "";
+}
+
+/* line 787, ../scss/fa/scss/_icons.scss */
+.fa-superpowers:before {
+  content: "";
+}
+
+/* line 788, ../scss/fa/scss/_icons.scss */
+.fa-wpexplorer:before {
+  content: "";
+}
+
+/* line 789, ../scss/fa/scss/_icons.scss */
+.fa-meetup:before {
+  content: "";
+}
+
+/* line 4, ../scss/fa/scss/_screen-reader.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 51, ../scss/fa/scss/_mixins.scss */
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* DDG Compass Vars */
+/* for compass */
+/*
+    Spacing Units
+    Base spacing units for uniform spacing
+*/
+/*
+	Specific to the main Search Form
+*/
+/*
+	'Tile' Vars
+*/
+/*
+	'Detail Pane' Colors
+*/
+/*
+	Media Query Break Points
+	litestrap (and other components) use variable-controlled media queries.
+	Change these values to set different breakpoints.
+*/
+/*
+	Example Media Query Block:
+	
+	Note that Large is above Extra-Large, 
+	so that the extra large styles will override the large ones.
+	(CSS is read and applied top to bottom).
+	
+@media only screen and (min-width: $media--l) {}
+	
+@media only screen and (min-width: $media--xl) {}
+	
+@media only screen and (max-width: $media--m) {}
+		
+@media only screen and (max-width: $media--s) {}
+	
+@media only screen and (max-width: $media--xs) {}
+
+*/
+/* 
+   'Gutter' Widths 
+    The SERP layout has a fixed-size left gutter.  
+	Internal pages also use this gutter width on the right.
+    Adjust that size, and the header (menu) gutter here.
+*/
+/* these fixed gutters will need to adjust for mobile.  set sizes here: */
+/* 'medium' size screens */
+/* 'small' size screens */
+/* 'extra-small' screens */
+/* for modules/right rail ads we are collapsing left gutter at this size. */
+/*
+	Content Controllers
+*/
+/* 
+	Fixed Header Sizes
+
+	the "default" is to have a fixed-position header,
+	but only because .set-header--fixed is in the document
+*/
+/*
+	Spacing unit aliases (I mean who is going to remember this stuff, right?)
+*/
+/*
+	Text Styling
+	
+	.tx- and .hd- prefixes live here and are common text changes.
+	
+	This kind of thing is usually used to rapid-dev static pages.
+	Using different prefixes from litestrap for more distinction on where they might be modified.
+	
+	.tx - text
+	.hd - heading
+*/
+/* line 14, ../scss/duckduckhack/_text.scss */
+.tx-bld {
+  font-weight: 600;
+}
+
+/* line 17, ../scss/duckduckhack/_text.scss */
+.tx-lt, .hd-hr, .hd-lg {
+  font-weight: 300;
+}
+
+/* line 20, ../scss/duckduckhack/_text.scss */
+.tx-it {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 27, ../scss/duckduckhack/_text.scss */
+.tx-up, .hd-lg, .hd-md {
+  text-transform: uppercase;
+}
+
+/* line 34, ../scss/duckduckhack/_text.scss */
+.hd-hr {
+  line-height: 1.1;
+  text-align: center;
+}
+/* line 38, ../scss/duckduckhack/_text.scss */
+.hd-hr + .hd-hr {
+  padding-top: 0;
+}
+
+/* line 43, ../scss/duckduckhack/_text.scss */
+.hd-lg {
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+
+/* line 57, ../scss/duckduckhack/_text.scss */
+.hd-md .anchor--link {
+  float: right;
+  font-size: 0.5em;
+  margin-top: 1em;
+}
+
+/* line 3, ../scss/duckduckhack/_clearfix.scss */
+.cw:after, .cw--c:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*
+	Slider
+	
+	Used via extends here because each slider on static pages
+	are a little bit different in styling and function.
+*/
+/* line 8, ../scss/duckduckhack/_slider.scss */
+.ddh-hero-slides, .ddh-quotes {
+  margin: auto;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+/* line 16, ../scss/duckduckhack/_slider.scss */
+.ddh-hero-slides__item, .ddh-quote {
+  -moz-transition: opacity 0.3s ease-in-out 0s;
+  -o-transition: opacity 0.3s ease-in-out 0s;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition: opacity 0.3s ease-in-out 0s;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  width: 100%;
+  opacity: 0;
+}
+/* line 28, ../scss/duckduckhack/_slider.scss */
+.no-js .ddh-hero-slides__item, .no-js .ddh-quote, .is-active.ddh-hero-slides__item, .is-active.ddh-quote {
+  opacity: 1;
+}
+/* line 33, ../scss/duckduckhack/_slider.scss */
+.is-first.ddh-hero-slides__item, .is-first.ddh-quote {
+  -moz-transition: margin-left 0.3s, opacity 0.3s;
+  -o-transition: margin-left 0.3s, opacity 0.3s;
+  -webkit-transition: margin-left 0.3s, opacity 0.3s;
+  transition: margin-left 0.3s, opacity 0.3s;
+}
+
+/* line 38, ../scss/duckduckhack/_slider.scss */
+.ddh-quote-nav {
+  padding: 0;
+  margin: auto;
+  display: block;
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* line 50, ../scss/duckduckhack/_slider.scss */
+.ddh-quote-nav__item {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 0.5em;
+  vertical-align: middle;
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  font-size: 15px;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+}
+
+/* 
+	Width Control
+*/
+/* line 4, ../scss/duckduckhack/_cw.scss */
+.cw, .cw--c {
+  /* other content wrap options can be found in litestrap */
+  position: relative;
+  padding: 0 7px;
+  max-width: 1008px;
+  /* 
+  	Left alignment is the default in the new design, and we're disabling center-align
+  	.cw is a content-wrapper, and is normally set to margin: 0 auto;
+  	- reset that margin, and everything floats left! 
+  */
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* line 18, ../scss/duckduckhack/_cw.scss */
+.cw--c {
+  margin-left: auto;
+}
+
+/*
+	'Block' Sections
+	
+	Full-bleed sections to break of the content of a static page.
+*/
+/* line 9, ../scss/duckduckhack/_blk.scss */
+.blk {
+  padding-bottom: 4em;
+  position: relative;
+  display: block;
+  clear: both;
+  z-index: 1;
+}
+
+/* line 17, ../scss/duckduckhack/_blk.scss */
+.blk--alt {
+  background-color: #f7f7f7;
+}
+
+/* line 21, ../scss/duckduckhack/_blk.scss */
+.blk--dark {
+  background-color: #34383b;
+  color: #fff;
+}
+/* line 25, ../scss/duckduckhack/_blk.scss */
+.blk--dark .hr {
+  border-bottom-color: #fff;
+}
+
+/* line 30, ../scss/duckduckhack/_blk.scss */
+.blk--hero {
+  background-color: #e37151;
+  color: #fff;
+}
+/* line 34, ../scss/duckduckhack/_blk.scss */
+.blk--hero .hr {
+  border-bottom-color: #fff;
+}
+
+/* line 38, ../scss/duckduckhack/_blk.scss */
+.blk--hero--alt {
+  background-color: #60a5da;
+}
+
+/* line 43, ../scss/duckduckhack/_blk.scss */
+.blk--foot {
+  text-align: center;
+  padding: 1.25em 0;
+  background-color: #434a50;
+  color: #dee2e5;
+}
+/* line 48, ../scss/duckduckhack/_blk.scss */
+.blk--foot p {
+  padding: 0;
+}
+/* line 52, ../scss/duckduckhack/_blk.scss */
+.blk--foot a {
+  color: #c5cacd;
+}
+
+/* line 57, ../scss/duckduckhack/_blk.scss */
+.blk--foot--alt {
+  background-color: #e4e4e4;
+}
+/* line 60, ../scss/duckduckhack/_blk.scss */
+.blk--foot--alt, .blk--foot--alt a {
+  color: #999999;
+}
+/* line 64, ../scss/duckduckhack/_blk.scss */
+.blk--foot--alt p {
+  display: inline-block;
+}
+
+/* line 69, ../scss/duckduckhack/_blk.scss */
+.blk--foot--nav {
+  padding: 50px 0 0;
+}
+/* line 72, ../scss/duckduckhack/_blk.scss */
+.blk--foot--nav:after {
+  content: '';
+  display: block;
+  height: 1px;
+  max-width: 1008px;
+  margin: 0 auto;
+  background: #575f66;
+}
+
+/* line 83, ../scss/duckduckhack/_blk.scss */
+.blk--content {
+  padding-top: 1.25em;
+}
+
+/* line 87, ../scss/duckduckhack/_blk.scss */
+.blk--arr, .blk--arr--white {
+  padding-top: 4em;
+}
+/* line 90, ../scss/duckduckhack/_blk.scss */
+.blk--arr:before, .blk--arr--white:before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-right-width: 28px;
+  border-left-width: 28px;
+  border-top-width: 22px;
+  border-bottom-width: 0;
+  border-top-color: #ffffff;
+}
+@media only screen and (max-width: 590px) {
+  /* line 112, ../scss/duckduckhack/_blk.scss */
+  .blk--arr:before, .blk--arr--white:before {
+    border-right-width: 18px;
+    border-left-width: 18px;
+    border-top-width: 14px;
+  }
+}
+
+/* line 122, ../scss/duckduckhack/_blk.scss */
+.blk--alt + .blk--arr:before {
+  border-top-color: #f7f7f7;
+}
+/* line 125, ../scss/duckduckhack/_blk.scss */
+.blk--dark + .blk--arr:before {
+  border-top-color: #34383b;
+}
+/* line 128, ../scss/duckduckhack/_blk.scss */
+.blk--hero + .blk--arr:before {
+  border-top-color: #e37151;
+}
+/* line 131, ../scss/duckduckhack/_blk.scss */
+.blk--hero--alt + .blk--arr:before {
+  border-top-color: #60a5da;
+}
+
+/* line 141, ../scss/duckduckhack/_blk.scss */
+.blk__title, .ddh__title {
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 2.25em;
+  font-weight: 600;
+  line-height: 1.44;
+}
+/* line 148, ../scss/duckduckhack/_blk.scss */
+.blk--hero .blk__title, .blk--hero .ddh__title {
+  color: #ffffff;
+}
+@media only screen and (max-width: 590px) {
+  /* line 141, ../scss/duckduckhack/_blk.scss */
+  .blk__title, .ddh__title {
+    font-size: 1.5em;
+    line-height: 1.14;
+  }
+}
+
+/* line 158, ../scss/duckduckhack/_blk.scss */
+.blk__sub, .ddh__sub {
+  padding: 0;
+  margin-bottom: 50px;
+  color: #888888;
+}
+/* line 163, ../scss/duckduckhack/_blk.scss */
+.blk--hero .blk__sub, .blk--hero .ddh__sub {
+  color: #ffffff;
+}
+
+/* line 177, ../scss/duckduckhack/_blk.scss */
+.blk__text {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+/* line 183, ../scss/duckduckhack/_blk.scss */
+.footer-nav a {
+  margin-right: 1em;
+  display: inline-block;
+}
+
+/* line 189, ../scss/duckduckhack/_blk.scss */
+.blk--foot__nav-col {
+  padding: 0 25px 35px 25px;
+}
+/* line 192, ../scss/duckduckhack/_blk.scss */
+.blk--foot__nav-col ul {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  padding: 0;
+}
+
+/* line 200, ../scss/duckduckhack/_blk.scss */
+.blk--foot__nav-head {
+  padding: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 590px) {
+  /* line 208, ../scss/duckduckhack/_blk.scss */
+  .blk--foot__nav-col {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.9em;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+  }
+
+  /* line 218, ../scss/duckduckhack/_blk.scss */
+  .blk--foot__nav-head {
+    font-size: 1.1em;
+  }
+}
+/*
+	DuckDuckHack Styles
+*/
+/* line 12, ../scss/duckduckhack/_duckduckhack.scss */
+.site-wrapper--duckduckhack:before {
+  background-color: #3a7fb4;
+}
+
+/* line 18, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-banner {
+  position: relative;
+  top: -1.25em;
+  padding: 0.7em;
+  text-align: center;
+  background-color: #2C4B62;
+}
+
+/* line 26, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-banner__text {
+  font-size: 1.35em;
+}
+@media only screen and (max-width: 864px) {
+  /* line 26, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-banner__text {
+    display: block;
+  }
+}
+
+/* line 31, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-banner .btn {
+  margin-left: 2em;
+}
+@media only screen and (max-width: 864px) {
+  /* line 31, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-banner .btn {
+    margin-top: 0.5em;
+    margin-left: 0;
+  }
+}
+
+/* line 42, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero {
+  padding-top: 3em;
+  text-align: center;
+  max-width: 57em;
+}
+
+/* line 48, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero__title {
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  font-size: 3em;
+}
+
+/* line 54, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero__btn {
+  position: relative;
+  line-height: 1.6;
+  font-size: 1.35em;
+  font-weight: normal;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 1;
+}
+
+/* line 64, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides {
+  padding-bottom: 0.75em;
+}
+
+/* line 70, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__item {
+  vertical-align: middle;
+}
+
+/* line 76, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides--img {
+  margin: 0 auto -4em;
+  max-width: 1017px;
+}
+
+/* line 81, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__wrap {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 54.768%;
+  height: 0;
+}
+
+/* line 89, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__attr {
+  display: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #9ec8e8;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  top: 45px;
+  left: 0;
+  right: 0;
+}
+/* line 101, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__attr a {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1017px) {
+  /* line 106, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-hero-slides__attr {
+    display: block;
+  }
+}
+/* line 109, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__attr__item {
+  padding: 0 0.5em;
+}
+
+/* line 111, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__img,
+.ddh-hero-slides__img-wrap,
+.ddh-hero-slides__img-no-js {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: block;
+  max-height: 100%;
+}
+
+/* line 119, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__img-wrap {
+  -moz-transition: opacity 0.1s ease-in-out 1s;
+  -o-transition: opacity 0.1s ease-in-out 1s;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -webkit-transition-delay: 1s;
+  transition: opacity 0.1s ease-in-out 1s;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  top: 0;
+  opacity: 0;
+  z-index: 1;
+}
+/* line 126, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__img-wrap.is-active {
+  -moz-transition: opacity 1s ease-in-out 0s;
+  -o-transition: opacity 1s ease-in-out 0s;
+  -webkit-transition: opacity 1s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition: opacity 1s ease-in-out 0s;
+  opacity: 1;
+  z-index: 10;
+}
+
+/* line 133, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero-slides__nav-wrap {
+  height: 50%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 25%;
+  display: none;
+}
+
+@media only screen and (min-width: 1213px) {
+  /* line 144, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-hero-slides__nav-wrap {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1296.2px) {
+  /* line 149, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-hero-slides__nav-wrap {
+    right: 3%;
+    left: 3%;
+  }
+}
+/* line 155, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-anchor {
+  top: -90px;
+}
+
+/* line 157, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh {
+  text-align: center;
+  padding: 120px 0 120px 0;
+  line-height: 1.5;
+}
+
+/* line 165, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--foot {
+  text-align: left;
+  padding: 80px 0 60px;
+}
+
+/* line 170, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__title {
+  letter-spacing: -0.015em;
+  margin-bottom: 0.4em;
+  font-size: 2.75em;
+  line-height: 1em;
+}
+
+/* line 179, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--foot__title {
+  padding: 0;
+  margin-bottom: 30px;
+  line-height: 1em;
+}
+
+/* line 185, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__sub {
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-bottom: 80px;
+}
+
+/* line 193, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--foot__sub {
+  color: #b3d4ed;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+/* line 199, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__split {
+  position: relative;
+  max-width: 68em;
+}
+/* line 203, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__split:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 210, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__split__divide {
+  position: absolute;
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 330px;
+  z-index: -1;
+}
+/* line 224, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__split__divide:before, .ddh__split__divide:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 1px;
+  right: 0;
+  left: 0;
+  background: #d0d0d0;
+}
+/* line 234, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__split__divide:before {
+  top: 5px;
+  height: 125px;
+}
+/* line 238, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__split__divide:after {
+  top: 200px;
+  bottom: 0px;
+}
+@media only screen and (max-width: 590px) {
+  /* line 210, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh__split__divide {
+    line-height: 33px;
+    padding: 20px 0;
+    position: relative;
+    clear: both;
+    width: 100%;
+  }
+  /* line 250, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh__split__divide:before, .ddh__split__divide:after {
+    width: auto;
+    height: 1px;
+    bottom: 0;
+    top: 0;
+  }
+  /* line 257, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh__split__divide:before {
+    right: 60%;
+    left: 0.5em;
+  }
+  /* line 261, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh__split__divide:after {
+    left: 60%;
+    right: 0.5em;
+  }
+}
+
+/* line 270, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--ias {
+  background-color: #31383f;
+}
+
+@media only screen and (max-width: 590px) {
+  /* line 274, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--ias__items .third:not(:last-of-type) {
+    margin-bottom: 3em;
+  }
+}
+
+/* line 278, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--ias__desc {
+  margin: 1.5em 3em;
+  color: #aaaaaa;
+  line-height: 1.75em;
+}
+
+/* line 284, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--ias__link {
+  color: #7db5e1;
+}
+/* line 287, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--ias__link:hover {
+  text-decoration: none;
+}
+
+/* line 290, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--ias__icon {
+  margin-right: 0.5em;
+}
+
+/* line 292, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--ias__number {
+  font-size: 3.6em;
+  line-height: 1.3em;
+  padding: 0;
+}
+
+/* line 298, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--ias__status {
+  margin-top: -1em;
+}
+
+/* line 303, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-cta {
+  max-width: 21em;
+  font-size: 1.25em;
+  display: block;
+  margin: auto;
+  padding: 0 1.5em;
+}
+
+/* line 311, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-cta__title {
+  letter-spacing: -0.015em;
+  font-size: 1.85em;
+  font-weight: 600;
+  padding: 10px 0 0;
+}
+
+/* line 318, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-cta__sub {
+  padding: 0;
+  color: #888888;
+}
+
+/* line 323, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-cta__text {
+  padding: 33px 0 50px;
+  line-height: 1.7;
+  color: #666666;
+}
+
+/* line 329, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-cta__btn {
+  border: none;
+  padding: 0 2em;
+  font-weight: normal;
+  line-height: 2.25;
+  min-width: 3em;
+  background-color: #7db5e1;
+}
+
+/* line 341, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh__title {
+  font-size: 2.5em;
+  margin-top: .2em;
+}
+/* line 346, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh--help__section {
+  margin-bottom: 3em;
+}
+/* line 349, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh--help__section:last-of-type {
+  margin-bottom: 0;
+}
+/* line 353, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh--help__section > .ddgsi, .ddh--help .ddh--help__section .fa {
+  font-size: 3em;
+}
+/* line 358, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh--help__link {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+/* line 362, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh--help__link > .ddgsi, .ddh--help .ddh--help__link .fa {
+  color: #60a5da;
+  font-size: 1em;
+}
+/* line 368, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh--help__section > p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+/* line 374, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh__sub--link {
+  color: #7db5e1;
+}
+
+/* line 376, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__half {
+  min-width: 432px;
+}
+
+/* line 378, ../scss/duckduckhack/_duckduckhack.scss */
+.half--last .ddh--help__item--first .ddh--help__text {
+  padding-top: 0.9em;
+}
+
+/* line 380, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__item {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  color: inherit;
+}
+/* line 386, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__item:hover {
+  cursor: pointer;
+}
+/* line 388, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__item:hover .ddh--help__num {
+  color: #ffffff;
+  background-color: #7db5e1;
+}
+/* line 392, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__item:hover .ddh--help__text {
+  color: #333333;
+}
+
+/* line 396, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__item--first {
+  margin-bottom: 2em;
+}
+
+/* line 398, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__num {
+  height: 75px;
+  width: 75px;
+  padding-top: 18px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #d0d0d0;
+  background-color: #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-transition: all, 0.3s, ease;
+  -o-transition: all, 0.3s, ease;
+  -webkit-transition: all, 0.3s, ease;
+  transition: all, 0.3s, ease;
+}
+
+/* line 410, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help__text {
+  padding: 0.3em 0 0 1em;
+  height: 75px;
+  color: #aaaaaa;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+@media only screen and (max-width: 590px) {
+  /* line 419, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--help__half {
+    max-width: 432px;
+  }
+
+  /* line 420, ../scss/duckduckhack/_duckduckhack.scss */
+  .half--last .ddh--help__item--first {
+    margin-top: 2em;
+  }
+  /* line 422, ../scss/duckduckhack/_duckduckhack.scss */
+  .half--last .ddh--help__item--first .ddh--help__text {
+    padding-top: 0;
+  }
+
+  /* line 424, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--help__num {
+    height: 50px;
+    width: 50px;
+    padding-top: 14px;
+    margin-bottom: 0;
+  }
+
+  /* line 431, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--help__text {
+    height: 50px;
+    width: 80%;
+    padding-top: 0;
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 864px) {
+  /* line 443, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--comm__wrapper {
+    max-width: 350px;
+  }
+}
+
+/* line 445, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__items {
+  margin-top: 5em;
+}
+@media only screen and (max-width: 864px) {
+  /* line 445, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--comm__items {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 590px) {
+  /* line 445, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--comm__items {
+    margin-top: 0;
+  }
+}
+
+/* line 451, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__item {
+  position: relative;
+  padding-left: 1.5em;
+}
+@media only screen and (max-width: 864px) {
+  /* line 451, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--comm__item {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 864px) {
+  /* line 455, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--comm__item.third--first, .ddh--comm__item.third--mid {
+    padding-bottom: 2em;
+  }
+}
+@media only screen and (max-width: 590px) {
+  /* line 455, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--comm__item.third--first, .ddh--comm__item.third--mid {
+    padding-bottom: 2em;
+  }
+}
+
+/* line 463, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__item__top,
+.ddh--comm__item__bottom {
+  -moz-box-shadow: 1px 1.5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 1.5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+/* line 468, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__item__top {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #7db5e1;
+  padding: 3em 0 4em;
+}
+
+/* line 474, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__item__bottom {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 4em 0 3em;
+}
+
+/* line 479, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__num {
+  letter-spacing: 0.02em;
+}
+
+/* line 481, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__link {
+  color: inherit;
+}
+/* line 483, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__link:hover {
+  text-decoration: none;
+}
+
+/* line 486, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__circle {
+  position: absolute;
+  top: 115px;
+  left: 41.5%;
+  height: 80px;
+  width: 80px;
+  color: #ffffff;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #31383f;
+}
+
+/* line 497, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__circle__month {
+  position: relative;
+  top: 1em;
+  line-height: 1em;
+}
+
+/* line 503, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__circle__day {
+  position: relative;
+  top: 0.4em;
+  font-size: 2em;
+}
+
+/* line 509, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--comm__icon {
+  position: relative;
+  top: 25%;
+  font-size: 3em;
+}
+
+/* line 518, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quotes {
+  padding-top: 1em;
+  padding-bottom: 4em;
+  max-width: 55em;
+}
+/* line 524, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quotes blockquote {
+  color: #999999;
+  line-height: 1.35;
+  font-weight: 300;
+  font-size: 2em;
+}
+/* line 530, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quotes cite {
+  padding-top: 1.5em;
+  font-weight: 400;
+  font-size: 0.6em;
+  display: block;
+}
+/* line 537, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quotes a {
+  color: #7db5e1;
+}
+
+/* line 540, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote {
+  vertical-align: middle;
+}
+
+/* line 545, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote-nav {
+  bottom: 1em;
+}
+
+/* line 550, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote-nav__item {
+  -moz-box-shadow: inset 0 0 0 3px #d0d0d0;
+  -webkit-box-shadow: inset 0 0 0 3px #d0d0d0;
+  box-shadow: inset 0 0 0 3px #d0d0d0;
+  width: 13px;
+  height: 13px;
+  margin: 0 0.25em;
+}
+/* line 557, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote-nav__item.is-active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #333333;
+}
+/* line 562, ../scss/duckduckhack/_duckduckhack.scss */
+.lt-ie9 .ddh-quote-nav__item {
+  border: 3px solid #d0d0d0;
+}
+
+/* line 567, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature {
+  margin: 10px 0 20px;
+}
+
+/* line 569, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 1em;
+  height: 40px;
+  width: 40px;
+}
+
+/* line 576, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__body {
+  padding-right: 1em;
+}
+
+/* line 578, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__title {
+  color: #ffffff;
+  font-size: 1.3em;
+  line-height: 1.1;
+  padding: 0.2em 0 0;
+}
+/* line 584, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__title a {
+  color: inherit;
+}
+
+/* line 587, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__sub {
+  color: #b3d4ed;
+  font-size: 0.9em;
+  padding: 0;
+}
+
+/* line 593, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__sub__link {
+  color: inherit;
+}
+
+/* line 595, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__userlink {
+  color: #ffffff;
+}
+
+/* line 597, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-feature__sub__link:hover,
+.ddh-feature__userlink:hover {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 590px) {
+  /* line 604, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-hero {
+    padding-bottom: 1.25em;
+  }
+
+  /* line 606, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-hero-slides__item {
+    vertical-align: top;
+  }
+
+  /* line 608, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-hero__title {
+    font-size: 1.75em;
+  }
+
+  /* line 610, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh {
+    padding: 60px 0;
+  }
+
+  /* line 612, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--foot {
+    padding-top: 15px;
+    padding-bottom: 45px;
+  }
+
+  /* line 617, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh__title {
+    margin-bottom: 15px;
+    font-size: 1.75em;
+  }
+
+  /* line 622, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh__sub {
+    margin-bottom: 25px;
+  }
+
+  /* line 624, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh__split {
+    margin: 1em auto;
+  }
+
+  /* line 626, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-cta__title {
+    font-size: 1.35em;
+  }
+
+  /* line 628, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-cta__text {
+    padding: 1em 0;
+  }
+
+  /* line 631, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh-quotes blockquote {
+    font-size: 1.5em;
+  }
+
+  /* line 634, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--foot__cw {
+    max-width: 20em;
+  }
+
+  /* line 636, ../scss/duckduckhack/_duckduckhack.scss */
+  .ddh--help__section {
+    margin-bottom: 3em;
+  }
+}
+/* line 2, ../scss/duckduckhack/_page.scss */
+html, body {
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 9, ../scss/duckduckhack/_page.scss */
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #f7f7f7;
+  font-size: 90%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 19, ../scss/duckduckhack/_page.scss */
+body {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+
+/* line 25, ../scss/duckduckhack/_page.scss */
+.site-wrapper {
+  overflow: hidden;
+}
+/* line 31, ../scss/duckduckhack/_page.scss */
+.has-module .site-wrapper {
+  min-height: 650px !important;
+}
+/* line 36, ../scss/duckduckhack/_page.scss */
+.is-mobile-device.has-search-focus .site-wrapper:before {
+  display: none;
+}
+
+/* line 43, ../scss/duckduckhack/_page.scss */
+body {
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* line 47, ../scss/duckduckhack/_page.scss */
+body,
+input,
+select,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  color: #333333;
+}
+
+/* line 55, ../scss/duckduckhack/_page.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* line 60, ../scss/duckduckhack/_page.scss */
+p {
+  line-height: 1.35;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+/* line 66, ../scss/duckduckhack/_page.scss */
+strong, b {
+  font-weight: 600;
+}
+
+/* line 69, ../scss/duckduckhack/_page.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 72, ../scss/duckduckhack/_page.scss */
+pre, tt, code {
+  color: #393939;
+  background-color: #eaeaea;
+  text-shadow: none;
+}
+
+/* line 77, ../scss/duckduckhack/_page.scss */
+pre {
+  padding: 0.55em 0;
+  padding-left: 0.5em;
+  margin: 0.5em 0;
+}
+
+/* line 82, ../scss/duckduckhack/_page.scss */
+pre code {
+  padding-left: 0;
+}
+
+/* line 86, ../scss/duckduckhack/_page.scss */
+sup, sub {
+  vertical-align: baseline;
+  font-size: 0.6em;
+  position: relative;
+  line-height: 0;
+}
+
+/* line 92, ../scss/duckduckhack/_page.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 93, ../scss/duckduckhack/_page.scss */
+sub {
+  top: 0;
+}
+
+/* line 95, ../scss/duckduckhack/_page.scss */
+.no-select {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 104, ../scss/duckduckhack/_page.scss */
+.absolute-center {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+/* line 108, ../scss/duckduckhack/_page.scss */
+.one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+/* Hyperlinks */
+/* line 113, ../scss/duckduckhack/_page.scss */
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: #4495d4;
+}
+/* line 118, ../scss/duckduckhack/_page.scss */
+a:hover, a:focus {
+  color: #3a7fb4;
+}
+/* line 122, ../scss/duckduckhack/_page.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 125, ../scss/duckduckhack/_page.scss */
+a:focus {
+  text-decoration: none;
+  outline: none;
+  /* allows for keyboard moving on the homepage et al */
+}
+/* line 130, ../scss/duckduckhack/_page.scss */
+a.is-disabled {
+  color: #999999;
+  cursor: default;
+}
+/* line 134, ../scss/duckduckhack/_page.scss */
+a.is-disabled:focus, a.is-disabled:hover {
+  text-decoration: none;
+  color: #999999;
+}
+
+/* line 141, ../scss/duckduckhack/_page.scss */
+:visited {
+  color: #6d59a3;
+}
+
+/* line 144, ../scss/duckduckhack/_page.scss */
+.no-visited {
+  color: #4495d4;
+}
+
+@media only screen and (max-height: 590px) {
+  /* line 149, ../scss/duckduckhack/_page.scss */
+  .has-slideout-open {
+    overflow: hidden;
+  }
+}

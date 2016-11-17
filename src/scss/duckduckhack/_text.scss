@@ -1,0 +1,62 @@
+/*
+	Text Styling
+	
+	.tx- and .hd- prefixes live here and are common text changes.
+	
+	This kind of thing is usually used to rapid-dev static pages.
+	Using different prefixes from litestrap for more distinction on where they might be modified.
+	
+	.tx - text
+	.hd - heading
+*/
+
+// weights & styles
+.tx-bld {
+	font-weight: 600;
+}
+.tx-lt {
+	font-weight: 300;
+}
+.tx-it {
+	// only one style of italic in our default font family...
+	font-weight: normal;
+	font-style: italic;
+}
+
+// transforms
+.tx-up {
+	text-transform: uppercase;
+}
+
+// Headings
+
+// hero headings - dynamic sizes
+.hd-hr {
+	@extend .tx-lt;
+	line-height: 1.1;
+	text-align: center;
+	& + .hd-hr {
+		padding-top: 0;
+	}
+}
+// large (h2) headings
+.hd-lg {
+	@extend .h-xxl;
+	@extend .tx-up;
+	@extend .tx-lt;
+	
+	padding-top: $base-unit;
+	padding-bottom: 0;
+}
+// secondary (h3/h4) headings
+.hd-md {
+	@extend .h-m;
+	@extend .tx-up;
+	
+	// nested anchors (kinda dirty)
+	.anchor--link {
+		float: right;
+		font-size: 0.5em;
+		margin-top: 1em;
+	}
+}

@@ -1,0 +1,222 @@
+/*
+	'Block' Sections
+	
+	Full-bleed sections to break of the content of a static page.
+*/
+
+$blk-bottom-padding: $base-unit*4;
+
+.blk {
+	padding-bottom: $blk-bottom-padding;
+	position: relative;
+	display: block;
+	clear: both;
+	z-index: 1;
+}
+	// darker bg
+	.blk--alt {
+		background-color: $alt-bg;
+	}
+	// dark bg
+	.blk--dark {
+		background-color: $slate-blue;
+		color: #fff;
+		
+		.hr {
+			border-bottom-color: #fff;
+		}
+	}
+	// hero
+	.blk--hero {
+		background-color: $hero-red;
+		color: #fff;
+		
+		.hr {
+			border-bottom-color: #fff;
+		}
+	}
+	.blk--hero--alt {
+		background-color: $blue-light;
+	}
+	
+	// footer
+	.blk--foot {
+		text-align: center;
+		padding: $big-unit 0;
+		background-color: $slate-light-blue;
+		color: #dee2e5;
+		p {
+			padding: 0;
+		}
+		// link colors
+		a {
+			color: #c5cacd;
+		}
+	}
+	// alternate footer styling
+	.blk--foot--alt {
+		background-color: #e4e4e4;
+		
+		&, a {
+			color: $grey;
+		}
+		
+		p {
+			display: inline-block;
+		}
+	}
+	// navigation (tall) footer
+	.blk--foot--nav {
+		padding: 50px 0 0;
+	
+		&:after {
+			content: '';
+			display: block;
+			height: 1px;
+			max-width: $cw-width;
+			margin: 0 auto;
+			background: #575f66;
+		}
+	}
+	
+	// content
+	.blk--content {
+		padding-top: $big-unit;
+	}
+	// trailing arrow
+	%blk--arr {
+		padding-top: $blk-bottom-padding;
+		
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			margin: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			
+			border-style: solid;
+			border-color: transparent;
+			border-right-width: 28px;
+			border-left-width: 28px;
+			border-top-width: 22px;
+			border-bottom-width: 0;
+			
+			border-top-color: $main-bg;
+		}
+		
+		@include media-query(s) {
+			&:before {
+				border-right-width: 18px;
+				border-left-width: 18px;
+				border-top-width: 14px;
+			}
+		}
+	}
+	.blk--arr {
+		@extend %blk--arr;
+		// the arrow color depends on what block element preceeded
+		.blk--alt + &:before {
+			border-top-color: $alt-bg;
+		}
+		.blk--dark + &:before {
+			border-top-color: $slate-blue;
+		}
+		.blk--hero + &:before {
+			border-top-color: $hero-red;
+		}
+		.blk--hero--alt + &:before {
+			border-top-color: $blue-light;
+		}
+	}
+	
+	.blk--arr--white {
+		// disregard preceeding block element
+		@extend %blk--arr;
+	}
+	
+	%blk__title {
+		padding: 0;
+		margin-bottom: 15px;
+		font-size: 2.25em;
+		font-weight: 600;
+		line-height: 1.44;
+		
+		.blk--hero & {
+			color: $white;
+		}
+		
+		@include media-query(s) {
+			font-size: 1.5em;
+			line-height: 1.14;
+		}
+	}
+	
+	%blk__sub {
+		padding: 0;
+		margin-bottom: 50px;
+		color: $grey-dark;
+		
+		.blk--hero & {
+			color: $white;
+		}
+	}
+	
+	.blk__title {
+		@extend %blk__title;
+	}
+	
+	.blk__sub {
+		@extend %blk__sub;
+	}
+	
+	// text block wrapper for more width control
+	.blk__text {
+		max-width: 40em;
+		margin: 0 auto;
+	}
+	
+		.footer-nav {
+			a {
+				margin-right: $base-unit;
+				display: inline-block;
+			}
+		}
+
+.blk--foot__nav-col {
+	padding: 0 25px 35px 25px;
+	
+	ul {
+		font-size: 0.9em;
+		margin-bottom: 15px;
+		line-height: 1.7;
+		padding: 0;
+	}
+}
+
+.blk--foot__nav-head {
+	padding: 0;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+
+@include media-query(s) {
+	.blk--foot__nav-col {
+		padding-left: 0;
+		padding-right: 0;
+		
+		font-size: 0.9em;
+		
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+	}
+	.blk--foot__nav-head {
+		font-size: 1.1em;
+	}
+
+}
