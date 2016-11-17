@@ -6,7 +6,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 
   return "            <li class=\"text-left ddh--comm__item "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + " clearfix\">\n	            <div>\n	                <a class=\"tx-clr--dk one-line issue-name\" href=\"https://github.com/duckduckgo/zeroclickinfo-"
+    + " clearfix\">\n	            <div class=\"r-iblock\">\n	                <a class=\"tx-clr--dk one-line issue-name\" href=\"https://github.com/duckduckgo/zeroclickinfo-"
     + alias4(((helper = (helper = helpers.repo || (depth0 != null ? depth0.repo : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"repo","hash":{},"data":data}) : helper)))
     + "/issues/"
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
