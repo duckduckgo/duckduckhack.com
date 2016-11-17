@@ -1,0 +1,152 @@
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	@extend .r-border-box;
+	overflow: hidden;
+	overflow-y: auto;
+	//margin-top: $header-border-width;
+	background-color: $alt-bg;
+	font-size: $html-font-size;
+	// fix for landscape mode in iOS
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	overflow: hidden;
+	position: relative;	
+	height: auto;
+}
+	
+	.site-wrapper {
+		overflow: hidden;
+
+		// if we have a module we need to increase the min-height to 
+		// avoid content clipping before the deep results render and
+		// fill out the page.
+		.has-module & {
+			min-height: 650px !important;
+		}
+
+		// hide if refocusing on the search field
+		.is-mobile-device.has-search-focus &:before {
+			display: none;
+		}
+	}
+
+	
+// Colors & Fonts
+body {	
+	background-color: $main-bg;
+	line-height: 1.6;
+}
+body,
+input,
+select,
+textarea {
+	font-family: $default-font; // set in _vars
+	color: $base-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	//font-family: $header-font; // set in _vars, currently the same as default
+	font-weight: normal;
+}
+
+p {
+	line-height: 1.35;
+	padding-top: $quarter-unit;
+	padding-bottom: $quarter-unit;
+}
+
+strong, b {
+	font-weight: 600;
+}
+em, i {
+	font-style: italic;
+}
+pre, tt, code {
+	color: lighten($base-color,2.5%);
+	background-color: darken($alt-bg,5%);
+	text-shadow: none;	
+}
+	pre {
+		padding: $half-unit*1.1 0;
+		padding-left: $half-unit;
+		margin: $half-unit 0;
+	}
+	pre code {
+		padding-left: 0;
+	}
+
+sup, sub {
+	vertical-align: baseline;
+	font-size: 0.6em;
+	position: relative;
+	line-height: 0;
+}
+	sup { top: -$half-unit; }
+	sub { top: 0; }
+
+.no-select,
+%no-select {
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.absolute-center {
+	@include absolute-center();
+}
+
+.one-line {
+	@include ellipsis;
+}
+
+/* Hyperlinks */
+a {
+	font-family: inherit;
+	text-decoration: none;
+	color: $link-color;
+
+	&:hover,
+	&:focus {
+		color: $link-color-hover;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+	&:focus {    
+		text-decoration: none;
+		outline: none; /* allows for keyboard moving on the homepage et al */
+	}
+
+	&.is-disabled {
+		color: $grey;
+		cursor: default;
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			color: $grey;
+		}
+	}
+}
+:visited {
+	color: $link-color-visited;
+}
+.no-visited {
+	color: $link-color;
+}
+
+@media only screen and (max-height: $media--s) {
+	.has-slideout-open {
+		overflow: hidden;
+	}
+}

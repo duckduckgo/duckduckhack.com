@@ -61,7 +61,7 @@ img {
 }
 
 /* line 53, ../scss/litestrap/_litestrap.scss */
-.r-border-box {
+.r-border-box, html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -730,6 +730,67 @@ img {
     Requires that you compile the icon font yourself and
     serve it via @font-face under the name 'ddg-serp-icons'
 */
+/* DDG Compass Vars */
+/* for compass */
+/*
+    Spacing Units
+    Base spacing units for uniform spacing
+*/
+/*
+	Specific to the main Search Form
+*/
+/*
+	'Tile' Vars
+*/
+/*
+	'Detail Pane' Colors
+*/
+/*
+	Media Query Break Points
+	litestrap (and other components) use variable-controlled media queries.
+	Change these values to set different breakpoints.
+*/
+/*
+	Example Media Query Block:
+	
+	Note that Large is above Extra-Large, 
+	so that the extra large styles will override the large ones.
+	(CSS is read and applied top to bottom).
+	
+@media only screen and (min-width: $media--l) {}
+	
+@media only screen and (min-width: $media--xl) {}
+	
+@media only screen and (max-width: $media--m) {}
+		
+@media only screen and (max-width: $media--s) {}
+	
+@media only screen and (max-width: $media--xs) {}
+
+*/
+/* 
+   'Gutter' Widths 
+    The SERP layout has a fixed-size left gutter.  
+	Internal pages also use this gutter width on the right.
+    Adjust that size, and the header (menu) gutter here.
+*/
+/* these fixed gutters will need to adjust for mobile.  set sizes here: */
+/* 'medium' size screens */
+/* 'small' size screens */
+/* 'extra-small' screens */
+/* for modules/right rail ads we are collapsing left gutter at this size. */
+/*
+	Content Controllers
+*/
+/* 
+	Fixed Header Sizes
+
+	the "default" is to have a fixed-position header,
+	but only because .set-header--fixed is in the document
+*/
+/*
+	Spacing unit aliases (I mean who is going to remember this stuff, right?)
+*/
 /* line 3, ../scss/duckduckhack/_clearfix.scss */
 .cw:after, .cw--c:after {
   content: "";
@@ -754,10 +815,11 @@ img {
 
 /* line 16, ../scss/duckduckhack/_slider.scss */
 .ddh-hero-slides__item, .ddh-quote {
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -moz-transition: opacity 0.3s ease-in-out 0s;
+  -o-transition: opacity 0.3s ease-in-out 0s;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition: opacity 0.3s ease-in-out 0s;
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -774,10 +836,10 @@ img {
 }
 /* line 33, ../scss/duckduckhack/_slider.scss */
 .is-first.ddh-hero-slides__item, .is-first.ddh-quote {
-  -moz-transition: margin-left 1s, opacity 1s;
-  -o-transition: margin-left 1s, opacity 1s;
-  -webkit-transition: margin-left 1s, opacity 1s;
-  transition: margin-left 1s, opacity 1s;
+  -moz-transition: margin-left 0.3s, opacity 0.3s;
+  -o-transition: margin-left 0.3s, opacity 0.3s;
+  -webkit-transition: margin-left 0.3s, opacity 0.3s;
+  transition: margin-left 0.3s, opacity 0.3s;
 }
 
 /* line 38, ../scss/duckduckhack/_slider.scss */
@@ -947,7 +1009,7 @@ img {
   border-bottom-width: 0;
   border-top-color: #ffffff;
 }
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 112, ../scss/duckduckhack/_blk.scss */
   .blk--arr:before, .blk--arr--white:before {
     border-right-width: 18px;
@@ -985,7 +1047,7 @@ img {
 .blk--hero .blk__title, .blk--hero .ddh__title {
   color: #ffffff;
 }
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 141, ../scss/duckduckhack/_blk.scss */
   .blk__title, .ddh__title {
     font-size: 1.5em;
@@ -1035,7 +1097,7 @@ img {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 208, ../scss/duckduckhack/_blk.scss */
   .blk--foot__nav-col {
     padding-left: 0;
@@ -1326,7 +1388,7 @@ img {
   top: 200px;
   bottom: 0px;
 }
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 210, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__split__divide {
     line-height: 33px;
@@ -1359,7 +1421,7 @@ img {
   background-color: #31383f;
 }
 
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 274, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--ias__items .third:not(:last-of-type) {
     margin-bottom: 3em;
@@ -1540,7 +1602,7 @@ img {
   line-height: 1.2em;
 }
 
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 419, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--help__half {
     max-width: 432px;
@@ -1588,7 +1650,7 @@ img {
     width: 100%;
   }
 }
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 445, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__items {
     margin-top: 0;
@@ -1612,7 +1674,7 @@ img {
     padding-bottom: 2em;
   }
 }
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 455, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__item.third--first, .ddh--comm__item.third--mid {
     padding-bottom: 2em;
@@ -1810,7 +1872,7 @@ img {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 590px) {
   /* line 604, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-hero {
     padding-bottom: 1.25em;
@@ -1876,5 +1938,192 @@ img {
   /* line 636, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--help__section {
     margin-bottom: 3em;
+  }
+}
+/* line 2, ../scss/duckduckhack/_page.scss */
+html, body {
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 9, ../scss/duckduckhack/_page.scss */
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #f7f7f7;
+  font-size: 90%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 19, ../scss/duckduckhack/_page.scss */
+body {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+
+/* line 25, ../scss/duckduckhack/_page.scss */
+.site-wrapper {
+  overflow: hidden;
+}
+/* line 31, ../scss/duckduckhack/_page.scss */
+.has-module .site-wrapper {
+  min-height: 650px !important;
+}
+/* line 36, ../scss/duckduckhack/_page.scss */
+.is-mobile-device.has-search-focus .site-wrapper:before {
+  display: none;
+}
+
+/* line 43, ../scss/duckduckhack/_page.scss */
+body {
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* line 47, ../scss/duckduckhack/_page.scss */
+body,
+input,
+select,
+textarea {
+  font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L", "Liberation Sans", "Open Sans", FreeSans, Arial, sans-serif;
+  color: #333333;
+}
+
+/* line 55, ../scss/duckduckhack/_page.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* line 60, ../scss/duckduckhack/_page.scss */
+p {
+  line-height: 1.35;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+/* line 66, ../scss/duckduckhack/_page.scss */
+strong, b {
+  font-weight: 600;
+}
+
+/* line 69, ../scss/duckduckhack/_page.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 72, ../scss/duckduckhack/_page.scss */
+pre, tt, code {
+  color: #393939;
+  background-color: #eaeaea;
+  text-shadow: none;
+}
+
+/* line 77, ../scss/duckduckhack/_page.scss */
+pre {
+  padding: 0.55em 0;
+  padding-left: 0.5em;
+  margin: 0.5em 0;
+}
+
+/* line 82, ../scss/duckduckhack/_page.scss */
+pre code {
+  padding-left: 0;
+}
+
+/* line 86, ../scss/duckduckhack/_page.scss */
+sup, sub {
+  vertical-align: baseline;
+  font-size: 0.6em;
+  position: relative;
+  line-height: 0;
+}
+
+/* line 92, ../scss/duckduckhack/_page.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 93, ../scss/duckduckhack/_page.scss */
+sub {
+  top: 0;
+}
+
+/* line 95, ../scss/duckduckhack/_page.scss */
+.no-select {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 104, ../scss/duckduckhack/_page.scss */
+.absolute-center {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+/* line 108, ../scss/duckduckhack/_page.scss */
+.one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+/* Hyperlinks */
+/* line 113, ../scss/duckduckhack/_page.scss */
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: #4495d4;
+}
+/* line 118, ../scss/duckduckhack/_page.scss */
+a:hover, a:focus {
+  color: #3a7fb4;
+}
+/* line 122, ../scss/duckduckhack/_page.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 125, ../scss/duckduckhack/_page.scss */
+a:focus {
+  text-decoration: none;
+  outline: none;
+  /* allows for keyboard moving on the homepage et al */
+}
+/* line 130, ../scss/duckduckhack/_page.scss */
+a.is-disabled {
+  color: #999999;
+  cursor: default;
+}
+/* line 134, ../scss/duckduckhack/_page.scss */
+a.is-disabled:focus, a.is-disabled:hover {
+  text-decoration: none;
+  color: #999999;
+}
+
+/* line 141, ../scss/duckduckhack/_page.scss */
+:visited {
+  color: #6d59a3;
+}
+
+/* line 144, ../scss/duckduckhack/_page.scss */
+.no-visited {
+  color: #4495d4;
+}
+
+@media only screen and (max-height: 590px) {
+  /* line 149, ../scss/duckduckhack/_page.scss */
+  .has-slideout-open {
+    overflow: hidden;
   }
 }
