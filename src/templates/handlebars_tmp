@@ -18,15 +18,23 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.user : depth0)) != null ? stack1.login : stack1), depth0))
     + "\">"
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.user : depth0)) != null ? stack1.login : stack1), depth0))
-    + "</a> \n	                </span>\n	            </div>\n            </li>\n";
+    + "</a> \n	                </span>\n	            </div>\n                <div class=\"r-iblock\">\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "                </div>\n            </li>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     return "tag-"
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
+},"4":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "                        <div class=\"r-iblock btn--wire--hero\">"
+    + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"name","hash":{},"data":data}) : helper)))
+    + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "\n<div class=\"issues-list\">\n  <section>\n    <div class=\"whole text-center blk blk--hero blk--hero--alt\">\n        <div class=\"cw--c ddh-hero\">\n            <h1 class=\"ddh-hero__title\">List of Open Issues</h1>\n        </div>\n    </div>\n    <div class=\"blk--content\">\n        <ul>\n"
+  return "\n<div class=\"issues-list\">\n  <section>\n    <div class=\"whole text-center blk blk--hero blk--hero--alt\">\n        <div class=\"cw--c ddh-hero\">\n            <h1 class=\"ddh-hero__title\">List of Open Issues</h1>\n        </div>\n    </div>\n    <div class=\"ddh blk--content\">\n        <ul>\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "        </ul>\n    </div>\n  </section>\n</div>\n\n";
 },"useData":true});
