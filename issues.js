@@ -18,7 +18,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.user : depth0)) != null ? stack1.login : stack1), depth0))
     + "\">"
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.user : depth0)) != null ? stack1.login : stack1), depth0))
-    + "</a> \n	                </span>\n	            </div>\n                <div class=\"r-iblock\">\n"
+    + "</a> \n	                </span>\n	            </div>\n                <div class=\"t-xxxs r-iblock\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "                </div>\n            </li>\n";
 },"2":function(container,depth0,helpers,partials,data) {
