@@ -1,0 +1,639 @@
+/*
+	DuckDuckHack Styles
+*/
+
+$ddh-title-kerning: -0.015em;
+$ddh-screenshot-size:  1017px;
+$ddh-nav-display-width: $ddh-screenshot-size + $nav-spacing*2 + $nav-size*2 + 20;
+$midnight: #31383f;
+$midday: #7db5e1;
+$midnight-light: #2C4B62;
+
+.site-wrapper--duckduckhack:before {
+    background-color: $blue-dark;
+}
+
+// GQ&H Banner
+
+.ddh-banner {
+    position: relative;
+    top: -1.25em;
+    padding: 0.7em;
+    text-align: center;
+    background-color: $midnight-light;
+}
+
+.ddh-banner__text {
+    font-size: 1.35em;
+    @include media-query(m) { display: block; }
+}
+
+.ddh-banner .btn {
+    margin-left: 2em;
+    @include media-query(m) {
+        margin-top: 0.5em;
+        margin-left: 0;
+    }
+}
+
+
+// Hero 
+
+.ddh-hero {
+    padding-top: $base-unit * 3;
+    text-align: center;
+    max-width: 57em;
+}
+
+.ddh-hero__title {
+    letter-spacing: $ddh-title-kerning;
+    line-height: 1.25;
+    font-size: 3em;
+}
+
+.ddh-hero__btn {
+    position: relative;
+    line-height: 1.6;
+    font-size: 1.35em;
+    font-weight: normal;
+    padding-left: $double-unit;
+    padding-right: $double-unit;
+    z-index: 1;
+}
+
+.ddh-hero-slides {
+    @extend %static-slide-wrap;
+    
+    padding-bottom: $three-quarter-unit;
+}
+
+.ddh-hero-slides__item {
+    @extend %static-slide-item;
+    
+    vertical-align: middle;
+}
+
+.ddh-hero-slides--img {
+    margin: 0 auto -4em;
+    max-width: 1017px;
+}
+
+.ddh-hero-slides__wrap {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 54.768%;
+    height: 0;
+}
+
+.ddh-hero-slides__attr {
+    display: none; // hidden by default
+    font-size: 13px; // using px font size because it needs to fit inside a specified area on the image behind it
+    font-weight: 600;
+    color: $blue-lighter;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    top: 45px;
+    left: 0;
+    right: 0;
+
+    a { color: $white; }
+}
+
+// width of DDH screenshot images
+@media only screen and (min-width: $ddh-screenshot-size) {
+    .ddh-hero-slides__attr { display: block; }
+}
+
+.ddh-hero-slides__attr__item { padding: 0 $half-unit; }
+
+.ddh-hero-slides__img,
+.ddh-hero-slides__img-wrap,
+.ddh-hero-slides__img-no-js {
+    @include absolute-center();
+    display: block;
+    max-height: 100%;
+}
+
+.ddh-hero-slides__img-wrap {
+    @include single-transition(opacity,0.1s,ease-in-out,1s); // delay 1s, execute quickly
+    @include transform(translate3d(0,0,0)); // push transition and text rendering to GPU to fix weird Safari quirk where the font-weight would change on transition
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+	
+    &.is-active {
+        @include single-transition(opacity,1s,ease-in-out,0s); // do not delay, execute slowly
+        opacity: 1;
+        z-index: 10;
+    }
+}
+
+.ddh-hero-slides__nav-wrap {
+    height: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 25%;
+    display: none;
+}
+
+// only display on large screens
+@media only screen and (min-width: $ddh-nav-display-width) {
+    .ddh-hero-slides__nav-wrap { display: block; }
+}
+
+// more side spacing on even larger screens
+@media only screen and (min-width: $ddh-nav-display-width + $nav-size*1.3) {
+    .ddh-hero-slides__nav-wrap {
+        right: 3%;
+        left: 3%;
+    }
+}
+
+.ddh-anchor { top: -90px; }
+
+.ddh {
+    text-align: center;
+    padding: 120px 0 120px 0;
+    line-height: 1.5;
+}
+
+// Footer
+
+.ddh--foot {
+    text-align: left;
+    padding: 80px 0 60px;
+}
+
+.ddh__title {
+    @extend %blk__title;
+		
+    letter-spacing: $ddh-title-kerning;
+    margin-bottom: 0.4em;
+    font-size: 2.75em;
+    line-height: 1em;
+}
+	
+.ddh--foot__title {
+    padding: 0;
+    margin-bottom: 30px;
+    line-height: 1em;
+}
+	
+.ddh__sub {
+    @extend %blk__sub;
+		
+    font-size: 1.25em;
+    line-height: 1em;
+    margin-bottom: 80px;
+}
+
+.ddh--foot__sub {
+    color: $blue-lightest;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+	
+.ddh__split {
+    position: relative;
+    max-width: 68em;
+
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+	
+.ddh__split__divide {
+    position: absolute;
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 330px;
+    z-index: -1;
+			
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        width: 1px;
+        right: 0;
+        left: 0;
+        background: $divider-gray;
+    }
+    &:before {
+        top: 5px;
+        height: 125px;
+    }
+    &:after {
+        top: 200px;
+        bottom: 0px;
+    }
+			
+    @include media-query(s) {
+        line-height: 33px;
+        padding: 20px 0;
+        position: relative;
+        clear: both;
+        width: 100%;
+    
+        &:before,
+        &:after {
+            width: auto;
+            height: 1px;
+            bottom: 0;
+		    top: 0;
+        }
+        &:before {
+            right: 60%;
+            left: $half-unit;
+        }    
+        &:after {
+            left: 60%;
+            right: $half-unit;
+        }
+    }	
+}
+
+// Power of Instant Answers
+
+.ddh--ias { background-color: $midnight; }
+
+.ddh--ias__items {
+    @include media-query(s) {
+        .third:not(:last-of-type) { margin-bottom: $base-unit * 3; }
+    } 
+}
+
+.ddh--ias__desc {
+    margin: $base-unit*1.5 $base-unit*3;
+    color: $grey-light;
+    line-height: 1.75em;
+}
+
+.ddh--ias__link {
+    color: $midday;
+    
+    &:hover { text-decoration: none; }
+}    
+
+.ddh--ias__icon { margin-right: $half-unit; }
+
+.ddh--ias__number {
+    font-size: 3.6em;
+    line-height: 1.3em;
+    padding: 0;
+}
+
+.ddh--ias__status { margin-top: -$base-unit; }
+
+
+// Get Involved
+
+.ddh-cta {
+    max-width: 21em;
+    font-size: 1.25em;
+    display: block;
+    margin: auto;
+    padding: 0 1.5em;
+}
+
+.ddh-cta__title {
+    letter-spacing: $ddh-title-kerning;
+    font-size: 1.85em;
+    font-weight: 600;
+    padding: 10px 0 0;
+}
+
+.ddh-cta__sub {
+    padding: 0;
+    color: $light;
+}
+
+.ddh-cta__text {
+    padding: 33px 0 50px;
+    line-height: 1.7;
+    color: $slate-light;
+}
+
+.ddh-cta__btn {
+    border: none;
+    padding: 0 $double-unit;
+    font-weight: normal;
+    line-height: 2.25;
+    min-width: 3em;
+    background-color: $midday;
+}
+
+// Need Help Getting Started
+
+.ddh--help {
+    .ddh__title {
+        font-size: 2.5em;
+        margin-top: .2em;
+    }
+
+    .ddh--help__section {
+        margin-bottom: 3em;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        & > .ddgsi {
+            font-size: 3em;
+        }
+    }
+
+    .ddh--help__link {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        
+        & > .ddgsi {
+            color: $blue-light;
+            font-size: .7em;
+        }
+    }
+
+    .ddh--help__section > p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+}
+
+.ddh__sub--link { color: $midday; }
+    
+.ddh--help__half { min-width: 432px; }
+
+.half--last .ddh--help__item--first .ddh--help__text { padding-top: 0.9em; } 
+
+.ddh--help__item {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    
+    &:hover {
+        cursor: pointer;
+        .ddh--help__num {
+            color: $white;
+            background-color: $midday;
+        }
+        .ddh--help__text { color: $slate; }
+    }
+}
+
+.ddh--help__item--first { margin-bottom: $double-unit; }
+
+.ddh--help__num {
+    height: 75px;
+    width: 75px;
+    padding-top: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    color: $platinum-dark;
+    background-color: $white;
+    @include border-radius(3px);
+    @include transition(all, 0.3s, ease);
+}
+
+.ddh--help__text { 
+    padding: 0.3em 0 0 $base-unit;
+    height: 75px;
+    color: $grey-light;    
+    font-weight: 300;
+    line-height: 1.2em;
+}
+    
+@include media-query(s){
+    .ddh--help__half { max-width: 432px; }
+    .half--last .ddh--help__item--first { 
+        margin-top: $double-unit; 
+        .ddh--help__text { padding-top: 0; }
+    }
+    .ddh--help__num {
+        height: 50px;
+        width: 50px;
+        padding-top: 14px;
+        margin-bottom: 0;    
+    }
+    
+    .ddh--help__text { 
+        height: 50px;
+        width: 80%;
+        padding-top: 0;
+        font-size: 1.6em;
+    }
+}
+
+// Join a community
+
+.ddh--comm {}
+
+.ddh--comm__wrapper { @include media-query(m) { max-width: 350px; } }  
+
+.ddh--comm__items {
+    margin-top: $base-unit * 5;
+    @include media-query(m) { width: 100%; }
+    @include media-query(s) { margin-top: 0; }
+}
+
+.ddh--comm__item {
+    position: relative;
+    padding-left: $base-unit * 1.5;
+    @include media-query(m) { width: 100%; }
+    &.third--first,
+    &.third--mid
+    {
+        @include media-query(m) { padding-bottom: $double-unit; }
+        @include media-query(s) { padding-bottom: $double-unit; }
+    }
+}
+
+.ddh--comm__item__top,
+.ddh--comm__item__bottom {
+    @include box-shadow(1px 1.5px rgba(0,0,0, 0.1)); 
+}
+
+.ddh--comm__item__top { 
+    @include border-top-radius(3px);
+    background-color: $midday;
+    padding: $base-unit*3 0 $base-unit*4; 
+}
+
+.ddh--comm__item__bottom { 
+    @include border-bottom-radius(3px);
+    padding: $base-unit*4 0 $base-unit*3; 
+}
+    
+.ddh--comm__num { letter-spacing: 0.02em; }    
+
+.ddh--comm__link { 
+    color: inherit; 
+    &:hover { text-decoration: none; }
+}
+
+.ddh--comm__circle {
+    position: absolute;
+    top: 115px;
+    left: 41.5%;
+    height: 80px;
+    width: 80px;
+    color: $white;
+    @include border-radius(100%);
+    background-color: $midnight;
+}
+
+.ddh--comm__circle__month {
+    position: relative;
+    top: 1em;
+    line-height: 1em;
+}
+
+.ddh--comm__circle__day {
+    position: relative;
+    top: 0.4em;
+    font-size: 2em;
+}
+
+.ddh--comm__icon {
+    position: relative;
+    top: 25%;
+    font-size: 3em;
+}
+
+
+// What others have said about DuckDuckHack...
+
+.ddh-quotes {
+    @extend %static-slide-wrap;
+    padding-top: $base-unit;
+    padding-bottom: $double-unit*2;
+    max-width: 55em;
+	
+    blockquote {
+        color: $grey;
+        line-height: 1.35;
+        font-weight: 300;
+        font-size: 2em;
+    }
+    cite {
+        padding-top: 1.5em;
+        font-weight: 400;
+        font-size: 0.6em;
+        display: block;
+    }
+	
+    a { color: $midday; }
+}
+
+.ddh-quote {
+    @extend %static-slide-item;    
+    vertical-align: middle;
+}
+
+.ddh-quote-nav {
+    @extend %static-slide-nav;
+    bottom: $base-unit;
+}
+
+.ddh-quote-nav__item {
+    @extend %static-slide-nav__item;
+    @include box-shadow(inset 0 0 0 3px lighten($grey-light,15%));
+    width: 13px;
+    height: 13px;
+    margin: 0 $quarter-unit;
+    
+    &.is-active {
+        @include box-shadow(none);
+        background-color: $dark;
+    }
+    
+    .lt-ie9 & { border: 3px solid lighten($grey-light,15%); }
+}
+
+// Staff Picks + Active Contributors
+
+.ddh-feature { margin: 10px 0 20px; }
+
+.ddh-feature__img {
+    @include border-radius(50%);
+    margin-right: $base-unit;
+    height: 40px;
+    width: 40px;
+}
+
+.ddh-feature__body { padding-right: $base-unit; }
+
+.ddh-feature__title {
+    color: $white;
+    font-size: 1.3em;
+    line-height: 1.1;
+    padding: 0.2em 0 0;
+
+    a { color: inherit; }
+}
+
+.ddh-feature__sub {
+    color: $blue-lightest;
+    font-size: 0.9em;
+    padding: 0;
+}
+
+.ddh-feature__sub__link { color: inherit; }
+
+.ddh-feature__userlink { color: $white; }
+	
+.ddh-feature__sub__link:hover,
+.ddh-feature__userlink:hover {
+    color: $white;
+}
+	
+// small screen adjustments
+@include media-query(s) {
+    .ddh-hero { padding-bottom: 1.25em; }
+
+    .ddh-hero-slides__item { vertical-align: top; }
+
+    .ddh-hero__title { font-size: 1.75em; }
+	
+    .ddh { padding: 60px 0; }
+
+    .ddh--foot {
+        padding-top: 15px;
+        padding-bottom: 45px;
+    }
+
+    .ddh__title {
+        margin-bottom: 15px;
+        font-size: 1.75em;
+    }
+	
+    .ddh__sub { margin-bottom: 25px; }
+
+    .ddh__split { margin: 1em auto; }
+
+    .ddh-cta__title { font-size: 1.35em; }
+    
+    .ddh-cta__text { padding: $base-unit 0; }
+
+    .ddh-quotes {
+        blockquote { font-size: 1.5em; }
+    }
+
+    .ddh--foot__cw { max-width: 20em; }
+
+    .ddh--help__section {
+        margin-bottom: 3em;
+    }
+}

@@ -1,0 +1,23 @@
+/* 
+	Width Control
+*/
+.cw /* cw => content-wrapper, content-wrap, something like that. :) */ {
+	/* other content wrap options can be found in litestrap */
+	@extend %l-clearfix;
+	position: relative;
+	padding: 0 $cw-spacing;
+	max-width: $cw-width;
+	/* 
+		Left alignment is the default in the new design, and we're disabling center-align
+		.cw is a content-wrapper, and is normally set to margin: 0 auto;
+		- reset that margin, and everything floats left! 
+	*/
+	margin-left: 0;
+	margin-right: auto;
+}
+	.cw--c {
+		@extend .cw;
+		// always center this width-wrapper
+		margin-left: auto;
+	}
+

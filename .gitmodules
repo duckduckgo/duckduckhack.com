@@ -1,0 +1,9 @@
+[submodule "src/scss/duckduckgo-colors"]
+	path = src/scss/duckduckgo-colors
+	url = https://github.com/duckduckgo/duckduckgo-colors
+[submodule "src/scss/duckduckgo-styles"]
+	path = src/scss/duckduckgo-styles
+	url = https://github.com/duckduckgo/duckduckgo-styles
+[submodule "src/scss/litestrap"]
+	path = src/scss/litestrap
+	url = https://github.com/duckduckgo/litestrap
