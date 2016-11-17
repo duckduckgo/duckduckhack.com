@@ -59,6 +59,10 @@ $midnight-light: #2C4B62;
     padding-left: $double-unit;
     padding-right: $double-unit;
     z-index: 1;
+
+    &:visited {
+        color: $white;
+    }
 }
 
 .ddh-hero-slides {
@@ -363,6 +367,10 @@ $midnight-light: #2C4B62;
             color: $blue-light;
             font-size: 1em;
         }
+
+        a:visited {
+            color: $blue-light;
+        }
     }
 
     .ddh--help__section > p {
@@ -635,5 +643,86 @@ $midnight-light: #2C4B62;
 
     .ddh--help__section {
         margin-bottom: 3em;
+    }
+}
+
+.ddh-quotes {
+    @include animation(slide-next 25s infinite);
+}
+
+.ddh-quote {
+    opacity: 0;
+
+    &:nth-child(1) {
+        @include animation(first-frame 25s infinite);
+    }
+    &:nth-child(2) {
+        @include animation(second-frame 25s infinite);
+    }
+    &:nth-child(3) {
+        @include animation(third-frame 25s infinite);
+    }
+    &:nth-child(4) {
+        @include animation(fourth-frame 25s infinite);
+    }
+}
+
+@include keyframes(first-frame) {
+    0%, 19% {
+        opacity: 1;
+    }
+    25%, 100% {
+        opacity: 0;
+    }
+}
+
+@include keyframes(second-frame) {
+    0%, 20% {
+        opacity: 0;
+    }
+    21%, 46% {
+        opacity: 1;
+    }
+    47%, 100% {
+        opacity: 0;
+    }
+}
+
+@include keyframes(third-frame) {
+    0%, 45% {
+        opacity: 0;
+    }
+    46%, 70% {
+        opacity: 1;
+    }
+    71%, 100% {
+        opacity: 0;
+    }
+}
+
+@include keyframes(fourth-frame) {
+    0%, 70% {
+        opacity: 0;
+    }
+    71%, 100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes(slide-next) {
+    0%, 20% {
+        transform: translateX(0%);
+    }
+
+    25%, 45% {
+        transform: translateX(-100%);
+    }
+
+    50%, 70% {
+        transform: translateX(-200%);
+    }
+
+    75%, 100% {
+        transform: translateX(-300%);
     }
 }
