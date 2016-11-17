@@ -1,0 +1,22 @@
+{
+  "name": "duckduckhack.com",
+  "description": "",
+  "main": "src/",
+  "authors": [
+    "Maria Grazia Alastra <maria@duckduckgo.com>"
+  ],
+  "license": "Apache 2",
+  "homepage": "https://github.com/duckduckgo/duckduckhack.com",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "~2.16.0"
+  }
+}
