@@ -32,6 +32,43 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </ul>\n  </section>\n</div>\n\n";
 },"useData":true});
+// Strip non-alphanumeric chars from a string and transform it to lowercase
+Handlebars.registerHelper('slug', function(txt) {
+    txt = txt? txt.toLowerCase().replace(/[^a-z0-9]/g, '') : '';
+    return txt;
+});
+
+// Return elapsed time expressed as days from now (e.g. 5 days, 1 day, today)
+Handlebars.registerHelper("timeago", function(date, full) {
+    var format = "YYYY-MM-DD";
+    var timestring = full? " days ago" : "d";
+    if (date) {
+        // expected date format: YYYY-MM-DDTHH:mm:ssZ e.g. 2011-04-22T13:33:48Z
+        date = date.replace(/T.*Z/, "");
+        date = moment.utc(date, format);
+        
+        var elapsed = parseInt(moment().diff(date, "days", true));
+        date = elapsed + timestring;
+
+        return date;
+    }
+});
+
+// Format the full date and convert time to local timezone time
+Handlebars.registerHelper("format_time", function(date) {
+    if (date) {
+        var offset = moment().local().utcOffset();
+
+        // expected date format: YYYY-MM-DDTHH:mm:ssZ e.g. 2011-04-22T13:33:48Z
+        date = date.replace("T", " ").replace("Z", " ");
+        date = moment.utc(date, "YYYY-MM-DD HH:mm:ss");
+        date = date.add(offset, "m");
+        date = date.format('D MMM YYYY HH:mm');
+        return date;
+    }
+ });
+
+
 
 $(document).ready(function() {
     var url = "https://api.github.com/search/issues?q=repo%3Aduckduckgo%2Fzeroclickinfo-spice+repo%3Aduckduckgo%2Fzeroclickinfo-fathead+repo%3Aduckduckgo%2Fzeroclickinfo-goodies+repo%3Aduckduckgo%2Fzeroclickinfo-longtail+is%3Aissue+is%3Aopen+label%3A%22Low-Hanging+Fruit%22+no:assignee&type=Issues&ref=searchresults";

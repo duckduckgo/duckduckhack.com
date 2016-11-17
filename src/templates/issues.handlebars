@@ -6,13 +6,13 @@
     </header>
     <ul>
       {{#each items}}
-      <li class="{{#each labels}}tag-{{name}} {{/each}} clearfix">
+      <li class="{{#each labels}}tag-{{slug name}} {{/each}} clearfix">
 	<span>
 	  <a class="tx-clr--dk one-line issue-name" href="https://github.com/duckduckgo/zeroclickinfo-{{repo}}/issues/{{id}}">
             {{title}}
           </a>
 	  <span class="tx-clr--lt tx-size--small">
-            created at {{created_at}} by <a class="tx-clr--lt" href="https://github.com/{{user.login}}">{{user.login}}</a> 
+            opened {{timeago created_at false}} ago by <a class="tx-clr--lt" href="https://github.com/{{user.login}}">{{user.login}}</a> 
 	  </span>
 	</span>
       </li>

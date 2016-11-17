@@ -17,6 +17,15 @@ module.exports = function(grunt) {
         'concat:libs_build',
     ];
 
+    var js_files = [
+        'Helpers.js',
+        'issues.js'
+    ];
+
+    for(var file in js_files) {
+        js_files[file] = js_dir + js_files[file];
+    }
+    
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         static_dir: static_dir,
@@ -40,12 +49,12 @@ module.exports = function(grunt) {
          */
         concat: {
             js: {
-                src: [templates_dir + 'handlebars_tmp', js_dir + 'issues.js'],
+                src: [templates_dir + 'handlebars_tmp', js_files],
                 dest: 'issues.js'
             },
 	        libs_build: {
 		        src: [ 'issues.js', moment],
-		        dest: static_dir + 'js/moment.js'
+		        dest: 'issues.js'
 	        },
         },
 
