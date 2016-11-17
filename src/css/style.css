@@ -708,6 +708,462 @@ img {
     width: 10%;
   }
 }
+/* line 8, ../scss/litestrap/layout/_text.scss */
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* line 14, ../scss/litestrap/layout/_text.scss */
+h1, .h-xxl, .hd-lg, .t-xxxxl, .t-triple {
+  font-size: 3em;
+}
+
+/* line 17, ../scss/litestrap/layout/_text.scss */
+h2, .h-xl, .t-xxxl, .t-double {
+  font-size: 2em;
+}
+
+/* line 20, ../scss/litestrap/layout/_text.scss */
+h3, .h-l, .t-xxl {
+  font-size: 1.75em;
+}
+
+/* line 23, ../scss/litestrap/layout/_text.scss */
+h4, .h-m, .hd-md, .t-xl {
+  font-size: 1.5em;
+}
+
+/* line 26, ../scss/litestrap/layout/_text.scss */
+h5, .h-s, .t-l {
+  font-size: 1.33em;
+}
+
+/* line 29, ../scss/litestrap/layout/_text.scss */
+h6, .h-xs, .t-m {
+  font-size: 1.1667em;
+}
+
+/* line 32, ../scss/litestrap/layout/_text.scss */
+small, .t-s {
+  font-size: 0.9176em;
+}
+
+/* line 35, ../scss/litestrap/layout/_text.scss */
+.t-xs {
+  font-size: 0.8333em;
+}
+
+/* line 38, ../scss/litestrap/layout/_text.scss */
+.t-xxs {
+  font-size: 0.75em;
+}
+
+/* line 41, ../scss/litestrap/layout/_text.scss */
+.t-xxxs {
+  font-size: 0.66em;
+}
+
+/* line 44, ../scss/litestrap/layout/_text.scss */
+.t-xxxxs {
+  font-size: 0.5833em;
+}
+
+/* line 47, ../scss/litestrap/layout/_text.scss */
+.t-xxxxxs, .t-half {
+  font-size: 0.5em;
+}
+
+/* line 50, ../scss/litestrap/layout/_text.scss */
+.t-n {
+  font-size: 1em;
+}
+
+/* line 55, ../scss/litestrap/layout/_text.scss */
+.t-nat {
+  font-size: 1rem;
+}
+
+/* line 60, ../scss/litestrap/layout/_text.scss */
+.text-center, .text-mid, .t-mid, .t-center {
+  text-align: center;
+}
+
+/* line 64, ../scss/litestrap/layout/_text.scss */
+.t-left, .text-left {
+  text-align: left;
+}
+
+/* line 68, ../scss/litestrap/layout/_text.scss */
+.t-right, .text-right {
+  text-align: right;
+}
+
+/* line 72, ../scss/litestrap/layout/_text.scss */
+.t-bold {
+  font-weight: bold;
+}
+
+/* line 76, ../scss/litestrap/layout/_text.scss */
+.t-normal {
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 1079px) {
+  /* line 82, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-l, .t-xxxxl--screen-l, .t-triple--screen-l {
+    font-size: 3em;
+  }
+
+  /* line 85, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-l, .t-xxxl--screen-l, .t-double--screen-l {
+    font-size: 2em;
+  }
+
+  /* line 88, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-l, .t-xxl--screen-l {
+    font-size: 1.75em;
+  }
+
+  /* line 91, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-l, .t-xl--screen-l, .t-xl--screen-l {
+    font-size: 1.5em;
+  }
+
+  /* line 94, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-l, .t-l--screen-l {
+    font-size: 1.33em;
+  }
+
+  /* line 97, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-l, .t-m--screen-l {
+    font-size: 1.1667em;
+  }
+
+  /* line 100, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-l {
+    font-size: 0.9176em;
+  }
+
+  /* line 103, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-l {
+    font-size: 0.8333em;
+  }
+
+  /* line 106, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-l {
+    font-size: 1rem;
+  }
+
+  /* line 109, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-l {
+    font-size: 0.5em;
+  }
+
+  /* line 112, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-l {
+    font-size: 1em;
+  }
+
+  /* line 115, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-l, .t-center--screen-l {
+    text-align: center;
+  }
+
+  /* line 118, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-l {
+    text-align: left;
+  }
+
+  /* line 121, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-l {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* line 127, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-xl, .t-xxxxl--screen-xl, .t-triple--screen-xl {
+    font-size: 3em;
+  }
+
+  /* line 130, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-xl, .t-xxxl--screen-xl, .t-double--screen-xl {
+    font-size: 2em;
+  }
+
+  /* line 133, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-xl, .t-xxl--screen-xl {
+    font-size: 1.75em;
+  }
+
+  /* line 136, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-xl, .t-xl--screen-xl, .t-xl--screen-xl {
+    font-size: 1.5em;
+  }
+
+  /* line 139, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-xl, .t-l--screen-xl {
+    font-size: 1.33em;
+  }
+
+  /* line 142, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-xl, .t-m--screen-xl {
+    font-size: 1.1667em;
+  }
+
+  /* line 145, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-xl {
+    font-size: 0.9176em;
+  }
+
+  /* line 148, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-xl {
+    font-size: 0.8333em;
+  }
+
+  /* line 151, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-xl {
+    font-size: 1rem;
+  }
+
+  /* line 154, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-xl {
+    font-size: 0.5em;
+  }
+
+  /* line 157, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-xl {
+    font-size: 1em;
+  }
+
+  /* line 160, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-xl, .t-center--screen-xl {
+    text-align: center;
+  }
+
+  /* line 163, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-xl {
+    text-align: left;
+  }
+
+  /* line 166, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-xl {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 864px) {
+  /* line 172, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-m, .t-xxxxl--screen-m, .t-triple--screen-m {
+    font-size: 3em;
+  }
+
+  /* line 175, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-m, .t-xxxl--screen-m, .t-double--screen-m {
+    font-size: 2em;
+  }
+
+  /* line 178, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-m, .t-xxl--screen-m {
+    font-size: 1.75em;
+  }
+
+  /* line 181, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-m, .t-xl--screen-m, .t-xl--screen-m {
+    font-size: 1.5em;
+  }
+
+  /* line 184, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-m, .t-l--screen-m {
+    font-size: 1.33em;
+  }
+
+  /* line 187, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-m, .t-m--screen-m {
+    font-size: 1.1667em;
+  }
+
+  /* line 190, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-m {
+    font-size: 0.9176em;
+  }
+
+  /* line 193, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-m {
+    font-size: 0.8333em;
+  }
+
+  /* line 196, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-m {
+    font-size: 1rem;
+  }
+
+  /* line 199, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-m {
+    font-size: 0.5em;
+  }
+
+  /* line 202, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-m {
+    font-size: 1em;
+  }
+
+  /* line 205, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-m, .t-center--screen-m {
+    text-align: center;
+  }
+
+  /* line 208, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-m {
+    text-align: left;
+  }
+
+  /* line 211, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-m {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 634px) {
+  /* line 217, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-s, .t-xxxxl--screen-s, .t-triple--screen-s {
+    font-size: 3em;
+  }
+
+  /* line 220, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-s, .t-xxxl--screen-s, .t-double--screen-s {
+    font-size: 2em;
+  }
+
+  /* line 223, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-s, .t-xxl--screen-s {
+    font-size: 1.75em;
+  }
+
+  /* line 226, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-s, .t-xl--screen-s, .t-xl--screen-s {
+    font-size: 1.5em;
+  }
+
+  /* line 229, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-s, .t-l--screen-s {
+    font-size: 1.33em;
+  }
+
+  /* line 232, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-s, .t-m--screen-s {
+    font-size: 1.1667em;
+  }
+
+  /* line 235, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-s {
+    font-size: 0.9176em;
+  }
+
+  /* line 238, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-s {
+    font-size: 0.8333em;
+  }
+
+  /* line 241, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-s {
+    font-size: 1rem;
+  }
+
+  /* line 244, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-s {
+    font-size: 0.5em;
+  }
+
+  /* line 247, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-s {
+    font-size: 1em;
+  }
+
+  /* line 250, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-s, .t-center--screen-s {
+    text-align: center;
+  }
+
+  /* line 253, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-s {
+    text-align: left;
+  }
+
+  /* line 256, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-s {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* line 262, ../scss/litestrap/layout/_text.scss */
+  .h-xxl--screen-xs, .t-xxxxl--screen-xs, .t-triple--screen-xs {
+    font-size: 3em;
+  }
+
+  /* line 265, ../scss/litestrap/layout/_text.scss */
+  .h-xl--screen-xs, .t-xxxl--screen-xs, .t-double--screen-xs {
+    font-size: 2em;
+  }
+
+  /* line 268, ../scss/litestrap/layout/_text.scss */
+  .h-l--screen-xs, .t-xxl--screen-xs {
+    font-size: 1.75em;
+  }
+
+  /* line 271, ../scss/litestrap/layout/_text.scss */
+  .h-m--screen-xs, .t-xl--screen-xs, .t-xl--screen-xs {
+    font-size: 1.5em;
+  }
+
+  /* line 274, ../scss/litestrap/layout/_text.scss */
+  .h-s--screen-xs, .t-l--screen-xs {
+    font-size: 1.33em;
+  }
+
+  /* line 277, ../scss/litestrap/layout/_text.scss */
+  .h-xs--screen-xs, .t-m--screen-xs {
+    font-size: 1.1667em;
+  }
+
+  /* line 280, ../scss/litestrap/layout/_text.scss */
+  .t-s--screen-xs {
+    font-size: 0.9176em;
+  }
+
+  /* line 283, ../scss/litestrap/layout/_text.scss */
+  .t-xs--screen-xs {
+    font-size: 0.8333em;
+  }
+
+  /* line 286, ../scss/litestrap/layout/_text.scss */
+  .t-nat--screen-xs {
+    font-size: 1rem;
+  }
+
+  /* line 289, ../scss/litestrap/layout/_text.scss */
+  .t-half--screen-xs {
+    font-size: 0.5em;
+  }
+
+  /* line 292, ../scss/litestrap/layout/_text.scss */
+  .t-n--screen-xs {
+    font-size: 1em;
+  }
+
+  /* line 295, ../scss/litestrap/layout/_text.scss */
+  .t-mid--screen-xs, .t-center--screen-xs {
+    text-align: center;
+  }
+
+  /* line 298, ../scss/litestrap/layout/_text.scss */
+  .t-left--screen-xs {
+    text-align: left;
+  }
+
+  /* line 301, ../scss/litestrap/layout/_text.scss */
+  .t-right--screen-xs {
+    text-align: right;
+  }
+}
 /*
     Media Query Mixin
 
@@ -730,6 +1186,303 @@ img {
     Requires that you compile the icon font yourself and
     serve it via @font-face under the name 'ddg-serp-icons'
 */
+/*
+    Buttons
+    (Most of the basics are handled by litestrap - this is for custom stuff)    
+*/
+/* line 5, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn, .button,
+.btn--icon,
+.btn--top {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -moz-transition: none 1s;
+  -o-transition: none 1s;
+  -webkit-transition: none 1s;
+  transition: none 1s;
+  outline: none !important;
+  background-color: #fafafa;
+  border-color: #dddddd;
+  line-height: 2;
+  font-weight: normal;
+  font-size: 1em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #333333;
+}
+/* line 18, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn:hover, .button:hover, .btn:focus, .button:focus,
+.btn--icon:hover,
+.btn--top:hover,
+.btn--icon:focus,
+.btn--top:focus {
+  text-decoration: none !important;
+  color: #333333;
+}
+
+/* line 24, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn:active, .button:active {
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
+
+/* line 33, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn.is-disabled, .button.is-disabled {
+  border-color: #c3c3c3;
+  background-color: #c3c3c3;
+  color: #eee;
+}
+/* line 38, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn.is-active, .button.is-active {
+  border-color: transparent;
+  background: #666666;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+/* line 47, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary {
+  background-color: #60a5da;
+  border-color: #60a5da;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* line 54, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary:hover, .btn--primary:focus {
+  color: #ffffff;
+  background-color: #4495d4;
+  border-color: #4495d4;
+}
+/* line 59, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary:active {
+  background-color: #3a7fb4;
+  border-color: #3a7fb4;
+}
+
+/* line 69, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary--alt {
+  background-color: #4495d4;
+  border-color: #4495d4;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* line 76, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary--alt:hover, .btn--primary--alt:focus {
+  color: #ffffff;
+  background-color: #3a7fb4;
+  border-color: #3a7fb4;
+}
+/* line 81, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--primary--alt:active {
+  background-color: #27567a;
+  border-color: #27567a;
+}
+
+/* line 87, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--critical {
+  background-color: #e37151;
+  border-color: #e37151;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* line 94, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--critical:hover, .btn--critical:focus {
+  color: #ffffff;
+  background-color: #de5833;
+  border-color: #de5833;
+}
+/* line 99, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--critical:active {
+  background-color: #bd4b2b;
+  border-color: #bd4b2b;
+}
+
+/* line 106, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--secondary {
+  border-color: #dddddd;
+  background-color: #f2f2f2;
+  color: #666666;
+  font-weight: 600;
+}
+/* line 113, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: #60a5da;
+  border-color: #4495d4;
+  color: #ffffff;
+}
+/* line 118, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--secondary:active {
+  background-color: #4495d4;
+  color: #ffffff;
+}
+
+/* line 125, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--alt {
+  border-color: #c3c3c3;
+  background-color: #e5e5e5;
+  color: #666666;
+}
+/* line 130, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--alt:hover, .btn--alt:focus {
+  color: #666666;
+  background-color: #d8d8d8;
+}
+/* line 134, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--alt:active {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+/* line 140, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: none;
+  background-color: transparent;
+  font-weight: normal;
+  border: 1px solid #dddddd;
+  color: #aaaaaa;
+}
+/* line 148, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire:hover, .btn--wire:focus {
+  border-color: #aaaaaa;
+  background-color: #aaaaaa;
+  color: #ffffff;
+}
+
+/* line 155, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--hero {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+/* line 162, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--hero:hover, .btn--wire--hero:focus {
+  border-color: #ffffff;
+  background: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* line 170, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--dark {
+  border-color: #333333;
+  color: #333333;
+}
+/* line 174, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--wire--dark:hover {
+  border-color: #333333;
+  background-color: #333333;
+}
+
+/* line 180, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--icon,
+.btn--top {
+  font-family: 'ddg-serp-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none !important;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: background-color 0.1s, color 0.1s;
+  -o-transition: background-color 0.1s, color 0.1s;
+  -webkit-transition: background-color 0.1s, color 0.1s;
+  transition: background-color 0.1s, color 0.1s;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  position: relative;
+  width: 33px;
+  height: 33px;
+  line-height: 34px;
+  text-indent: 1px;
+  font-size: 16px;
+}
+/* line 209, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.no-touch .btn--icon:hover,
+.no-touch .btn--top:hover, .no-touch .btn--icon:focus,
+.no-touch .btn--top:focus, .no-js .btn--icon:hover,
+.no-js .btn--top:hover, .no-js .btn--icon:focus,
+.no-js .btn--top:focus {
+  color: white;
+  background-color: #6d6d6d;
+}
+/* line 214, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.no-touch .btn--icon:active,
+.no-touch .btn--top:active, .no-js .btn--icon:active,
+.no-js .btn--top:active {
+  -moz-transition: none 1s;
+  -o-transition: none 1s;
+  -webkit-transition: none 1s;
+  transition: none 1s;
+  color: white;
+  background-color: #555555;
+}
+
+/* line 227, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn__icon,
+.btn__icon--sm {
+  margin-right: 0.125em;
+  vertical-align: middle;
+  margin-top: -0.125em;
+  max-height: 1em;
+  max-width: 1em;
+}
+
+/* line 235, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn__icon {
+  margin-left: -0.25em;
+  font-size: 1.5em;
+}
+
+/* line 239, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn__icon--sm {
+  font-size: 16px;
+  margin-left: -0.25em;
+  margin-right: 0.5em;
+  position: relative;
+  top: -0.05em;
+}
+
+/* line 247, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn--inline {
+  display: inline;
+  line-height: inherit;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  top: -1px;
+}
+
+/* line 255, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn-stack {
+  margin-bottom: -0.5em;
+  padding: 0;
+}
+/* line 258, ../scss/duckduckgo-styles/objects/_buttons.scss */
+.btn-stack .btn {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 /* DDG Compass Vars */
 /* for compass */
 /*
@@ -791,6 +1544,61 @@ img {
 /*
 	Spacing unit aliases (I mean who is going to remember this stuff, right?)
 */
+/*
+	Text Styling
+	
+	.tx- and .hd- prefixes live here and are common text changes.
+	
+	This kind of thing is usually used to rapid-dev static pages.
+	Using different prefixes from litestrap for more distinction on where they might be modified.
+	
+	.tx - text
+	.hd - heading
+*/
+/* line 14, ../scss/duckduckhack/_text.scss */
+.tx-bld {
+  font-weight: 600;
+}
+
+/* line 17, ../scss/duckduckhack/_text.scss */
+.tx-lt, .hd-hr, .hd-lg {
+  font-weight: 300;
+}
+
+/* line 20, ../scss/duckduckhack/_text.scss */
+.tx-it {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 27, ../scss/duckduckhack/_text.scss */
+.tx-up, .hd-lg, .hd-md {
+  text-transform: uppercase;
+}
+
+/* line 34, ../scss/duckduckhack/_text.scss */
+.hd-hr {
+  line-height: 1.1;
+  text-align: center;
+}
+/* line 38, ../scss/duckduckhack/_text.scss */
+.hd-hr + .hd-hr {
+  padding-top: 0;
+}
+
+/* line 43, ../scss/duckduckhack/_text.scss */
+.hd-lg {
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+
+/* line 57, ../scss/duckduckhack/_text.scss */
+.hd-md .anchor--link {
+  float: right;
+  font-size: 0.5em;
+  margin-top: 1em;
+}
+
 /* line 3, ../scss/duckduckhack/_clearfix.scss */
 .cw:after, .cw--c:after {
   content: "";
