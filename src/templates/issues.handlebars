@@ -1,23 +1,25 @@
 
 <div class="issues-list">
   <section>
-    <div class="ddh-hero blk--hero">
+    <div class="whole text-center ddh-hero blk--hero">
       <span class="ddh-hero__title"><strong>List of Open Issues</strong></span>
     </div>
-    <ul>
-      {{#each items}}
-      <li class="{{#each labels}}tag-{{slug name}} {{/each}} clearfix">
-	<span>
-	  <a class="tx-clr--dk one-line issue-name" href="https://github.com/duckduckgo/zeroclickinfo-{{repo}}/issues/{{id}}">
-            {{title}}
-          </a>
-	  <span class="tx-clr--lt tx-size--small">
-            opened {{timeago created_at false}} ago by <a class="tx-clr--lt" href="https://github.com/{{user.login}}">{{user.login}}</a> 
-	  </span>
-	</span>
-      </li>
-      {{/each}}
-    </ul>
+    <div class="blk--content">
+        <ul>
+        {{#each items}}
+            <li class="{{#each labels}}tag-{{slug name}} {{/each}} clearfix">
+	            <div>
+	                <a class="tx-clr--dk one-line issue-name" href="https://github.com/duckduckgo/zeroclickinfo-{{repo}}/issues/{{id}}">
+                        {{title}}
+                    </a>
+	                <span class="tx-clr--lt tx-size--small">
+                        opened {{timeago created_at false}} ago by <a class="tx-clr--lt" href="https://github.com/{{user.login}}">{{user.login}}</a> 
+	                </span>
+	            </div>
+            </li>
+        {{/each}}
+        </ul>
+    </div>
   </section>
 </div>
 
