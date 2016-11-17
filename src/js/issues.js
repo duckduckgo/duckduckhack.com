@@ -8,7 +8,7 @@ $(document).ready(function() {
         var issues;
         issues = Handlebars.templates.issues(data);
 
-        $('#issues').html(ia_issues);
+        $('#issues').html(issues);
     });
 
 });

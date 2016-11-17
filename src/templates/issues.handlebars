@@ -6,7 +6,7 @@
     </header>
     <ul>
       {{#each items}}
-      <li class="{{#each tags}}tag-{{name}} {{/each}} clearfix" data-repo="{{repo}}">
+      <li class="{{#each labels}}tag-{{name}} {{/each}} clearfix">
 	<span>
 	  <a class="tx-clr--dk one-line issue-name" href="https://github.com/duckduckgo/zeroclickinfo-{{repo}}/issues/{{id}}">
             {{title}}
