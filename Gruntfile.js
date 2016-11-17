@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     var static_dir = 'root/static/';
     var templates_dir = 'src/templates/';
-    var js_dir = 'src/jsi/';
+    var js_dir = 'src/js/';
 
     // Libraries that we need.
     var moment = 'bower_components/moment/min/moment.min.js';

@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "moment": "~2.16.0"
+    "moment": "~2.16.0",
+    "handlebars": "~4.0.5"
   }
 }
