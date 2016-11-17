@@ -1,12 +1,13 @@
 @import 'compass';
 @import "compass/reset";
 
+@import 'duckduckgo-colors/colors';
+
 @import 'litestrap/variables';
 @import 'litestrap/litestrap';
 @import 'litestrap/layout/text';
 @import 'litestrap/objects/media';
-
-@import 'duckduckgo-colors/colors';
+@import 'litestrap/objects/buttons';
 
 @import 'duckduckgo-styles/vars';
 @import 'duckduckgo-styles/mixins';

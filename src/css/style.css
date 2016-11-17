@@ -1257,6 +1257,180 @@ small, .t-s {
   overflow: hidden;
 }
 
+/* line 7, ../scss/litestrap/objects/_buttons.scss */
+.button, .butt, .btn, .tag, .btn, .button, .btn--icon,
+.btn--top {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 1em;
+  line-height: 2.5;
+  border: 1px solid #babec9;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+  background-color: #f8f8f8;
+  color: #474747;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 49, ../scss/litestrap/objects/_buttons.scss */
+.button, .butt, .btn, .btn, .button, .btn--icon,
+.btn--top {
+  cursor: pointer;
+}
+
+/* line 52, ../scss/litestrap/objects/_buttons.scss */
+.button:hover, .butt:hover, .btn:hover, .btn:hover, .button:hover {
+  text-decoration: none;
+  background-color: #fff;
+}
+
+/* line 57, ../scss/litestrap/objects/_buttons.scss */
+.button:active, .butt:active, .btn:active, .btn:active, .button:active {
+  background-color: #eee;
+}
+
+/* line 62, ../scss/litestrap/objects/_buttons.scss */
+.button:active, .button:focus {
+  outline: none;
+}
+
+/* line 70, ../scss/litestrap/objects/_buttons.scss */
+.btn--full, .btn--fill {
+  display: block;
+}
+
+/* line 73, ../scss/litestrap/objects/_buttons.scss */
+.btn--pill {
+  -moz-border-radius: 5em;
+  -webkit-border-radius: 5em;
+  border-radius: 5em;
+}
+
+/* line 80, ../scss/litestrap/objects/_buttons.scss */
+.btn--xxl {
+  font-size: 5em;
+}
+
+/* line 83, ../scss/litestrap/objects/_buttons.scss */
+.btn--xl {
+  font-size: 3em;
+}
+
+/* line 86, ../scss/litestrap/objects/_buttons.scss */
+.btn--l {
+  font-size: 2em;
+}
+
+/* line 89, ../scss/litestrap/objects/_buttons.scss */
+.btn--m {
+  font-size: 1.5em;
+}
+
+/* line 92, ../scss/litestrap/objects/_buttons.scss */
+.btn--s {
+  font-size: 0.75em;
+}
+
+/* line 95, ../scss/litestrap/objects/_buttons.scss */
+.btn--xs {
+  font-size: 0.5em;
+}
+
+/* line 100, ../scss/litestrap/objects/_buttons.scss */
+.btn--xtall {
+  line-height: 4;
+}
+
+/* line 103, ../scss/litestrap/objects/_buttons.scss */
+.btn--tall {
+  line-height: 3;
+}
+
+/* line 106, ../scss/litestrap/objects/_buttons.scss */
+.btn--short {
+  line-height: 1.5;
+}
+
+/* line 109, ../scss/litestrap/objects/_buttons.scss */
+.btn--nat {
+  line-height: inherit;
+}
+
+/* line 116, ../scss/litestrap/objects/_buttons.scss */
+.btn--dark, .tag--dark {
+  border-color: #242424;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.9);
+  background-color: #474747;
+  color: #f8f8f8;
+}
+
+/* line 122, ../scss/litestrap/objects/_buttons.scss */
+.btn--dark:hover {
+  background-color: #383838;
+}
+
+/* line 125, ../scss/litestrap/objects/_buttons.scss */
+.btn--dark:active {
+  background-color: #292929;
+}
+
+/* line 131, ../scss/litestrap/objects/_buttons.scss */
+.btn--grp, .btn-grp > .btn {
+  margin-left: -0.35em;
+}
+
+/* line 134, ../scss/litestrap/objects/_buttons.scss */
+.btn--grp, .btn-grp > .btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 139, ../scss/litestrap/objects/_buttons.scss */
+.btn--grp:first-child, .btn-grp > .btn:first-child, .btn--grp--first {
+  margin-left: 0;
+  -moz-border-radius-bottomleft: 0.25em;
+  -webkit-border-bottom-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  -moz-border-radius-topleft: 0.25em;
+  -webkit-border-top-left-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+}
+
+/* line 148, ../scss/litestrap/objects/_buttons.scss */
+.btn--grp:last-child, .btn-grp > .btn:last-child, .btn--grp--last {
+  -moz-border-radius-topright: 0.25em;
+  -webkit-border-top-right-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  -moz-border-radius-bottomright: 0.25em;
+  -webkit-border-bottom-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+
+/* line 156, ../scss/litestrap/objects/_buttons.scss */
+.btn--grp.btn--grp--fakefirst {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
 /*
     Media Query Mixin
 
@@ -5829,24 +6003,28 @@ small, .t-s {
   padding-right: 2em;
   z-index: 1;
 }
+/* line 63, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-hero__btn:visited {
+  color: #ffffff;
+}
 
-/* line 64, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 68, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides {
   padding-bottom: 0.75em;
 }
 
-/* line 70, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 74, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__item {
   vertical-align: middle;
 }
 
-/* line 76, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 80, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides--img {
   margin: 0 auto -4em;
   max-width: 1017px;
 }
 
-/* line 81, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 85, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__wrap {
   position: relative;
   display: block;
@@ -5855,7 +6033,7 @@ small, .t-s {
   height: 0;
 }
 
-/* line 89, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 93, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__attr {
   display: none;
   font-size: 13px;
@@ -5868,23 +6046,23 @@ small, .t-s {
   left: 0;
   right: 0;
 }
-/* line 101, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 105, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__attr a {
   color: #ffffff;
 }
 
 @media only screen and (min-width: 1017px) {
-  /* line 106, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 110, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-hero-slides__attr {
     display: block;
   }
 }
-/* line 109, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 113, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__attr__item {
   padding: 0 0.5em;
 }
 
-/* line 111, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 115, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__img,
 .ddh-hero-slides__img-wrap,
 .ddh-hero-slides__img-no-js {
@@ -5898,7 +6076,7 @@ small, .t-s {
   max-height: 100%;
 }
 
-/* line 119, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 123, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__img-wrap {
   -moz-transition: opacity 0.1s ease-in-out 1s;
   -o-transition: opacity 0.1s ease-in-out 1s;
@@ -5913,7 +6091,7 @@ small, .t-s {
   opacity: 0;
   z-index: 1;
 }
-/* line 126, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 130, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__img-wrap.is-active {
   -moz-transition: opacity 1s ease-in-out 0s;
   -o-transition: opacity 1s ease-in-out 0s;
@@ -5924,7 +6102,7 @@ small, .t-s {
   z-index: 10;
 }
 
-/* line 133, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 137, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-hero-slides__nav-wrap {
   height: 50%;
   position: absolute;
@@ -5935,37 +6113,37 @@ small, .t-s {
 }
 
 @media only screen and (min-width: 1213px) {
-  /* line 144, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 148, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-hero-slides__nav-wrap {
     display: block;
   }
 }
 @media only screen and (min-width: 1296.2px) {
-  /* line 149, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 153, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-hero-slides__nav-wrap {
     right: 3%;
     left: 3%;
   }
 }
-/* line 155, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 159, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-anchor {
   top: -90px;
 }
 
-/* line 157, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 161, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh {
   text-align: center;
   padding: 120px 0 120px 0;
   line-height: 1.5;
 }
 
-/* line 165, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 169, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--foot {
   text-align: left;
   padding: 80px 0 60px;
 }
 
-/* line 170, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 174, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__title {
   letter-spacing: -0.015em;
   margin-bottom: 0.4em;
@@ -5973,40 +6151,40 @@ small, .t-s {
   line-height: 1em;
 }
 
-/* line 179, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 183, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--foot__title {
   padding: 0;
   margin-bottom: 30px;
   line-height: 1em;
 }
 
-/* line 185, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 189, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__sub {
   font-size: 1.25em;
   line-height: 1em;
   margin-bottom: 80px;
 }
 
-/* line 193, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 197, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--foot__sub {
   color: #b3d4ed;
   text-transform: uppercase;
   font-size: 0.9em;
 }
 
-/* line 199, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 203, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__split {
   position: relative;
   max-width: 68em;
 }
-/* line 203, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 207, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__split:after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* line 210, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 214, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__split__divide {
   position: absolute;
   display: block;
@@ -6020,7 +6198,7 @@ small, .t-s {
   line-height: 330px;
   z-index: -1;
 }
-/* line 224, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 228, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__split__divide:before, .ddh__split__divide:after {
   content: "";
   position: absolute;
@@ -6030,18 +6208,18 @@ small, .t-s {
   left: 0;
   background: #d0d0d0;
 }
-/* line 234, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 238, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__split__divide:before {
   top: 5px;
   height: 125px;
 }
-/* line 238, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 242, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__split__divide:after {
   top: 200px;
   bottom: 0px;
 }
 @media only screen and (max-width: 590px) {
-  /* line 210, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 214, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__split__divide {
     line-height: 33px;
     padding: 20px 0;
@@ -6049,71 +6227,71 @@ small, .t-s {
     clear: both;
     width: 100%;
   }
-  /* line 250, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 254, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__split__divide:before, .ddh__split__divide:after {
     width: auto;
     height: 1px;
     bottom: 0;
     top: 0;
   }
-  /* line 257, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 261, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__split__divide:before {
     right: 60%;
     left: 0.5em;
   }
-  /* line 261, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 265, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__split__divide:after {
     left: 60%;
     right: 0.5em;
   }
 }
 
-/* line 270, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 274, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--ias {
   background-color: #31383f;
 }
 
 @media only screen and (max-width: 590px) {
-  /* line 274, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 278, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--ias__items .third:not(:last-of-type) {
     margin-bottom: 3em;
   }
 }
 
-/* line 278, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 282, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--ias__desc {
   margin: 1.5em 3em;
   color: #aaaaaa;
   line-height: 1.75em;
 }
 
-/* line 284, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 288, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--ias__link {
   color: #7db5e1;
 }
-/* line 287, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 291, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--ias__link:hover {
   text-decoration: none;
 }
 
-/* line 290, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 294, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--ias__icon {
   margin-right: 0.5em;
 }
 
-/* line 292, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 296, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--ias__number {
   font-size: 3.6em;
   line-height: 1.3em;
   padding: 0;
 }
 
-/* line 298, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 302, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--ias__status {
   margin-top: -1em;
 }
 
-/* line 303, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 307, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-cta {
   max-width: 21em;
   font-size: 1.25em;
@@ -6122,7 +6300,7 @@ small, .t-s {
   padding: 0 1.5em;
 }
 
-/* line 311, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 315, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-cta__title {
   letter-spacing: -0.015em;
   font-size: 1.85em;
@@ -6130,20 +6308,20 @@ small, .t-s {
   padding: 10px 0 0;
 }
 
-/* line 318, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 322, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-cta__sub {
   padding: 0;
   color: #888888;
 }
 
-/* line 323, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 327, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-cta__text {
   padding: 33px 0 50px;
   line-height: 1.7;
   color: #666666;
 }
 
-/* line 329, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 333, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-cta__btn {
   border: none;
   padding: 0 2em;
@@ -6153,81 +6331,85 @@ small, .t-s {
   background-color: #7db5e1;
 }
 
-/* line 341, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 345, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help .ddh__title {
   font-size: 2.5em;
   margin-top: .2em;
 }
-/* line 346, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 350, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help .ddh--help__section {
   margin-bottom: 3em;
 }
-/* line 349, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 353, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help .ddh--help__section:last-of-type {
   margin-bottom: 0;
 }
-/* line 353, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 357, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help .ddh--help__section > .ddgsi, .ddh--help .ddh--help__section .fa {
   font-size: 3em;
 }
-/* line 358, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 362, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help .ddh--help__link {
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
-/* line 362, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 366, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help .ddh--help__link > .ddgsi, .ddh--help .ddh--help__link .fa {
   color: #60a5da;
   font-size: 1em;
 }
-/* line 368, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 371, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh--help .ddh--help__link a:visited {
+  color: #60a5da;
+}
+/* line 376, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help .ddh--help__section > p {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
-/* line 374, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 382, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh__sub--link {
   color: #7db5e1;
 }
 
-/* line 376, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 384, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__half {
   min-width: 432px;
 }
 
-/* line 378, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 386, ../scss/duckduckhack/_duckduckhack.scss */
 .half--last .ddh--help__item--first .ddh--help__text {
   padding-top: 0.9em;
 }
 
-/* line 380, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 388, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__item {
   display: inline-block;
   width: 100%;
   text-align: left;
   color: inherit;
 }
-/* line 386, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 394, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__item:hover {
   cursor: pointer;
 }
-/* line 388, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 396, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__item:hover .ddh--help__num {
   color: #ffffff;
   background-color: #7db5e1;
 }
-/* line 392, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 400, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__item:hover .ddh--help__text {
   color: #333333;
 }
 
-/* line 396, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 404, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__item--first {
   margin-bottom: 2em;
 }
 
-/* line 398, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 406, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__num {
   height: 75px;
   width: 75px;
@@ -6245,7 +6427,7 @@ small, .t-s {
   transition: all, 0.3s, ease;
 }
 
-/* line 410, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 418, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--help__text {
   padding: 0.3em 0 0 1em;
   height: 75px;
@@ -6255,21 +6437,21 @@ small, .t-s {
 }
 
 @media only screen and (max-width: 590px) {
-  /* line 419, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 427, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--help__half {
     max-width: 432px;
   }
 
-  /* line 420, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 428, ../scss/duckduckhack/_duckduckhack.scss */
   .half--last .ddh--help__item--first {
     margin-top: 2em;
   }
-  /* line 422, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 430, ../scss/duckduckhack/_duckduckhack.scss */
   .half--last .ddh--help__item--first .ddh--help__text {
     padding-top: 0;
   }
 
-  /* line 424, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 432, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--help__num {
     height: 50px;
     width: 50px;
@@ -6277,7 +6459,7 @@ small, .t-s {
     margin-bottom: 0;
   }
 
-  /* line 431, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 439, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--help__text {
     height: 50px;
     width: 80%;
@@ -6286,54 +6468,54 @@ small, .t-s {
   }
 }
 @media only screen and (max-width: 864px) {
-  /* line 443, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 451, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__wrapper {
     max-width: 350px;
   }
 }
 
-/* line 445, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 453, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__items {
   margin-top: 5em;
 }
 @media only screen and (max-width: 864px) {
-  /* line 445, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 453, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__items {
     width: 100%;
   }
 }
 @media only screen and (max-width: 590px) {
-  /* line 445, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 453, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__items {
     margin-top: 0;
   }
 }
 
-/* line 451, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 459, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__item {
   position: relative;
   padding-left: 1.5em;
 }
 @media only screen and (max-width: 864px) {
-  /* line 451, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 459, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__item {
     width: 100%;
   }
 }
 @media only screen and (max-width: 864px) {
-  /* line 455, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 463, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__item.third--first, .ddh--comm__item.third--mid {
     padding-bottom: 2em;
   }
 }
 @media only screen and (max-width: 590px) {
-  /* line 455, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 463, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--comm__item.third--first, .ddh--comm__item.third--mid {
     padding-bottom: 2em;
   }
 }
 
-/* line 463, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 471, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__item__top,
 .ddh--comm__item__bottom {
   -moz-box-shadow: 1px 1.5px rgba(0, 0, 0, 0.1);
@@ -6341,7 +6523,7 @@ small, .t-s {
   box-shadow: 1px 1.5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 468, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 476, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__item__top {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -6353,7 +6535,7 @@ small, .t-s {
   padding: 3em 0 4em;
 }
 
-/* line 474, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 482, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__item__bottom {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -6364,21 +6546,21 @@ small, .t-s {
   padding: 4em 0 3em;
 }
 
-/* line 479, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 487, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__num {
   letter-spacing: 0.02em;
 }
 
-/* line 481, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 489, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__link {
   color: inherit;
 }
-/* line 483, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 491, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__link:hover {
   text-decoration: none;
 }
 
-/* line 486, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 494, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__circle {
   position: absolute;
   top: 115px;
@@ -6392,63 +6574,63 @@ small, .t-s {
   background-color: #31383f;
 }
 
-/* line 497, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 505, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__circle__month {
   position: relative;
   top: 1em;
   line-height: 1em;
 }
 
-/* line 503, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 511, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__circle__day {
   position: relative;
   top: 0.4em;
   font-size: 2em;
 }
 
-/* line 509, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 517, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh--comm__icon {
   position: relative;
   top: 25%;
   font-size: 3em;
 }
 
-/* line 518, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 526, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quotes {
   padding-top: 1em;
   padding-bottom: 4em;
   max-width: 55em;
 }
-/* line 524, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 532, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quotes blockquote {
   color: #999999;
   line-height: 1.35;
   font-weight: 300;
   font-size: 2em;
 }
-/* line 530, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 538, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quotes cite {
   padding-top: 1.5em;
   font-weight: 400;
   font-size: 0.6em;
   display: block;
 }
-/* line 537, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 545, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quotes a {
   color: #7db5e1;
 }
 
-/* line 540, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 548, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote {
   vertical-align: middle;
 }
 
-/* line 545, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 553, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote-nav {
   bottom: 1em;
 }
 
-/* line 550, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 558, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote-nav__item {
   -moz-box-shadow: inset 0 0 0 3px #d0d0d0;
   -webkit-box-shadow: inset 0 0 0 3px #d0d0d0;
@@ -6457,24 +6639,24 @@ small, .t-s {
   height: 13px;
   margin: 0 0.25em;
 }
-/* line 557, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 565, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote-nav__item.is-active {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #333333;
 }
-/* line 562, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 570, ../scss/duckduckhack/_duckduckhack.scss */
 .lt-ie9 .ddh-quote-nav__item {
   border: 3px solid #d0d0d0;
 }
 
-/* line 567, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 575, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature {
   margin: 10px 0 20px;
 }
 
-/* line 569, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 577, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -6484,112 +6666,304 @@ small, .t-s {
   width: 40px;
 }
 
-/* line 576, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 584, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__body {
   padding-right: 1em;
 }
 
-/* line 578, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 586, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__title {
   color: #ffffff;
   font-size: 1.3em;
   line-height: 1.1;
   padding: 0.2em 0 0;
 }
-/* line 584, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 592, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__title a {
   color: inherit;
 }
 
-/* line 587, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 595, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__sub {
   color: #b3d4ed;
   font-size: 0.9em;
   padding: 0;
 }
 
-/* line 593, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 601, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__sub__link {
   color: inherit;
 }
 
-/* line 595, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 603, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__userlink {
   color: #ffffff;
 }
 
-/* line 597, ../scss/duckduckhack/_duckduckhack.scss */
+/* line 605, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-feature__sub__link:hover,
 .ddh-feature__userlink:hover {
   color: #ffffff;
 }
 
 @media only screen and (max-width: 590px) {
-  /* line 604, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 612, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-hero {
     padding-bottom: 1.25em;
   }
 
-  /* line 606, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 614, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-hero-slides__item {
     vertical-align: top;
   }
 
-  /* line 608, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 616, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-hero__title {
     font-size: 1.75em;
   }
 
-  /* line 610, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 618, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh {
     padding: 60px 0;
   }
 
-  /* line 612, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 620, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--foot {
     padding-top: 15px;
     padding-bottom: 45px;
   }
 
-  /* line 617, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 625, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__title {
     margin-bottom: 15px;
     font-size: 1.75em;
   }
 
-  /* line 622, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 630, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__sub {
     margin-bottom: 25px;
   }
 
-  /* line 624, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 632, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh__split {
     margin: 1em auto;
   }
 
-  /* line 626, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 634, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-cta__title {
     font-size: 1.35em;
   }
 
-  /* line 628, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 636, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-cta__text {
     padding: 1em 0;
   }
 
-  /* line 631, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 639, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh-quotes blockquote {
     font-size: 1.5em;
   }
 
-  /* line 634, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 642, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--foot__cw {
     max-width: 20em;
   }
 
-  /* line 636, ../scss/duckduckhack/_duckduckhack.scss */
+  /* line 644, ../scss/duckduckhack/_duckduckhack.scss */
   .ddh--help__section {
     margin-bottom: 3em;
+  }
+}
+/* line 649, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quotes {
+  -moz-animation: slide-next 25s 1 forwards;
+  -webkit-animation: slide-next 25s 1 forwards;
+  animation: slide-next 25s 1 forwards;
+}
+
+/* line 653, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote {
+  opacity: 0;
+}
+/* line 656, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote:nth-child(1) {
+  -moz-animation: first-frame 25s 1 forwards;
+  -webkit-animation: first-frame 25s 1 forwards;
+  animation: first-frame 25s 1 forwards;
+}
+/* line 659, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote:nth-child(2) {
+  -moz-animation: second-frame 25s 1 forwards;
+  -webkit-animation: second-frame 25s 1 forwards;
+  animation: second-frame 25s 1 forwards;
+}
+/* line 662, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote:nth-child(3) {
+  -moz-animation: third-frame 25s 1 forwards;
+  -webkit-animation: third-frame 25s 1 forwards;
+  animation: third-frame 25s 1 forwards;
+}
+/* line 665, ../scss/duckduckhack/_duckduckhack.scss */
+.ddh-quote:nth-child(4) {
+  -moz-animation: fourth-frame 25s 1 forwards;
+  -webkit-animation: fourth-frame 25s 1 forwards;
+  animation: fourth-frame 25s 1 forwards;
+}
+
+@-moz-keyframes first-frame {
+  0%, 19% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes first-frame {
+  0%, 19% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes first-frame {
+  0%, 19% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes second-frame {
+  0%, 20% {
+    opacity: 0;
+  }
+  21%, 46% {
+    opacity: 1;
+  }
+  47%, 100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes second-frame {
+  0%, 20% {
+    opacity: 0;
+  }
+  21%, 46% {
+    opacity: 1;
+  }
+  47%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes second-frame {
+  0%, 20% {
+    opacity: 0;
+  }
+  21%, 46% {
+    opacity: 1;
+  }
+  47%, 100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes third-frame {
+  0%, 45% {
+    opacity: 0;
+  }
+  46%, 70% {
+    opacity: 1;
+  }
+  71%, 100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes third-frame {
+  0%, 45% {
+    opacity: 0;
+  }
+  46%, 70% {
+    opacity: 1;
+  }
+  71%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes third-frame {
+  0%, 45% {
+    opacity: 0;
+  }
+  46%, 70% {
+    opacity: 1;
+  }
+  71%, 100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fourth-frame {
+  0%, 70% {
+    opacity: 0;
+  }
+  71%, 100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fourth-frame {
+  0%, 70% {
+    opacity: 0;
+  }
+  71%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes fourth-frame {
+  0%, 70% {
+    opacity: 0;
+  }
+  71%, 100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes slide-next {
+  0%, 20% {
+    transform: translateX(0%);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 100% {
+    transform: translateX(-300%);
+  }
+}
+@-webkit-keyframes slide-next {
+  0%, 20% {
+    transform: translateX(0%);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 100% {
+    transform: translateX(-300%);
+  }
+}
+@keyframes slide-next {
+  0%, 20% {
+    transform: translateX(0%);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 100% {
+    transform: translateX(-300%);
   }
 }
 /* line 2, ../scss/duckduckhack/_page.scss */
