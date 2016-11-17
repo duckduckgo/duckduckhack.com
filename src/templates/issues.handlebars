@@ -1,6 +1,5 @@
 
 <div class="issues-list">
-  <section>
     <div class="whole text-center blk blk--hero blk--hero--alt">
         <div class="cw--c ddh-hero">
             <h1 class="ddh-hero__title">List of Open Issues</h1>
@@ -9,7 +8,7 @@
     <div class="ddh blk--content">
         <ul>
         {{#each items}}
-            <li class="{{#each labels}}tag-{{slug name}} {{/each}} clearfix">
+            <li class="text-left ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}} clearfix">
 	            <div>
 	                <a class="tx-clr--dk one-line issue-name" href="https://github.com/duckduckgo/zeroclickinfo-{{repo}}/issues/{{id}}">
                         {{title}}
@@ -27,6 +26,5 @@
         {{/each}}
         </ul>
     </div>
-  </section>
 </div>
 
