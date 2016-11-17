@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     var static_dir = 'root/static/';
     var templates_dir = 'src/templates/';
-    var js_dir = 'src/js';
+    var js_dir = 'src/jsi/';
 
     // Libraries that we need.
     var moment = 'bower_components/moment/min/moment.min.js';
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                 dest: 'issues.js'
             },
 	        libs_build: {
-		        src: [static_dir + 'js/issues.js', moment],
+		        src: [ 'issues.js', moment],
 		        dest: static_dir + 'js/moment.js'
 	        },
         },
