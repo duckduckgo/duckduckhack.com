@@ -22,7 +22,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
 },"4":function(container,depth0,helpers,partials,data) {
-    return "style=\"margin-top:10em; padding-top:1.35em;\"";
+    return "style=\"margin-top:8em;\"";
 },"6":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -36,7 +36,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "\n<div class=\"issues-list\">\n    <div class=\"whole text-center blk blk--hero blk--hero--alt\">\n        <div class=\"cw--c ddh-hero\">\n            <h1 class=\"ddh-hero__title\">DuckDuckHack Tasks</h1>\n            <h3 class=\"ddh__sub\">\n                Create and Improve Instant Answers<br>\n                Each task has detailed instructions to help you get started.\n                See <a class=\"fa-inverse\" href=\"index.html\">DuckDuckHack.com</a> and the <a class=\"fa-inverse\" href=\"https://docs.duckduckhack.com\">documentation</a> for more.\n            </h3>\n        </div>\n    </div>\n    <div class=\"ddh blk--content\">\n        <ul>\n"
+  return "\n<div class=\"issues-list\">\n    <div class=\"whole text-center blk--hero blk--hero--alt\">\n        <div class=\"cw--c ddh-hero\">\n            <h1 class=\"ddh-hero__title\">DuckDuckHack Tasks</h1>\n            <div class=\"ddh__sub\">\n                <h4>\n                    Create and Improve Instant Answers<br>\n                </h4>\n                <p>\n                   Each task has detailed instructions to help you get started.\n                   <br> See <a class=\"fa-inverse\" href=\"index.html\">DuckDuckHack.com</a> and the <a class=\"fa-inverse\" href=\"https://docs.duckduckhack.com\">documentation</a> for more.\n                </p>\n            </div>\n        </div>\n    </div>\n    <div class=\"ddh blk--content\">\n        <ul>\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "        </ul>\n    </div>\n</div>\n\n";
 },"useData":true});

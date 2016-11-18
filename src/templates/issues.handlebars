@@ -1,19 +1,23 @@
 
 <div class="issues-list">
-    <div class="whole text-center blk blk--hero blk--hero--alt">
+    <div class="whole text-center blk--hero blk--hero--alt">
         <div class="cw--c ddh-hero">
             <h1 class="ddh-hero__title">DuckDuckHack Tasks</h1>
-            <h3 class="ddh__sub">
-                Create and Improve Instant Answers<br>
-                Each task has detailed instructions to help you get started.
-                See <a class="fa-inverse" href="index.html">DuckDuckHack.com</a> and the <a class="fa-inverse" href="https://docs.duckduckhack.com">documentation</a> for more.
-            </h3>
+            <div class="ddh__sub">
+                <h4>
+                    Create and Improve Instant Answers<br>
+                </h4>
+                <p>
+                   Each task has detailed instructions to help you get started.
+                   <br> See <a class="fa-inverse" href="index.html">DuckDuckHack.com</a> and the <a class="fa-inverse" href="https://docs.duckduckhack.com">documentation</a> for more.
+                </p>
+            </div>
         </div>
     </div>
     <div class="ddh blk--content">
         <ul>
         {{#each items}}
-            <li class="fa-border text-left ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}} clearfix" {{#if @first}}style="margin-top:10em; padding-top:1.35em;"{{/if}}>
+            <li class="fa-border text-left ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}} clearfix" {{#if @first}}style="margin-top:8em;"{{/if}}>
 	          <p>
                 <div class="r-iblock">
 	                <a class="tx-clr--dk one-line issue-name" href="{{url}}">
