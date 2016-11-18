@@ -42,3 +42,18 @@ Handlebars.registerHelper('eq', function(value1, value2, options) {
         return options.inverse(this);
     }
 });
+
+// Check if two value match
+Handlebars.registerHelper('match', function(val1, val2, options) {
+    val2 = new RegExp(val2);
+    if ((val1 && val2) && val1.match(val2)) {
+        return options.fn(this);
+    } else {
+        return options.inverse(this);
+    }
+});
+
+// Extract value from a GitHub label
+Handlebars.registerHelper('strip_label', function(label) {
+    return label.substring(label.indexOf(':'), label.length);
+});

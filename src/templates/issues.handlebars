@@ -17,24 +17,46 @@
     <div class="ddh blk--content">
         <ul style="margin-top:13.65em;">
         {{#each items}}
-            <li class="fa-border text-left ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}} clearfix">
-	          <p>
-                <div class="r-iblock">
-	                <a class="tx-clr--dk one-line issue-name" href="{{url}}">
-                        {{title}}
-                    </a>
-	                <span class="tx-clr--lt tx-size--small">
-                        opened {{timeago created_at false}} ago
-	                </span>
-	             </div>
-                 <div class="t-xxxs r-iblock">
-                    {{#each labels}}
-                        {{#eq (slug name) 'priorityhigh'}}
-                            <div class="r-iblock btn" style="border-color:#{{color}}; color:#{{color}};">{{name}}</div>
+            <li class="fa-border text-left gw ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
+             <div class="g quarter">
+              <div class="g half">
+                {{#each labels}}
+                    {{#match (slug name) 'difficulty'}}
+                        {{#eq (slug name) 'difficultylow'}}
+                            <span>Easy</span>
+                        {{else}}
+                            <span>Hard</span>
                         {{/eq}}
-                    {{/each}}
-                 </div>
-               </p>
+                    {{/match}}
+                {{/each}}
+              </div>
+              <div class="g half">
+                {{#each labels}}
+                    {{#match (slug name) 'skill'}}
+                        <span>{{strip_label name}}</span>
+                    {{/match}}
+                {{/each}}
+              </div>
+             </div>
+             <div class="g threequarter">
+	           <p>
+                 <div class="r-iblock">
+	                 <a class="tx-clr--dk one-line issue-name" href="{{url}}">
+                         {{title}}
+                     </a>
+	                 <span class="tx-clr--lt tx-size--small">
+                         opened {{timeago created_at false}} ago
+	                 </span>
+	              </div>
+                  <div class="t-xxxs r-iblock">
+                     {{#each labels}}
+                         {{#eq (slug name) 'priorityhigh'}}
+                             <div class="r-iblock btn" style="border-color:#{{color}}; color:#{{color}};">{{name}}</div>
+                         {{/eq}}
+                     {{/each}}
+                  </div>
+                </p>
+               </div>
             </li>
         {{/each}}
         </ul>

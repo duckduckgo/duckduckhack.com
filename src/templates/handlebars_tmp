@@ -4,17 +4,21 @@ this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
 this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "            <li class=\"fa-border text-left ddh--comm__item "
+  return "            <li class=\"fa-border text-left gw ddh--comm__item "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + " clearfix\">\n	          <p>\n                <div class=\"r-iblock\">\n	                <a class=\"tx-clr--dk one-line issue-name\" href=\""
-    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
-    + "\">\n                        "
-    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n                    </a>\n	                <span class=\"tx-clr--lt tx-size--small\">\n                        opened "
-    + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
-    + " ago\n	                </span>\n	             </div>\n                 <div class=\"t-xxxs r-iblock\">\n"
+    + "\">\n             <div class=\"g quarter\">\n              <div class=\"g half\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "                 </div>\n               </p>\n            </li>\n";
+    + "              </div>\n              <div class=\"g half\">\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "              </div>\n             </div>\n             <div class=\"g threequarter\">\n	           <p>\n                 <div class=\"r-iblock\">\n	                 <a class=\"tx-clr--dk one-line issue-name\" href=\""
+    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
+    + "\">\n                         "
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "\n                     </a>\n	                 <span class=\"tx-clr--lt tx-size--small\">\n                         opened "
+    + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
+    + " ago\n	                 </span>\n	              </div>\n                  <div class=\"t-xxxs r-iblock\">\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "                  </div>\n                </p>\n               </div>\n            </li>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     return "tag-"
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
@@ -22,11 +26,31 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"4":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
 
-  return ((stack1 = (helpers.eq || (depth0 && depth0.eq) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"priorityhigh",{"name":"eq","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = (helpers.match || (depth0 && depth0.match) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"difficulty",{"name":"match","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"5":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
+
+  return ((stack1 = (helpers.eq || (depth0 && depth0.eq) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"difficultylow",{"name":"eq","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "");
+},"6":function(container,depth0,helpers,partials,data) {
+    return "                            <span>Easy</span>\n";
+},"8":function(container,depth0,helpers,partials,data) {
+    return "                            <span>Hard</span>\n";
+},"10":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
+
+  return ((stack1 = (helpers.match || (depth0 && depth0.match) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"skill",{"name":"match","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"11":function(container,depth0,helpers,partials,data) {
+    return "                        <span>"
+    + container.escapeExpression((helpers.strip_label || (depth0 && depth0.strip_label) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"strip_label","hash":{},"data":data}))
+    + "</span>\n";
+},"13":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
+
+  return ((stack1 = (helpers.eq || (depth0 && depth0.eq) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"priorityhigh",{"name":"eq","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"14":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "                            <div class=\"r-iblock btn\" style=\"border-color:#"
+  return "                             <div class=\"r-iblock btn\" style=\"border-color:#"
     + alias4(((helper = (helper = helpers.color || (depth0 != null ? depth0.color : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"color","hash":{},"data":data}) : helper)))
     + "; color:#"
     + alias4(((helper = (helper = helpers.color || (depth0 != null ? depth0.color : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"color","hash":{},"data":data}) : helper)))
