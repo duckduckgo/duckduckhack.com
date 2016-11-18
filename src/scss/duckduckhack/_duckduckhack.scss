@@ -647,23 +647,23 @@ $midnight-light: #2C4B62;
 }
 
 .ddh-quotes {
-    @include animation(slide-next 25s 1 forwards);
+    @include animation(slide-next 25s infinite alternate);
 }
 
 .ddh-quote {
     opacity: 0;
 
     &:nth-child(1) {
-        @include animation(first-frame 25s 1 forwards);
+        @include animation(first-frame 25s infinite alternate);
     }
     &:nth-child(2) {
-        @include animation(second-frame 25s 1 forwards);
+        @include animation(second-frame 25s infinite alternate);
     }
     &:nth-child(3) {
-        @include animation(third-frame 25s 1 forwards);
+        @include animation(third-frame 25s infinite alternate);
     }
     &:nth-child(4) {
-        @include animation(fourth-frame 25s 1 forwards);
+        @include animation(fourth-frame 25s infinite alternate);
     }
 }
 
