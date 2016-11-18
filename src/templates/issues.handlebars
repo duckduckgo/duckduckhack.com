@@ -19,7 +19,7 @@
         {{#each items}}
             <li class="fa-border text-left gw ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
              <div class="g quarter">
-              <div class="g half">
+              <div class="g half r-iblock">
                 {{#each labels}}
                     {{#match (slug name) 'difficulty'}}
                         {{#eq (slug name) 'difficultylow'}}
@@ -30,7 +30,7 @@
                     {{/match}}
                 {{/each}}
               </div>
-              <div class="g half">
+              <div class="g half r-iblock">
                 {{#each labels}}
                     {{#match (slug name) 'skill'}}
                         <span>{{strip_label name}}</span>

@@ -6,9 +6,9 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 
   return "            <li class=\"fa-border text-left gw ddh--comm__item "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n             <div class=\"g quarter\">\n              <div class=\"g half\">\n"
+    + "\">\n             <div class=\"g quarter\">\n              <div class=\"g half r-iblock\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "              </div>\n              <div class=\"g half\">\n"
+    + "              </div>\n              <div class=\"g half r-iblock\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "              </div>\n             </div>\n             <div class=\"g threequarter\">\n	           <p>\n                 <div class=\"r-iblock\">\n	                 <a class=\"tx-clr--dk one-line issue-name\" href=\""
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
@@ -121,7 +121,8 @@ Handlebars.registerHelper('match', function(val1, val2, options) {
 
 // Extract value from a GitHub label
 Handlebars.registerHelper('strip_label', function(label) {
-    return label.substring(label.indexOf(':'), label.length);
+    var result = label.substring(label.indexOf(':') + 1, label.length);
+    return result.trim();
 });
 
 

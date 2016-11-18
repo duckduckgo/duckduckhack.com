@@ -55,5 +55,6 @@ Handlebars.registerHelper('match', function(val1, val2, options) {
 
 // Extract value from a GitHub label
 Handlebars.registerHelper('strip_label', function(label) {
-    return label.substring(label.indexOf(':'), label.length);
+    var result = label.substring(label.indexOf(':') + 1, label.length);
+    return result.trim();
 });
