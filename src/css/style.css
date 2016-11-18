@@ -6776,9 +6776,9 @@ small, .t-s {
 }
 /* line 649, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quotes {
-  -moz-animation: slide-next 25s 1 forwards;
-  -webkit-animation: slide-next 25s 1 forwards;
-  animation: slide-next 25s 1 forwards;
+  -moz-animation: slide-next 25s infinite alternate;
+  -webkit-animation: slide-next 25s infinite alternate;
+  animation: slide-next 25s infinite alternate;
 }
 
 /* line 653, ../scss/duckduckhack/_duckduckhack.scss */
@@ -6787,27 +6787,27 @@ small, .t-s {
 }
 /* line 656, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote:nth-child(1) {
-  -moz-animation: first-frame 25s 1 forwards;
-  -webkit-animation: first-frame 25s 1 forwards;
-  animation: first-frame 25s 1 forwards;
+  -moz-animation: first-frame 25s infinite alternate;
+  -webkit-animation: first-frame 25s infinite alternate;
+  animation: first-frame 25s infinite alternate;
 }
 /* line 659, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote:nth-child(2) {
-  -moz-animation: second-frame 25s 1 forwards;
-  -webkit-animation: second-frame 25s 1 forwards;
-  animation: second-frame 25s 1 forwards;
+  -moz-animation: second-frame 25s infinite alternate;
+  -webkit-animation: second-frame 25s infinite alternate;
+  animation: second-frame 25s infinite alternate;
 }
 /* line 662, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote:nth-child(3) {
-  -moz-animation: third-frame 25s 1 forwards;
-  -webkit-animation: third-frame 25s 1 forwards;
-  animation: third-frame 25s 1 forwards;
+  -moz-animation: third-frame 25s infinite alternate;
+  -webkit-animation: third-frame 25s infinite alternate;
+  animation: third-frame 25s infinite alternate;
 }
 /* line 665, ../scss/duckduckhack/_duckduckhack.scss */
 .ddh-quote:nth-child(4) {
-  -moz-animation: fourth-frame 25s 1 forwards;
-  -webkit-animation: fourth-frame 25s 1 forwards;
-  animation: fourth-frame 25s 1 forwards;
+  -moz-animation: fourth-frame 25s infinite alternate;
+  -webkit-animation: fourth-frame 25s infinite alternate;
+  animation: fourth-frame 25s infinite alternate;
 }
 
 @-moz-keyframes first-frame {
