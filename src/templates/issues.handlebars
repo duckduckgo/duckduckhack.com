@@ -16,29 +16,17 @@
     </div>
     <div class="ddh blk--content">
         <ul style="margin-top:13.65em;">
-        {{#each items}}
+        {{#each .}}
             <li class="fa-border text-left gw ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
-             <div class="g quarter">
+             <div class="g quarter r-iblock">
               <div class="g half r-iblock">
-                {{#each labels}}
-                    {{#match (slug name) 'difficulty'}}
-                        {{#eq (slug name) 'difficultylow'}}
-                            <span>Easy</span>
-                        {{else}}
-                            <span>Hard</span>
-                        {{/eq}}
-                    {{/match}}
-                {{/each}}
+                <div class="r-iblock">{{difficulty}}</div>
               </div>
               <div class="g half r-iblock">
-                {{#each labels}}
-                    {{#match (slug name) 'skill'}}
-                        <span>{{strip_label name}}</span>
-                    {{/match}}
-                {{/each}}
+                <div class="r-iblock">{{skill}}</div>
               </div>
              </div>
-             <div class="g threequarter">
+             <div class="g threequarter r-iblock">
 	           <p>
                  <div class="r-iblock">
 	                 <a class="tx-clr--dk one-line issue-name" href="{{url}}">
@@ -48,13 +36,11 @@
                          opened {{timeago created_at false}} ago
 	                 </span>
 	              </div>
-                  <div class="t-xxxs r-iblock">
-                     {{#each labels}}
-                         {{#eq (slug name) 'priorityhigh'}}
-                             <div class="r-iblock btn" style="border-color:#{{color}}; color:#{{color}};">{{name}}</div>
-                         {{/eq}}
-                     {{/each}}
-                  </div>
+                  {{#if high_priority}}
+                    <div class="t-xxxs r-iblock">
+                        <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">{{name}}</div>
+                    </div>
+                  {{/if}}
                 </p>
                </div>
             </li>
