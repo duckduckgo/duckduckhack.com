@@ -10,7 +10,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<li class=\"fa-border text-left ddh--comm__item "
+  return "<li class=\"h3 pv3 bb b--black-10 "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\">\n  <div class=\"gw\">\n    <div class=\"g quarter r-iblock\">\n      <div class=\"g half r-iblock\">\n        <div class=\"r-iblock\">"
     + alias4(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"difficulty","hash":{},"data":data}) : helper)))
@@ -25,6 +25,20 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + " ago)\n          </span>\n        </div>\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "      </p>\n    </div>\n  </div>\n</li>";
+},"useData":true});
+
+this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "  <div id=\""
+    + alias2(alias1(depth0, depth0))
+    + "\" class=\"hide lang_group\">\n    <h4>"
+    + alias2(alias1(depth0, depth0))
+    + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br2\">\n    </ul>\n  </div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.languages : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 // Strip non-alphanumeric chars from a string and transform it to lowercase
 Handlebars.registerHelper('slug', function(txt) {
