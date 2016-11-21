@@ -23,18 +23,23 @@ function stripLabelVal(label) {
 // - Priority: High label
 // - Language
 function labelsToColumns(issue) {
-   $.each(issue.labels, function(label) {
+   for (var i = 0; i < issue.labels.length; i++) {
+       var label = issue.labels[i];
+       var name = label.name;
+       console.log(issue.labels.length);
+
        if (label === "Priority: High") {
            issue.high_priority = true;
-       } else if (label.match(/Difficulty/)) {
-           issue.difficulty = label.match(/Low/)? "Easy" : "Hard";
-       } else if (label.match(/Skill/)) {
-           issue.skill = $.trim(stripLabelVal(label));
-       } else if (label.match(/Topic/)) {
-           issue.lang = $.trim(stripLabelVal(label));
+       } else if (name.match(/Difficulty/)) {
+           issue.difficulty = name.match(/Low/)? "Easy" : "Hard";
+       } else if (name.match(/Skill/)) {
+           issue.skill = $.trim(stripLabelVal(name));
+       } else if (name.match(/Topic/)) {
+           issue.lang = $.trim(stripLabelVal(name));
+           console.log(issue.lang);
        }
        
-   });
+   }
 
    return issue;
 }
@@ -43,8 +48,9 @@ function labelsToColumns(issue) {
 // pulling out the important information 
 // and rendering each issue using the Handlebars template
 function groupIssuesByLanguage(issues) {
-    $.each(issues, function(issue) {
-        issue = labelsToColumns(issue);
+    $.each(issues, function(key, val) {
+        console.log(val.labels);
+        issue = labelsToColumns(val);
         
         renderIssue(issue);    
     });
@@ -53,7 +59,8 @@ function groupIssuesByLanguage(issues) {
 // Append the give issue to the appropriate Language list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    $("#" + issue.lang).append(rendered_issue);
+    console.log(issue.lang);
+    $("#" + issue.lang + " ul").append(rendered_issue);
 }
 
 // Render the containers for each Language list
