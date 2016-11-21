@@ -6,25 +6,39 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
 },"3":function(container,depth0,helpers,partials,data) {
-    return "        <div class=\"t-xxxs r-iblock\">\n          <div class=\"r-iblock btn\" style=\"border-color:#eb6420; color:#eb6420;\">High Priority</div>\n        </div>\n";
+    return "\n      <div class=\"t-xxxs r-iblock\">\n        <div class=\"r-iblock btn\" style=\"border-color:#eb6420; color:#eb6420;\">High Priority</div>\n      </div>\n      ";
+},"5":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "          <div class=\"r-iblock\">"
+    + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"difficulty","hash":{},"data":data}) : helper)))
+    + "</div>\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    return "          —\n";
+},"9":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "          <div class=\"r-iblock\">"
+    + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"skill","hash":{},"data":data}) : helper)))
+    + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<li class=\"h3 pv3 bb b--black-10 "
+  return "<li class=\"issue--item h3 pv3 bb b--black-10 "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n  <div class=\"gw\">\n    <div class=\"g quarter r-iblock\">\n      <div class=\"g half r-iblock\">\n        <div class=\"r-iblock\">"
-    + alias4(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"difficulty","hash":{},"data":data}) : helper)))
-    + "</div>\n      </div>\n      <div class=\"g half r-iblock\">\n        <div class=\"r-iblock\">"
-    + alias4(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"skill","hash":{},"data":data}) : helper)))
-    + "</div>\n      </div>\n    </div>\n    <div class=\"g threequarter r-iblock\">\n      <p>\n        <div class=\"r-iblock\">\n          <a class=\"tx-clr--dk one-line issue-name\" href=\""
+    + "\">\n  <div class=\"gw\">\n    <div class=\"g threequarter r-iblock pl4\">\n      <div class=\"r-iblock\">\n        <a class=\"tx-clr--dk one-line issue-name\" href=\""
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
     + "\">\n                "
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n            </a>\n          <span class=\"tx-clr--lt tx-size--small\">\n                ("
+    + "\n            </a>\n        <span class=\"black-50\">\n                ("
     + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
-    + " ago)\n          </span>\n        </div>\n"
+    + " ago)\n          </span>\n      </div>\n      <!--"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "      </p>\n    </div>\n  </div>\n</li>";
+    + "-->\n    </div>\n    <div class=\"g quarter r-iblock\">\n      <div class=\"fl w-50 r-iblock tc\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.difficulty : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
+    + "      </div>\n      <div class=\"fl w-50 r-iblock tc\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.skill : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
+    + "      </div>\n    </div>\n  </div>\n</li>";
 },"useData":true});
 
 this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -32,9 +46,9 @@ this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":functi
 
   return "  <div id=\""
     + alias2(alias1(depth0, depth0))
-    + "\" class=\"hide lang_group\">\n    <h4>"
+    + "\" class=\"hide lang_group\">\n    <h4 class=\"f3 black-70\">"
     + alias2(alias1(depth0, depth0))
-    + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br2\">\n    </ul>\n  </div>\n";
+    + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0\">\n    </ul>\n  </div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -132,16 +146,19 @@ function labelsToColumns(issue) {
        console.log(issue.labels.length);
 
        if (name === "Priority: High") {
-           issue.high_priority =  true;
+           issue.high_priority = true;
        } else if (name.match(/Difficulty/)) {
-           issue.difficulty = name.match(/Low/)? "Easy" : "Hard";
+           issue.difficulty = name.match(/Low/) ? "Easy" : "Hard";
        } else if (name.match(/Skill/)) {
            issue.skill = $.trim(stripLabelVal(name));
        } else if (name.match(/Topic/)) {
            issue.lang = $.trim(stripLabelVal(name));
            console.log(issue.lang);
        }
-       
+
+       if (issue.length - 1 === i) {
+           issue.last = true;
+       }   
    }
 
    console.log(issue);
@@ -155,7 +172,7 @@ function groupIssuesByLanguage(issues) {
     $.each(issues, function(key, val) {
         console.log(val.labels);
         issue = labelsToColumns(val);
-        
+
         renderIssue(issue);    
     });
 }

@@ -29,16 +29,19 @@ function labelsToColumns(issue) {
        console.log(issue.labels.length);
 
        if (name === "Priority: High") {
-           issue.high_priority =  true;
+           issue.high_priority = true;
        } else if (name.match(/Difficulty/)) {
-           issue.difficulty = name.match(/Low/)? "Easy" : "Hard";
+           issue.difficulty = name.match(/Low/) ? "Easy" : "Hard";
        } else if (name.match(/Skill/)) {
            issue.skill = $.trim(stripLabelVal(name));
        } else if (name.match(/Topic/)) {
            issue.lang = $.trim(stripLabelVal(name));
            console.log(issue.lang);
        }
-       
+
+       if (issue.length - 1 === i) {
+           issue.last = true;
+       }   
    }
 
    console.log(issue);
@@ -52,7 +55,7 @@ function groupIssuesByLanguage(issues) {
     $.each(issues, function(key, val) {
         console.log(val.labels);
         issue = labelsToColumns(val);
-        
+
         renderIssue(issue);    
     });
 }
