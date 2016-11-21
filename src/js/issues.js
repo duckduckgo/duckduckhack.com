@@ -60,7 +60,9 @@ function groupIssuesByLanguage(issues) {
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
     console.log(issue.lang);
-    $("#" + issue.lang + " ul").append(rendered_issue);
+    var $lang_group = $("#" + issue.lang);
+    $lang_group.removeClass("hide");
+    $lang_group.children("ul").append(rendered_issue);
 }
 
 // Render the containers for each Language list
