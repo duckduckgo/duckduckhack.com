@@ -17,14 +17,14 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + "</div>\n      </div>\n      <div class=\"g half r-iblock\">\n        <div class=\"r-iblock\">"
     + alias4(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"skill","hash":{},"data":data}) : helper)))
     + "</div>\n      </div>\n    </div>\n    <div class=\"g threequarter r-iblock\">\n      <p>\n        <div class=\"r-iblock\">\n          <a class=\"tx-clr--dk one-line issue-name\" href=\""
-    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"html_url","hash":{},"data":data}) : helper)))
     + "\">\n                "
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + "\n            </a>\n          <span class=\"tx-clr--lt tx-size--small\">\n                ("
     + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
     + " ago)\n          </span>\n        </div>\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "      </p>\n    </div>\n  </div>\n</li>";
+    + "      </p>\n    </div>\n  </div>\n</li>\n";
 },"useData":true});
 
 this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
