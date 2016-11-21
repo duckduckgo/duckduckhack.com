@@ -1,27 +1,29 @@
- <li class="fa-border text-left gw ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
-  <div class="g quarter r-iblock">
-   <div class="g half r-iblock">
-     <div class="r-iblock">{{difficulty}}</div>
-   </div>
-   <div class="g half r-iblock">
-     <div class="r-iblock">{{skill}}</div>
-   </div>
-  </div>
-  <div class="g threequarter r-iblock">
-  <p>
-      <div class="r-iblock">
-        <a class="tx-clr--dk one-line issue-name" href="{{url}}">
-              {{title}}
-          </a>
-        <span class="tx-clr--lt tx-size--small">
-              ({{timeago created_at false}} ago)
-        </span>
-     </div>
-       {{#if high_priority}}
-         <div class="t-xxxs r-iblock">
-             <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">High Priority</div>
-         </div>
-       {{/if}}
-     </p>
+<li class="fa-border text-left ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
+  <div class="gw">
+    <div class="g quarter r-iblock">
+      <div class="g half r-iblock">
+        <div class="r-iblock">{{difficulty}}</div>
+      </div>
+      <div class="g half r-iblock">
+        <div class="r-iblock">{{skill}}</div>
+      </div>
     </div>
- </li>
+    <div class="g threequarter r-iblock">
+      <p>
+        <div class="r-iblock">
+          <a class="tx-clr--dk one-line issue-name" href="{{url}}">
+                {{title}}
+            </a>
+          <span class="tx-clr--lt tx-size--small">
+                ({{timeago created_at false}} ago)
+          </span>
+        </div>
+        {{#if high_priority}}
+        <div class="t-xxxs r-iblock">
+          <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">High Priority</div>
+        </div>
+        {{/if}}
+      </p>
+    </div>
+  </div>
+</li>
