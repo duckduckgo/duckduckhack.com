@@ -28,10 +28,10 @@ function labelsToColumns(issue) {
            issue.high_priority = true;
        } else if (label.match(/Difficulty/)) {
            issue.difficulty = label.match(/Low/)? "Easy" : "Hard";
-       } else if (label.match(/Skill/) {
+       } else if (label.match(/Skill/)) {
            issue.skill = $.trim(stripLabelVal(label));
-       } else if (label.match(/Topic/) {
-           issue.lang = $.trim(stripLabelVal(label)));
+       } else if (label.match(/Topic/)) {
+           issue.lang = $.trim(stripLabelVal(label));
        }
        
    });
