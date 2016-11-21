@@ -6,11 +6,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
 },"3":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return "         <div class=\"t-xxxs r-iblock\">\n             <div class=\"r-iblock btn\" style=\"border-color:#eb6420; color:#eb6420;\">"
-    + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"name","hash":{},"data":data}) : helper)))
-    + "</div>\n         </div>\n";
+    return "         <div class=\"t-xxxs r-iblock\">\n             <div class=\"r-iblock btn\" style=\"border-color:#eb6420; color:#eb6420;\">High Priority</div>\n         </div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 

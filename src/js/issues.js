@@ -28,8 +28,8 @@ function labelsToColumns(issue) {
        var name = label.name;
        console.log(issue.labels.length);
 
-       if (label === "Priority: High") {
-           issue.high_priority = true;
+       if (name === "Priority: High") {
+           issue.high_priority =  true;
        } else if (name.match(/Difficulty/)) {
            issue.difficulty = name.match(/Low/)? "Easy" : "Hard";
        } else if (name.match(/Skill/)) {
@@ -41,6 +41,7 @@ function labelsToColumns(issue) {
        
    }
 
+   console.log(issue);
    return issue;
 }
 
