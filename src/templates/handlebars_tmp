@@ -24,9 +24,9 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
     + "\">\n              "
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n          </a>\n        <span class=\"tx-clr--lt tx-size--small\">\n              opened "
+    + "\n          </a>\n        <span class=\"tx-clr--lt tx-size--small\">\n              ("
     + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
-    + " ago\n        </span>\n     </div>\n"
+    + " ago)\n        </span>\n     </div>\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "     </p>\n    </div>\n </li>\n";
 },"useData":true});
