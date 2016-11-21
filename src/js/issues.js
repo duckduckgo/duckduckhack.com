@@ -61,6 +61,7 @@ function groupIssuesByLanguage(issues) {
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
     console.log(issue.lang);
+    issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
     var $lang_group = $("#" + issue.lang);
     $lang_group.removeClass("hide");
     $lang_group.children("ul").append(rendered_issue);

@@ -28,13 +28,17 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"useData":true});
 
 this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var alias1=container.lambda, alias2=container.escapeExpression;
+    var stack1;
 
   return "  <div id=\""
-    + alias2(alias1(depth0, depth0))
+    + ((stack1 = (helpers.eq || (depth0 && depth0.eq) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,"C++",{"name":"eq","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
     + "\" class=\"hide lang_group\">\n    <h4>"
-    + alias2(alias1(depth0, depth0))
+    + container.escapeExpression(container.lambda(depth0, depth0))
     + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br2\">\n    </ul>\n  </div>\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    return "Cplusplus";
+},"4":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression(container.lambda(depth0, depth0));
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -164,6 +168,7 @@ function groupIssuesByLanguage(issues) {
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
     console.log(issue.lang);
+    issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
     var $lang_group = $("#" + issue.lang);
     $lang_group.removeClass("hide");
     $lang_group.children("ul").append(rendered_issue);
