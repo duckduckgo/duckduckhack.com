@@ -1,51 +1,27 @@
-
-<div class="issues-list">
-    <div class="whole text-center blk--hero blk--hero--alt">
-        <div class="cw--c ddh-hero">
-            <h1 class="ddh-hero__title">DuckDuckHack Tasks</h1>
-            <div class="ddh__sub">
-                <h4>
-                    Create and Improve Instant Answers<br>
-                </h4>
-                <p>
-                   Each task has detailed instructions to help you get started.
-                   <br> See <a class="fa-inverse" href="index.html">DuckDuckHack.com</a> and the <a class="fa-inverse" href="https://docs.duckduckhack.com">documentation</a> for more.
-                </p>
-            </div>
-        </div>
+ <li class="fa-border text-left gw ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
+  <div class="g quarter r-iblock">
+   <div class="g half r-iblock">
+     <div class="r-iblock">{{difficulty}}</div>
+   </div>
+   <div class="g half r-iblock">
+     <div class="r-iblock">{{skill}}</div>
+   </div>
+  </div>
+  <div class="g threequarter r-iblock">
+  <p>
+      <div class="r-iblock">
+        <a class="tx-clr--dk one-line issue-name" href="{{url}}">
+              {{title}}
+          </a>
+        <span class="tx-clr--lt tx-size--small">
+              opened {{timeago created_at false}} ago
+        </span>
+     </div>
+       {{#if high_priority}}
+         <div class="t-xxxs r-iblock">
+             <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">{{name}}</div>
+         </div>
+       {{/if}}
+     </p>
     </div>
-    <div class="ddh blk--content">
-        <ul style="margin-top:13.65em;">
-        {{#each .}}
-            <li class="fa-border text-left gw ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
-             <div class="g quarter r-iblock">
-              <div class="g half r-iblock">
-                <div class="r-iblock">{{difficulty}}</div>
-              </div>
-              <div class="g half r-iblock">
-                <div class="r-iblock">{{skill}}</div>
-              </div>
-             </div>
-             <div class="g threequarter r-iblock">
-	           <p>
-                 <div class="r-iblock">
-	                 <a class="tx-clr--dk one-line issue-name" href="{{url}}">
-                         {{title}}
-                     </a>
-	                 <span class="tx-clr--lt tx-size--small">
-                         opened {{timeago created_at false}} ago
-	                 </span>
-	              </div>
-                  {{#if high_priority}}
-                    <div class="t-xxxs r-iblock">
-                        <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">{{name}}</div>
-                    </div>
-                  {{/if}}
-                </p>
-               </div>
-            </li>
-        {{/each}}
-        </ul>
-    </div>
-</div>
-
+ </li>

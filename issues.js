@@ -2,39 +2,47 @@ this["Handlebars"] = this["Handlebars"] || {};
 this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
 
 this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "            <li class=\"fa-border text-left gw ddh--comm__item "
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n             <div class=\"g quarter r-iblock\">\n              <div class=\"g half r-iblock\">\n                <div class=\"r-iblock\">"
-    + alias4(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"difficulty","hash":{},"data":data}) : helper)))
-    + "</div>\n              </div>\n              <div class=\"g half r-iblock\">\n                <div class=\"r-iblock\">"
-    + alias4(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"skill","hash":{},"data":data}) : helper)))
-    + "</div>\n              </div>\n             </div>\n             <div class=\"g threequarter r-iblock\">\n	           <p>\n                 <div class=\"r-iblock\">\n	                 <a class=\"tx-clr--dk one-line issue-name\" href=\""
-    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
-    + "\">\n                         "
-    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n                     </a>\n	                 <span class=\"tx-clr--lt tx-size--small\">\n                         opened "
-    + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
-    + " ago\n	                 </span>\n	              </div>\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "                </p>\n               </div>\n            </li>\n";
-},"2":function(container,depth0,helpers,partials,data) {
     return "tag-"
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
-},"4":function(container,depth0,helpers,partials,data) {
+},"3":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "                    <div class=\"t-xxxs r-iblock\">\n                        <div class=\"r-iblock btn\" style=\"border-color:#eb6420; color:#eb6420;\">"
+  return "         <div class=\"t-xxxs r-iblock\">\n             <div class=\"r-iblock btn\" style=\"border-color:#eb6420; color:#eb6420;\">"
     + container.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"name","hash":{},"data":data}) : helper)))
-    + "</div>\n                    </div>\n";
+    + "</div>\n         </div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return " <li class=\"fa-border text-left gw ddh--comm__item "
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n  <div class=\"g quarter r-iblock\">\n   <div class=\"g half r-iblock\">\n     <div class=\"r-iblock\">"
+    + alias4(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"difficulty","hash":{},"data":data}) : helper)))
+    + "</div>\n   </div>\n   <div class=\"g half r-iblock\">\n     <div class=\"r-iblock\">"
+    + alias4(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"skill","hash":{},"data":data}) : helper)))
+    + "</div>\n   </div>\n  </div>\n  <div class=\"g threequarter r-iblock\">\n  <p>\n      <div class=\"r-iblock\">\n        <a class=\"tx-clr--dk one-line issue-name\" href=\""
+    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
+    + "\">\n              "
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "\n          </a>\n        <span class=\"tx-clr--lt tx-size--small\">\n              opened "
+    + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
+    + " ago\n        </span>\n     </div>\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "     </p>\n    </div>\n </li>\n";
+},"useData":true});
+
+this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "  <div id=\""
+    + alias2(alias1(depth0, depth0))
+    + "\" class=\"lang_group\">\n    <h4>"
+    + alias2(alias1(depth0, depth0))
+    + "</h4>\n    <ul style=\"margin-top:13.65em;\">\n    </ul>\n  </div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "\n<div class=\"issues-list\">\n    <div class=\"whole text-center blk--hero blk--hero--alt\">\n        <div class=\"cw--c ddh-hero\">\n            <h1 class=\"ddh-hero__title\">DuckDuckHack Tasks</h1>\n            <div class=\"ddh__sub\">\n                <h4>\n                    Create and Improve Instant Answers<br>\n                </h4>\n                <p>\n                   Each task has detailed instructions to help you get started.\n                   <br> See <a class=\"fa-inverse\" href=\"index.html\">DuckDuckHack.com</a> and the <a class=\"fa-inverse\" href=\"https://docs.duckduckhack.com\">documentation</a> for more.\n                </p>\n            </div>\n        </div>\n    </div>\n    <div class=\"ddh blk--content\">\n        <ul style=\"margin-top:13.65em;\">\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},depth0,{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n</div>\n\n";
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.languages : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 // Strip non-alphanumeric chars from a string and transform it to lowercase
 Handlebars.registerHelper('slug', function(txt) {
@@ -111,48 +119,66 @@ var langs = [
     "Swift"
 ];
 
+// Determine Skill and Language from Issues labels
 function stripLabelVal(label) {
     var result = label.substring(label.indexOf(':') + 1, label.length);
     return result.trim();
 }
 
-function groupByLanguage(issues) {
-    var by_lang = {};
-    by_lang.languages = langs;
+// Pull out the info to display from labels:
+// - Difficulty and Skill columns
+// - Priority: High label
+// - Language
+function labelsToColumns(issue) {
+   $.each(issue.labels, function(label) {
+       if (label === "Priority: High") {
+           issue.high_priority = true;
+       } else if (label.match(/Difficulty/)) {
+           issue.difficulty = label.match(/Low/)? "Easy" : "Hard";
+       } else if (label.match(/Skill/) {
+           issue.skill = $.trim(stripLabelVal(label));
+       } else if (label.match(/Topic/) {
+           issue.lang = $.trim(stripLabelVal(label)));
+       }
+       
+   });
 
-    $.each(issues, function(issue) {
-        $.each(issue.labels, function(label) {
-            if (label === "Priority: High") {
-                issue.high_priority = true;
-            } else if (label.match(/Difficulty/)) {
-                issue.difficulty = label.match(/Low/)? "Easy" : "Hard";
-            } else if (label.match(/Skill/) {
-                issue.skill = $.trim(stripLabelVal(label));
-            } else if (label.match(/Topic/) {
-                var lang = $.trim(stripLabelVal(label)));
-                if (!by_lang[lang].length) {
-                    by_lang[lang] = [];
-                }
-                
-                by_lang[lang].push(issue);
-            }
-        });
-    });
-
-    return by_lang;
+   return issue;
 }
 
+// Main function iterating through the issues from GitHub API,
+// pulling out the important information 
+// and rendering each issue using the Handlebars template
+function groupIssuesByLanguage(issues) {
+    $.each(issues, function(issue) {
+        issue = labelsToColumns(issue);
+        
+        renderIssue(issue);    
+    });
+}
+
+// Append the give issue to the appropriate Language list
+function renderIssue(issue) {
+    var rendered_issue = Handlebars.templates.issues(issue);
+    $("#" + issue.lang).append(rendered_issue);
+}
+
+// Render the containers for each Language list
+function renderLanguages() {
+    var lang_obj = {};
+    lang_obj.languages = langs;
+    
+    var rendered_langs = Handlebars.templates.lang_groups(lang_obj);
+    $("#issues_list").html(rendered_langs);
+}
 
 $(document).ready(function() {
     var url = 'https://api.github.com/search/issues?q=repo%3Aduckduckgo%2Fzeroclickinfo-spice+repo%3Aduckduckgo%2Fzeroclickinfo-fathead+repo%3Aduckduckgo%2Fzeroclickinfo-goodies+repo%3Aduckduckgo%2Fzeroclickinfo-longtail+is%3Aissue+is%3Aopen+no:assignee+label%3A"Mission%3A+Programming"&type=Issues&ref=searchresults&per_page=500';
     $.getJSON(url, function(data) {
         console.log(data); //debug
-
-        data = groupByLanguage(data);
-
-        var issues = Handlebars.templates.issues(data);
-
-        $('#issues').html(issues);
+        
+        renderLanguages();
+        groupIssuesByLanguage(data.items);
     });
 
 });
