@@ -26,7 +26,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 
   return "<li class=\"issue--item h3 pv3 bb b--black-10 "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n  <div class=\"gw\">\n    <div class=\"g threequarter r-iblock pl4\">\n      <div class=\"r-iblock\">\n        <a class=\"tx-clr--dk one-line issue-name\" href=\""
+    + "\">\n  <div class=\"\">\n    <div class=\"fl w-75 w-50-m r-iblock pl4\">\n      <div class=\"r-iblock one-line w-100\">\n        <a class=\"issue-name\" href=\""
     + alias4(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"html_url","hash":{},"data":data}) : helper)))
     + "\">\n                "
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
@@ -34,7 +34,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
     + " ago)\n          </span>\n      </div>\n      <!--"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "-->\n    </div>\n    <div class=\"g quarter r-iblock\">\n      <div class=\"fl w-50 r-iblock tc\">\n"
+    + "-->\n    </div>\n    <div class=\"fl w-25 w-50-m r-iblock\">\n      <div class=\"fl w-50 r-iblock tc\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.difficulty : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
     + "      </div>\n      <div class=\"fl w-50 r-iblock tc\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.skill : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")

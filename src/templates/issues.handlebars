@@ -1,8 +1,8 @@
 <li class="issue--item h3 pv3 bb b--black-10 {{#each labels}}tag-{{slug name}} {{/each}}">
-  <div class="gw">
-    <div class="g threequarter r-iblock pl4">
-      <div class="r-iblock">
-        <a class="tx-clr--dk one-line issue-name" href="{{html_url}}">
+  <div class="">
+    <div class="fl w-75 w-50-m r-iblock pl4">
+      <div class="r-iblock one-line w-100">
+        <a class="issue-name" href="{{html_url}}">
                 {{title}}
             </a>
         <span class="black-50">
@@ -15,7 +15,7 @@
       </div>
       {{/if}}-->
     </div>
-    <div class="g quarter r-iblock">
+    <div class="fl w-25 w-50-m r-iblock">
       <div class="fl w-50 r-iblock tc">
         {{#if difficulty}}
           <div class="r-iblock black-70">{{difficulty}}</div>
