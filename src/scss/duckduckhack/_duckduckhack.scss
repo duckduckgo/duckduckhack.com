@@ -667,6 +667,10 @@ $midnight-light: #2C4B62;
     }
 }
 
+.issue--item:last-of-type {
+    border-bottom: none;
+}
+
 @include keyframes(first-frame) {
     0%, 19% {
         opacity: 1;
