@@ -24,9 +24,9 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<li class=\"issue--item h3 pv3 bb b--black-10 "
+  return "<li class=\"issue--item h3 pv3 bb b--black-10 bg-white "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n  <div class=\"\">\n    <div class=\"fl w-75 w-50-m r-iblock pl4\">\n      <div class=\"r-iblock one-line w-100\">\n        <a class=\"issue-name\" href=\""
+    + "\">\n  <div>\n    <div class=\"fl w-75 w-50-m r-iblock pl4\">\n      <div class=\"r-iblock one-line w-100\">\n        <a class=\"issue-name\" href=\""
     + alias4(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"html_url","hash":{},"data":data}) : helper)))
     + "\">\n                "
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
@@ -44,11 +44,11 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "  <div id=\""
+  return "<div id=\""
     + ((stack1 = (helpers.eq || (depth0 && depth0.eq) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,"C++",{"name":"eq","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
-    + "\" class=\"hide lang_group\">\n    <h4 class=\"f3 black-70\">"
+    + "\" class=\"hide lang_group\">\n  <h4 class=\"f3 black-70\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
-    + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0\">\n    </ul>\n  </div>\n";
+    + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-75 w-50-m r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-25 w-50-m r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     return "Cplusplus";
 },"4":function(container,depth0,helpers,partials,data) {

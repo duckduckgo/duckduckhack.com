@@ -4378,6 +4378,9 @@ small, .t-s {
   -webkit-animation: slide-next 25s infinite alternate;
   animation: slide-next 25s infinite alternate; }
 
+#issues_list {
+  min-height: 50vh; }
+
 .ddh-quote {
   opacity: 0; }
   .ddh-quote:nth-child(1) {
