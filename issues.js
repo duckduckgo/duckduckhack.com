@@ -10,15 +10,15 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"5":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "          <div class=\"r-iblock\">"
+  return "          <div class=\"r-iblock black-70\">"
     + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"difficulty","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
-    return "          —\n";
+    return "          <span class=\"black-20\">—</span>\n";
 },"9":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "          <div class=\"r-iblock\">"
+  return "          <div class=\"r-iblock black-70\">"
     + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"skill","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
