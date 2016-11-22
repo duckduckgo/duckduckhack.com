@@ -4628,6 +4628,35 @@ a {
 @media only screen and (max-height: 590px) {
   .has-slideout-open {
     overflow: hidden; } }
+.loader {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background-size: 1600%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 10vh; }
+  .is-loading .loader {
+    display: block;
+    -moz-animation: loader-animate 0.5s steps(15) infinite;
+    -webkit-animation: loader-animate 0.5s steps(15) infinite;
+    animation: loader-animate 0.5s steps(15) infinite; }
+
+@-moz-keyframes loader-animate {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: right; } }
+@-webkit-keyframes loader-animate {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: right; } }
+@keyframes loader-animate {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: right; } }
 /*! TACHYONS v4.5.3 | http://tachyons.io */
 html {
   font-family: sans-serif;
