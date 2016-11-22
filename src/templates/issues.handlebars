@@ -7,28 +7,25 @@
             </a>
         <span class="black-50">
                 ({{timeago created_at false}} ago)
-          </span>
+          </span> {{#if high_priority}}
+        <div class="t-xxxs r-iblock">
+          <div class="r-iblock btn bg-light-red b--light-red white" style="vertical-align: initial;">High Priority</div>
+        </div>
+        {{/if}}
       </div>
-      <!--{{#if high_priority}}
-      <div class="t-xxxs r-iblock">
-        <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">High Priority</div>
-      </div>
-      {{/if}}-->
     </div>
     <div class="fl w-25 w-50-m r-iblock">
       <div class="fl w-50 r-iblock tc">
         {{#if difficulty}}
-          <div class="r-iblock black-70">{{difficulty}}</div>
+        <div class="r-iblock black-70">{{difficulty}}</div>
         {{else}}
-          <span class="black-20">—</span>
-        {{/if}}
+        <span class="black-20">—</span> {{/if}}
       </div>
       <div class="fl w-50 r-iblock tc">
         {{#if skill}}
-          <div class="r-iblock black-70">{{skill}}</div>
+        <div class="r-iblock black-70">{{skill}}</div>
         {{else}}
-          <span class="black-20">—</span>
-        {{/if}}
+        <span class="black-20">—</span> {{/if}}
       </div>
     </div>
   </div>

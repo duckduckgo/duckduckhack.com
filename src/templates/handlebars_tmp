@@ -6,19 +6,19 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
 },"3":function(container,depth0,helpers,partials,data) {
-    return "\n      <div class=\"t-xxxs r-iblock\">\n        <div class=\"r-iblock btn\" style=\"border-color:#eb6420; color:#eb6420;\">High Priority</div>\n      </div>\n      ";
+    return "\n        <div class=\"t-xxxs r-iblock\">\n          <div class=\"r-iblock btn bg-light-red b--light-red white\" style=\"vertical-align: initial;\">High Priority</div>\n        </div>\n";
 },"5":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "          <div class=\"r-iblock black-70\">"
+  return "        <div class=\"r-iblock black-70\">"
     + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"difficulty","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
-    return "          <span class=\"black-20\">—</span>\n";
+    return "        <span class=\"black-20\">—</span> ";
 },"9":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "          <div class=\"r-iblock black-70\">"
+  return "        <div class=\"r-iblock black-70\">"
     + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"skill","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -32,13 +32,13 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + "\n            </a>\n        <span class=\"black-50\">\n                ("
     + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
-    + " ago)\n          </span>\n      </div>\n      <!--"
+    + " ago)\n          </span> "
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "-->\n    </div>\n    <div class=\"fl w-25 w-50-m r-iblock\">\n      <div class=\"fl w-50 r-iblock tc\">\n"
+    + "      </div>\n    </div>\n    <div class=\"fl w-25 w-50-m r-iblock\">\n      <div class=\"fl w-50 r-iblock tc\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.difficulty : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
-    + "      </div>\n      <div class=\"fl w-50 r-iblock tc\">\n"
+    + "\n      </div>\n      <div class=\"fl w-50 r-iblock tc\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.skill : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
-    + "      </div>\n    </div>\n  </div>\n</li>\n";
+    + "\n      </div>\n    </div>\n  </div>\n</li>";
 },"useData":true});
 
 this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
