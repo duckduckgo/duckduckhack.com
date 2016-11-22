@@ -23,6 +23,8 @@ function stripLabelVal(label) {
 // - Priority: High label
 // - Language
 function labelsToColumns(issue) {
+   issue.skill = [];
+   
    for (var i = 0; i < issue.labels.length; i++) {
        var label = issue.labels[i];
        var name = label.name;
@@ -33,7 +35,7 @@ function labelsToColumns(issue) {
        } else if (name.match(/Difficulty/)) {
            issue.difficulty = name.match(/Low/) ? "Easy" : "Hard";
        } else if (name.match(/Skill/)) {
-           issue.skill = $.trim(stripLabelVal(name));
+           issue.skill.push($.trim(stripLabelVal(name)));
        } else if (name.match(/Topic/)) {
            issue.lang = $.trim(stripLabelVal(name));
            console.log(issue.lang);
@@ -64,6 +66,7 @@ function groupIssuesByLanguage(issues) {
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
     console.log(issue.lang);
+    issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
     var $lang_group = $("#" + issue.lang);
     $lang_group.removeClass("hide");
     $lang_group.children("ul").append(rendered_issue);
