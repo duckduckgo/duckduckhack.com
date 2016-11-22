@@ -1,20 +1,45 @@
 <!doctype html>
 <html>
-<head>
-    <title>DuckDuckHack Tasks</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8;charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
-    <link rel="stylesheet" href="src/css/style.css" type="text/css">
-</head>
-<body>
-    <div class="site-wrapper">
-        <div class="content-wrap">
-            <div id="issues"></div>
-        </div>    
-    </div>
 
-	<div class="blk  blk--foot  blk--foot--nav ">
+<head>
+	<title>DuckDuckHack Tasks</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+	<link rel="stylesheet" href="src/css/style.css" type="text/css">
+</head>
+
+<body>
+	<div class="site-wrapper">
+		<div class="content-wrap">
+			<nav class="db dt-l w-100 border-box pa3 ph5-l bb b--black-10">
+				<a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="/" title="Home">
+					<img src="images/logo.svg" class="dib w3 h3 br-100" alt="Site Name">
+				</a>
+				<div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+					<a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="/" title="DuckDuckHack">DuckDuckHack</a>
+					<a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="https://forum.duckduckhack.com/t/duckduckhack-getting-started/53" title="Getting Started">Forum</a>
+					<a class="link dim dark-gray f6 f5-l dib" href="https://quackslack.herokuapp.com/" title="Join Slack">Join Slack</a>
+				</div>
+			</nav>
+
+			<section class="ph5">
+				<section class="pb4 bb b--black-10 mb4">
+					<h1 class="f2 black-70 pb0 mb0">DuckDuckHack Tasks</h1>
+					<p class="measure f4 black-50"><span class="b">Create and Improve Instant Answers.</span> Each task has detailed instructions to help you get started. See <a href="/">DuckDuckHack.com</a> and the <a href="https://docs.duckduckhack.com/">documentation</a> for more. </p>
+				</section>
+
+				<div id="issues_list" class="">
+					<span class="is-loading">
+						<div style="background-image: url('/images/blackx2.png')" class="loader"></div>
+					</span>
+				</div>
+			</section>
+		</div>
+	</div>
+	</div>
+
+	<div class="blk  blk--foot  blk--foot--nav mt5">
 		<div class="cw--c">
 			<div class="blk--foot__nav-col  third  thirty--screen-s">
 				<h5 class="blk--foot__nav-head">Community</h5>
@@ -54,8 +79,9 @@
 		</div>
 	</div>
 	</div>
-    <script src="src/js/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="src/js/handlebars.min.js" type="text/javascript"></script>
-    <script src="issues.js" type="text/javascript"></script>
+	<script src="src/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="src/js/handlebars.min.js" type="text/javascript"></script>
+	<script src="issues.js" type="text/javascript"></script>
 </body>
+
 </html>

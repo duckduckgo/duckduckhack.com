@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     ];
 
     var js_files = [
-        'Helpers.js',
+        'helpers.js',
         'issues.js'
     ];
 

@@ -650,6 +650,10 @@ $midnight-light: #2C4B62;
     @include animation(slide-next 25s infinite alternate);
 }
 
+#issues_list {
+    min-height: 50vh;
+}
+
 .ddh-quote {
     opacity: 0;
 
@@ -665,6 +669,22 @@ $midnight-light: #2C4B62;
     &:nth-child(4) {
         @include animation(fourth-frame 25s infinite alternate);
     }
+}
+
+.issue--item:last-of-type {
+    border-bottom: none;
+}
+
+li.issue--item {
+    padding-top: 0.6rem;
+    height: 2.6rem;
+}
+
+.btn.high-priority {
+    vertical-align: initial;
+    position: relative;
+    top: -3px;
+    line-height: 1.3;
 }
 
 @include keyframes(first-frame) {

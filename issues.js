@@ -2,67 +2,61 @@ this["Handlebars"] = this["Handlebars"] || {};
 this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
 
 this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "            <li class=\"fa-border text-left gw ddh--comm__item "
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\">\n             <div class=\"g quarter\">\n              <div class=\"g half r-iblock\">\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "              </div>\n              <div class=\"g half r-iblock\">\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "              </div>\n             </div>\n             <div class=\"g threequarter\">\n	           <p>\n                 <div class=\"r-iblock\">\n	                 <a class=\"tx-clr--dk one-line issue-name\" href=\""
-    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
-    + "\">\n                         "
-    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n                     </a>\n	                 <span class=\"tx-clr--lt tx-size--small\">\n                         opened "
-    + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
-    + " ago\n	                 </span>\n	              </div>\n                  <div class=\"t-xxxs r-iblock\">\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "                  </div>\n                </p>\n               </div>\n            </li>\n";
-},"2":function(container,depth0,helpers,partials,data) {
     return "tag-"
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
-},"4":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return ((stack1 = (helpers.match || (depth0 && depth0.match) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"difficulty",{"name":"match","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"3":function(container,depth0,helpers,partials,data) {
+    return "\n        <div class=\"t-xxxs r-iblock\">\n          <div class=\"r-iblock btn bg-light-red b--light-red white high-priority\" style=\"vertical-align: initial;\">High Priority</div>\n        </div>\n";
 },"5":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
+    var helper;
 
-  return ((stack1 = (helpers.eq || (depth0 && depth0.eq) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"difficultylow",{"name":"eq","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "");
-},"6":function(container,depth0,helpers,partials,data) {
-    return "                            <span>Easy</span>\n";
-},"8":function(container,depth0,helpers,partials,data) {
-    return "                            <span>Hard</span>\n";
-},"10":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return ((stack1 = (helpers.match || (depth0 && depth0.match) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"skill",{"name":"match","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"11":function(container,depth0,helpers,partials,data) {
-    return "                        <span>"
-    + container.escapeExpression((helpers.strip_label || (depth0 && depth0.strip_label) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"strip_label","hash":{},"data":data}))
-    + "</span>\n";
-},"13":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return ((stack1 = (helpers.eq || (depth0 && depth0.eq) || alias2).call(alias1,(helpers.slug || (depth0 && depth0.slug) || alias2).call(alias1,(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}),"priorityhigh",{"name":"eq","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"14":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "                             <div class=\"r-iblock btn\" style=\"border-color:#"
-    + alias4(((helper = (helper = helpers.color || (depth0 != null ? depth0.color : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"color","hash":{},"data":data}) : helper)))
-    + "; color:#"
-    + alias4(((helper = (helper = helpers.color || (depth0 != null ? depth0.color : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"color","hash":{},"data":data}) : helper)))
-    + ";\">"
-    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
+  return "        <div class=\"r-iblock black-70\">"
+    + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"difficulty","hash":{},"data":data}) : helper)))
     + "</div>\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    return "        <span class=\"black-20\">—</span> ";
+},"9":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "        <div class=\"r-iblock black-70\">"
+    + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"skill","hash":{},"data":data}) : helper)))
+    + "</div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<li class=\"issue--item h3 pv3 bb b--black-10 bg-white "
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n  <div>\n    <div class=\"fl w-75 w-50-m r-iblock pl4\">\n      <div class=\"r-iblock one-line w-100\">\n        <a class=\"issue-name\" href=\""
+    + alias4(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"html_url","hash":{},"data":data}) : helper)))
+    + "\">\n                "
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "\n            </a>\n        <span class=\"black-50\">\n                ("
+    + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
+    + " ago)\n          </span> "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "      </div>\n    </div>\n    <div class=\"fl w-25 w-50-m r-iblock\">\n      <div class=\"fl w-50 r-iblock tc\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.difficulty : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
+    + "\n      </div>\n      <div class=\"fl w-50 r-iblock tc\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.skill : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
+    + "\n      </div>\n    </div>\n  </div>\n</li>";
+},"useData":true});
+
+this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div id=\""
+    + ((stack1 = (helpers.eq || (depth0 && depth0.eq) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,"C++",{"name":"eq","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
+    + "\" class=\"hide lang_group\">\n  <h4 class=\"f3 black-70\">"
+    + container.escapeExpression(container.lambda(depth0, depth0))
+    + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-75 w-50-m r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-25 w-50-m r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    return "Cplusplus";
+},"4":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression(container.lambda(depth0, depth0));
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "\n<div class=\"issues-list\">\n    <div class=\"whole text-center blk--hero blk--hero--alt\">\n        <div class=\"cw--c ddh-hero\">\n            <h1 class=\"ddh-hero__title\">DuckDuckHack Tasks</h1>\n            <div class=\"ddh__sub\">\n                <h4>\n                    Create and Improve Instant Answers<br>\n                </h4>\n                <p>\n                   Each task has detailed instructions to help you get started.\n                   <br> See <a class=\"fa-inverse\" href=\"index.html\">DuckDuckHack.com</a> and the <a class=\"fa-inverse\" href=\"https://docs.duckduckhack.com\">documentation</a> for more.\n                </p>\n            </div>\n        </div>\n    </div>\n    <div class=\"ddh blk--content\">\n        <ul style=\"margin-top:13.65em;\">\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n</div>\n\n";
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.languages : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 // Strip non-alphanumeric chars from a string and transform it to lowercase
 Handlebars.registerHelper('slug', function(txt) {
@@ -125,16 +119,90 @@ Handlebars.registerHelper('strip_label', function(label) {
     return result.trim();
 });
 
+var langs = [
+    "C",
+    "C++",
+    "CSS",
+    "Java",
+    "JavaScript",
+    "Perl",
+    "PHP",
+    "Python",
+    "R",
+    "Ruby",
+    "Swift"
+];
+
+// Determine Skill and Language from Issues labels
+function stripLabelVal(label) {
+    var result = label.substring(label.indexOf(':') + 1, label.length);
+    return result.trim();
+}
+
+// Pull out the info to display from labels:
+// - Difficulty and Skill columns
+// - Priority: High label
+// - Language
+function labelsToColumns(issue) {
+   issue.skill = [];
+   
+   for (var i = 0; i < issue.labels.length; i++) {
+       var label = issue.labels[i];
+       var name = label.name;
+
+       if (name === "Priority: High") {
+           issue.high_priority = true;
+       } else if (name.match(/Difficulty/)) {
+           issue.difficulty = name.match(/Low/) ? "Easy" : "Hard";
+       } else if (name.match(/Skill/)) {
+           issue.skill.push($.trim(stripLabelVal(name)));
+       } else if (name.match(/Topic/)) {
+           issue.lang = $.trim(stripLabelVal(name));
+       }
+
+       if (issue.length - 1 === i) {
+           issue.last = true;
+       }   
+   }
+
+   return issue;
+}
+
+// Main function iterating through the issues from GitHub API,
+// pulling out the important information 
+// and rendering each issue using the Handlebars template
+function groupIssuesByLanguage(issues) {
+    $.each(issues, function(key, val) {
+        issue = labelsToColumns(val);
+
+        renderIssue(issue);    
+    });
+}
+
+// Append the give issue to the appropriate Language list
+function renderIssue(issue) {
+    var rendered_issue = Handlebars.templates.issues(issue);
+    issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
+    var $lang_group = $("#" + issue.lang);
+    $lang_group.removeClass("hide");
+    $lang_group.children("ul").append(rendered_issue);
+}
+
+// Render the containers for each Language list
+function renderLanguages() {
+    var lang_obj = {};
+    lang_obj.languages = langs;
+    
+    var rendered_langs = Handlebars.templates.lang_groups(lang_obj);
+    $("#issues_list").html(rendered_langs);
+}
 
 $(document).ready(function() {
-    var url = 'https://api.github.com/search/issues?q=repo%3Aduckduckgo%2Fzeroclickinfo-spice+repo%3Aduckduckgo%2Fzeroclickinfo-fathead+repo%3Aduckduckgo%2Fzeroclickinfo-goodies+repo%3Aduckduckgo%2Fzeroclickinfo-longtail+is%3Aissue+is%3Aopen+no:assignee+label%3A"Mission%3A+Programming"&type=Issues&ref=searchresults&per_page=500';
+    var url = 'https://duckduckhack.com/open_issues/';
+    
     $.getJSON(url, function(data) {
-        console.log(data); //debug
-
-        var issues;
-        issues = Handlebars.templates.issues(data);
-
-        $('#issues').html(issues);
+        renderLanguages();
+        groupIssuesByLanguage(data.items);
     });
 
 });

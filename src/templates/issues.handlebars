@@ -1,65 +1,32 @@
-
-<div class="issues-list">
-    <div class="whole text-center blk--hero blk--hero--alt">
-        <div class="cw--c ddh-hero">
-            <h1 class="ddh-hero__title">DuckDuckHack Tasks</h1>
-            <div class="ddh__sub">
-                <h4>
-                    Create and Improve Instant Answers<br>
-                </h4>
-                <p>
-                   Each task has detailed instructions to help you get started.
-                   <br> See <a class="fa-inverse" href="index.html">DuckDuckHack.com</a> and the <a class="fa-inverse" href="https://docs.duckduckhack.com">documentation</a> for more.
-                </p>
-            </div>
+<li class="issue--item h3 pv3 bb b--black-10 bg-white {{#each labels}}tag-{{slug name}} {{/each}}">
+  <div>
+    <div class="fl w-75 w-50-m r-iblock pl4">
+      <div class="r-iblock one-line w-100">
+        <a class="issue-name" href="{{html_url}}">
+                {{title}}
+            </a>
+        <span class="black-50">
+                ({{timeago created_at false}} ago)
+          </span> {{#if high_priority}}
+        <div class="t-xxxs r-iblock">
+          <div class="r-iblock btn bg-light-red b--light-red white high-priority" style="vertical-align: initial;">High Priority</div>
         </div>
+        {{/if}}
+      </div>
     </div>
-    <div class="ddh blk--content">
-        <ul style="margin-top:13.65em;">
-        {{#each items}}
-            <li class="fa-border text-left gw ddh--comm__item {{#each labels}}tag-{{slug name}} {{/each}}">
-             <div class="g quarter">
-              <div class="g half r-iblock">
-                {{#each labels}}
-                    {{#match (slug name) 'difficulty'}}
-                        {{#eq (slug name) 'difficultylow'}}
-                            <span>Easy</span>
-                        {{else}}
-                            <span>Hard</span>
-                        {{/eq}}
-                    {{/match}}
-                {{/each}}
-              </div>
-              <div class="g half r-iblock">
-                {{#each labels}}
-                    {{#match (slug name) 'skill'}}
-                        <span>{{strip_label name}}</span>
-                    {{/match}}
-                {{/each}}
-              </div>
-             </div>
-             <div class="g threequarter">
-	           <p>
-                 <div class="r-iblock">
-	                 <a class="tx-clr--dk one-line issue-name" href="{{url}}">
-                         {{title}}
-                     </a>
-	                 <span class="tx-clr--lt tx-size--small">
-                         opened {{timeago created_at false}} ago
-	                 </span>
-	              </div>
-                  <div class="t-xxxs r-iblock">
-                     {{#each labels}}
-                         {{#eq (slug name) 'priorityhigh'}}
-                             <div class="r-iblock btn" style="border-color:#{{color}}; color:#{{color}};">{{name}}</div>
-                         {{/eq}}
-                     {{/each}}
-                  </div>
-                </p>
-               </div>
-            </li>
-        {{/each}}
-        </ul>
+    <div class="fl w-25 w-50-m r-iblock">
+      <div class="fl w-50 r-iblock tc">
+        {{#if difficulty}}
+        <div class="r-iblock black-70">{{difficulty}}</div>
+        {{else}}
+        <span class="black-20">—</span> {{/if}}
+      </div>
+      <div class="fl w-50 r-iblock tc">
+        {{#if skill}}
+        <div class="r-iblock black-70">{{skill}}</div>
+        {{else}}
+        <span class="black-20">—</span> {{/if}}
+      </div>
     </div>
-</div>
-
+  </div>
+</li>
