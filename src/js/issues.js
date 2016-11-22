@@ -76,9 +76,11 @@ function renderLanguages() {
     $("#issues_list").html(rendered_langs);
 }
 
-var url = 'https://duckduckhack.com/open_issues/';
     
+renderLanguages();
+
+var url = 'https://duckduckhack.com/open_issues/';
+
 $.getJSON(url, function(data) {
-    renderLanguages();
     groupIssuesByLanguage(data.items);
 });
