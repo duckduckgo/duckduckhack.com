@@ -26,53 +26,33 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 
   return "<li class=\"issue--item h3 pv3 bb b--black-10 "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-<<<<<<< HEAD
     + "\">\n  <div class=\"gw\">\n    <div class=\"g threequarter r-iblock pl4\">\n      <div class=\"r-iblock\">\n        <a class=\"tx-clr--dk one-line issue-name\" href=\""
-    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
-=======
-    + "\">\n  <div class=\"gw\">\n    <div class=\"g quarter r-iblock\">\n      <div class=\"g half r-iblock\">\n        <div class=\"r-iblock\">"
-    + alias4(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"difficulty","hash":{},"data":data}) : helper)))
-    + "</div>\n      </div>\n      <div class=\"g half r-iblock\">\n        <div class=\"r-iblock\">"
-    + alias4(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"skill","hash":{},"data":data}) : helper)))
-    + "</div>\n      </div>\n    </div>\n    <div class=\"g threequarter r-iblock\">\n      <p>\n        <div class=\"r-iblock\">\n          <a class=\"tx-clr--dk one-line issue-name\" href=\""
     + alias4(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"html_url","hash":{},"data":data}) : helper)))
->>>>>>> origin/maria/languages
     + "\">\n                "
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + "\n            </a>\n        <span class=\"black-50\">\n                ("
     + alias4((helpers.timeago || (depth0 && depth0.timeago) || alias2).call(alias1,(depth0 != null ? depth0.created_at : depth0),false,{"name":"timeago","hash":{},"data":data}))
     + " ago)\n          </span>\n      </div>\n      <!--"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.high_priority : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-<<<<<<< HEAD
     + "-->\n    </div>\n    <div class=\"g quarter r-iblock\">\n      <div class=\"fl w-50 r-iblock tc\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.difficulty : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
     + "      </div>\n      <div class=\"fl w-50 r-iblock tc\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.skill : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
-    + "      </div>\n    </div>\n  </div>\n</li>";
-=======
-    + "      </p>\n    </div>\n  </div>\n</li>\n";
->>>>>>> origin/maria/languages
+    + "      </div>\n    </div>\n  </div>\n</li>\n";
 },"useData":true});
 
 this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "  <div id=\""
-<<<<<<< HEAD
-    + alias2(alias1(depth0, depth0))
-    + "\" class=\"hide lang_group\">\n    <h4 class=\"f3 black-70\">"
-    + alias2(alias1(depth0, depth0))
-    + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0\">\n    </ul>\n  </div>\n";
-=======
     + ((stack1 = (helpers.eq || (depth0 && depth0.eq) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,"C++",{"name":"eq","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
-    + "\" class=\"hide lang_group\">\n    <h4>"
+    + "\" class=\"hide lang_group\">\n    <h4 class=\"f3 black-70\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
-    + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br2\">\n    </ul>\n  </div>\n";
+    + "</h4>\n    <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0\">\n    </ul>\n  </div>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     return "Cplusplus";
 },"4":function(container,depth0,helpers,partials,data) {
     return container.escapeExpression(container.lambda(depth0, depth0));
->>>>>>> origin/maria/languages
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
