@@ -650,6 +650,10 @@ $midnight-light: #2C4B62;
     @include animation(slide-next 25s infinite alternate);
 }
 
+#issues_list {
+    min-height: 50vh;
+}
+
 .ddh-quote {
     opacity: 0;
 
