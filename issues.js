@@ -6,7 +6,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
 },"3":function(container,depth0,helpers,partials,data) {
-    return "\n        <div class=\"t-xxxs r-iblock\">\n          <div class=\"r-iblock btn bg-light-red b--light-red white\" style=\"vertical-align: initial;\">High Priority</div>\n        </div>\n";
+    return "\n        <div class=\"t-xxxs r-iblock\">\n          <div class=\"r-iblock btn bg-light-red b--light-red white high-priority\" style=\"vertical-align: initial;\">High Priority</div>\n        </div>\n";
 },"5":function(container,depth0,helpers,partials,data) {
     var helper;
 
@@ -48,7 +48,7 @@ this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":functi
     + ((stack1 = (helpers.eq || (depth0 && depth0.eq) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,"C++",{"name":"eq","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
     + "\" class=\"hide lang_group\">\n  <h4 class=\"f3 black-70\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
-    + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-75 w-50-m r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-25 w-50-m r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
+    + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-75 w-50-m r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-25 w-50-m r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     return "Cplusplus";
 },"4":function(container,depth0,helpers,partials,data) {
