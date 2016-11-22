@@ -149,7 +149,6 @@ function labelsToColumns(issue) {
    for (var i = 0; i < issue.labels.length; i++) {
        var label = issue.labels[i];
        var name = label.name;
-       console.log(issue.labels.length);
 
        if (name === "Priority: High") {
            issue.high_priority = true;
@@ -159,7 +158,6 @@ function labelsToColumns(issue) {
            issue.skill.push($.trim(stripLabelVal(name)));
        } else if (name.match(/Topic/)) {
            issue.lang = $.trim(stripLabelVal(name));
-           console.log(issue.lang);
        }
 
        if (issue.length - 1 === i) {
@@ -167,7 +165,6 @@ function labelsToColumns(issue) {
        }   
    }
 
-   console.log(issue);
    return issue;
 }
 
@@ -176,7 +173,6 @@ function labelsToColumns(issue) {
 // and rendering each issue using the Handlebars template
 function groupIssuesByLanguage(issues) {
     $.each(issues, function(key, val) {
-        console.log(val.labels);
         issue = labelsToColumns(val);
 
         renderIssue(issue);    
@@ -186,7 +182,6 @@ function groupIssuesByLanguage(issues) {
 // Append the give issue to the appropriate Language list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    console.log(issue.lang);
     issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
     var $lang_group = $("#" + issue.lang);
     $lang_group.removeClass("hide");
@@ -207,8 +202,6 @@ $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
     
     $.getJSON(url, function(data) {
-        console.log(data); //debug
-        
         renderLanguages();
         groupIssuesByLanguage(data.items);
     });
