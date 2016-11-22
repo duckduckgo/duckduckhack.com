@@ -1,29 +1,35 @@
-<li class="h3 pv3 bb b--black-10 {{#each labels}}tag-{{slug name}} {{/each}}">
-  <div class="gw">
-    <div class="g quarter r-iblock">
-      <div class="g half r-iblock">
-        <div class="r-iblock">{{difficulty}}</div>
-      </div>
-      <div class="g half r-iblock">
-        <div class="r-iblock">{{skill}}</div>
-      </div>
-    </div>
-    <div class="g threequarter r-iblock">
-      <p>
-        <div class="r-iblock">
-          <a class="tx-clr--dk one-line issue-name" href="{{html_url}}">
+<li class="issue--item h3 pv3 bb b--black-10 {{#each labels}}tag-{{slug name}} {{/each}}">
+  <div class="">
+    <div class="fl w-75 w-50-m r-iblock pl4">
+      <div class="r-iblock one-line w-100">
+        <a class="issue-name" href="{{html_url}}">
                 {{title}}
             </a>
-          <span class="tx-clr--lt tx-size--small">
+        <span class="black-50">
                 ({{timeago created_at false}} ago)
           </span>
-        </div>
-        {{#if high_priority}}
-        <div class="t-xxxs r-iblock">
-          <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">High Priority</div>
-        </div>
+      </div>
+      <!--{{#if high_priority}}
+      <div class="t-xxxs r-iblock">
+        <div class="r-iblock btn" style="border-color:#eb6420; color:#eb6420;">High Priority</div>
+      </div>
+      {{/if}}-->
+    </div>
+    <div class="fl w-25 w-50-m r-iblock">
+      <div class="fl w-50 r-iblock tc">
+        {{#if difficulty}}
+          <div class="r-iblock black-70">{{difficulty}}</div>
+        {{else}}
+          <span class="black-20">—</span>
         {{/if}}
-      </p>
+      </div>
+      <div class="fl w-50 r-iblock tc">
+        {{#if skill}}
+          <div class="r-iblock black-70">{{skill}}</div>
+        {{else}}
+          <span class="black-20">—</span>
+        {{/if}}
+      </div>
     </div>
   </div>
 </li>
