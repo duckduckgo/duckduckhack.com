@@ -1,6 +1,7 @@
 var langs = [
     "C",
     "C++",
+    "C#",
     "CSS",
     "Java",
     "JavaScript",
@@ -61,7 +62,13 @@ function groupIssuesByLanguage(issues) {
 // Append the give issue to the appropriate Language list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
+    
+    if (issue.lang === "C++") {
+        issue.lang = "Cplusplus";
+    } else if (issue.lang === "C#") {
+        issue.lang = "Csharp";
+    }
+
     var $lang_group = $("#" + issue.lang);
     $lang_group.removeClass("hide");
     $lang_group.children("ul").append(rendered_issue);
