@@ -197,14 +197,13 @@ function renderLanguages() {
     $("#issues_list").html(rendered_langs);
 }
 
-$(document).ready(function() {
-    var url = 'https://duckduckhack.com/open_issues/';
     
-    $.getJSON(url, function(data) {
-        renderLanguages();
-        groupIssuesByLanguage(data.items);
-    });
+renderLanguages();
 
+var url = 'https://duckduckhack.com/open_issues/';
+
+$.getJSON(url, function(data) {
+    groupIssuesByLanguage(data.items);
 });
 
 //! moment.js
