@@ -52,6 +52,15 @@ this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":functi
 },"2":function(container,depth0,helpers,partials,data) {
     return "Cplusplus";
 },"4":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = (helpers.eq || (depth0 && depth0.eq) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,"C#",{"name":"eq","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "");
+},"5":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "Csharp"
+    + container.escapeExpression(((helper = (helper = helpers.eq || (depth0 != null ? depth0.eq : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"eq","hash":{},"data":data}) : helper)));
+},"7":function(container,depth0,helpers,partials,data) {
     return container.escapeExpression(container.lambda(depth0, depth0));
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -122,6 +131,7 @@ Handlebars.registerHelper('strip_label', function(label) {
 var langs = [
     "C",
     "C++",
+    "C#",
     "CSS",
     "Java",
     "JavaScript",
@@ -182,7 +192,13 @@ function groupIssuesByLanguage(issues) {
 // Append the give issue to the appropriate Language list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
+    
+    if (issue.lang === "C++") {
+        issue.lang = "Cplusplus";
+    } else if (issue.lang === "C#") {
+        issue.lang = "Csharp";
+    }
+
     var $lang_group = $("#" + issue.lang);
     $lang_group.removeClass("hide");
     $lang_group.children("ul").append(rendered_issue);
