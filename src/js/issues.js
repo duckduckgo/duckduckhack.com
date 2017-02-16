@@ -87,8 +87,8 @@ function generateTopics(issues) {
 // The following function takes care of escaping these characters and places a "#" at the beginning of the ID string
 function sanitizeId(myid) {
     // it is possible for a topic label to not exist
-    // a topic C# becomes C\#; C-- becomes C\-\-
-    return (myid) ? "#" + myid.replace( /(:|#|\+|\.|\[|\]|-|,|=|@)/g, "\\$1" ).replace( /\s/g, "_") : "";
+    // replace all non alpha-numeric characters with _
+    return (myid) ? "#" + myid.replace( /[^a-z0-9]+/gi, "_" ) : "";
 }
 
 $(document).ready(function() {

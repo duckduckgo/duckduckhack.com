@@ -61,5 +61,5 @@ Handlebars.registerHelper('strip_label', function(label) {
 
 // Convert spaces to an HTML ID friendly character
 Handlebars.registerHelper('sanitize', function (obj) {
-    return obj.replace(/\s/g, "_");
+    return obj.replace( /[^a-z0-9]+/gi, "_" );
 });
