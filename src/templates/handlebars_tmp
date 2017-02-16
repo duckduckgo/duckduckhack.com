@@ -42,12 +42,12 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"useData":true});
 
 this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var alias1=container.lambda, alias2=container.escapeExpression;
+    var alias1=container.escapeExpression;
 
   return "<div id=\""
-    + alias2(alias1(depth0, depth0))
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
     + "\" class=\"hide\">\n  <h4 class=\"f3 black-70\">"
-    + alias2(alias1(depth0, depth0))
+    + alias1(container.lambda(depth0, depth0))
     + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-50 w-75-l r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-50 w-25-l r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;

@@ -88,7 +88,7 @@ function generateTopics(issues) {
 function sanitizeId(myid) {
     // it is possible for a topic label to not exist
     // a topic C# becomes C\#; C-- becomes C\-\-
-    return (myid) ? "#" + myid.replace( /(:|#|\+|\.|\[|\]|-|,|=|@)/g, "\\$1" ) : "";
+    return (myid) ? "#" + myid.replace( /(:|#|\+|\.|\[|\]|-|,|=|@)/g, "\\$1" ).replace( /\s/g, "_") : "";
 }
 
 $(document).ready(function() {

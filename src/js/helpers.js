@@ -58,3 +58,8 @@ Handlebars.registerHelper('strip_label', function(label) {
     var result = label.substring(label.indexOf(':') + 1, label.length);
     return result.trim();
 });
+
+// Convert spaces to an HTML ID friendly character
+Handlebars.registerHelper('sanitize', function (obj) {
+    return obj.replace(/\s/g, "_");
+});

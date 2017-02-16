@@ -386,4 +386,9 @@
         return total;
     });
 
+    // replace spaces with an HTML ID friendly character
+    Handlebars.registerHelper('sanitize', function (obj) {
+        return obj.replace(/\s/g, "_");
+    });
+
 })(DDH);

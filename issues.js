@@ -42,12 +42,12 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 },"useData":true});
 
 this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var alias1=container.lambda, alias2=container.escapeExpression;
+    var alias1=container.escapeExpression;
 
   return "<div id=\""
-    + alias2(alias1(depth0, depth0))
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
     + "\" class=\"hide\">\n  <h4 class=\"f3 black-70\">"
-    + alias2(alias1(depth0, depth0))
+    + alias1(container.lambda(depth0, depth0))
     + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-50 w-75-l r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-50 w-25-l r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -113,6 +113,11 @@ Handlebars.registerHelper('match', function(val1, val2, options) {
 Handlebars.registerHelper('strip_label', function(label) {
     var result = label.substring(label.indexOf(':') + 1, label.length);
     return result.trim();
+});
+
+// Convert spaces to an HTML ID friendly character
+Handlebars.registerHelper('sanitize', function (obj) {
+    return obj.replace(/\s/g, "_");
 });
 
 // Determine Skill and Topic from Issues labels
@@ -204,7 +209,8 @@ function generateTopics(issues) {
 // The following function takes care of escaping these characters and places a "#" at the beginning of the ID string
 function sanitizeId(myid) {
     // it is possible for a topic label to not exist
-    return (myid) ? "#" + myid.replace( /(:|#|\+|\.|\[|\]|-|,|=|@)/g, "\\$1" ) : "";
+    // a topic C# becomes C\#; C-- becomes C\-\-
+    return (myid) ? "#" + myid.replace( /(:|#|\+|\.|\[|\]|-|,|=|@)/g, "\\$1" ).replace( /\s/g, "_") : "";
 }
 
 $(document).ready(function() {
@@ -215,7 +221,6 @@ $(document).ready(function() {
         groupIssuesByTopic(data.items);
     });
 });
-
 //! moment.js
 //! version : 2.16.0
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
