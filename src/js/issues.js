@@ -47,8 +47,7 @@ function groupIssuesByTopic(issues) {
 // Append the give issue to the appropriate Topic list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    issue.topic = (issue.topic === "C++")? "Cplusplus" : issue.topic;
-    var $topic_group = $("#" + issue.topic);
+    var $topic_group = $(sanitizeId(issue.topic));
     $topic_group.removeClass("hide");
     $topic_group.children("ul").append(rendered_issue);
 }
@@ -64,7 +63,7 @@ function renderTopics(topics) {
 
 // Generate a list of topics
 function generateTopics(issues) {
-    var re = new RegExp('Topic: (.*)'); // matches CSS in "Topic: CSS"
+    var re = new RegExp("Topic: (.*)"); // matches CSS in "Topic: CSS"
     var topics = [];
 
     $.each(issues, function (key, issue) {
@@ -85,6 +84,12 @@ function generateTopics(issues) {
     return topics;
 }
 
+// The following function takes care of escaping these characters and places a "#" at the beginning of the ID string
+function sanitizeId(myid) {
+    // it is possible for a topic label to not exist
+    return (myid) ? "#" + myid.replace( /(:|#|\+|\.|\[|\]|-|,|=|@)/g, "\\$1" ) : "";
+}
+
 $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
     
@@ -92,5 +97,4 @@ $(document).ready(function() {
         renderTopics(generateTopics(data.items));
         groupIssuesByTopic(data.items);
     });
-
 });
