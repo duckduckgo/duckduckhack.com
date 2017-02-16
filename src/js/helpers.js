@@ -59,7 +59,7 @@ Handlebars.registerHelper('strip_label', function(label) {
     return result.trim();
 });
 
-// Convert spaces to an HTML ID friendly character
+// Convert non alpha numeric characters to HTML ID friendly characters
 Handlebars.registerHelper('sanitize', function (obj) {
     return obj.replace( /[^a-z0-9]+/gi, "_" );
 });
