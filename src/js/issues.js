@@ -88,7 +88,7 @@ function generateTopics(issues) {
 function sanitizeId(myid) {
     // it is possible for a topic label to not exist
     // replace all non alpha-numeric characters with _
-    return (myid) ? "#" + myid.replace( /[^a-z0-9]+/gi, "_" ) : "";
+    return (myid) ? "#" + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
 }
 
 $(document).ready(function() {

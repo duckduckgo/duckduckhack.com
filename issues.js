@@ -117,9 +117,8 @@ Handlebars.registerHelper('strip_label', function(label) {
 
 // Convert non alpha numeric characters to HTML ID friendly characters
 Handlebars.registerHelper('sanitize', function (obj) {
-    return obj.replace( /[^a-z0-9]+/gi, "_" );
+    return obj.replace(/\s/g, "_");
 });
-
 // Determine Skill and Topic from Issues labels
 function stripLabelVal(label) {
     var result = label.substring(label.indexOf(':') + 1, label.length);
@@ -210,7 +209,7 @@ function generateTopics(issues) {
 function sanitizeId(myid) {
     // it is possible for a topic label to not exist
     // replace all non alpha-numeric characters with _
-    return (myid) ? "#" + myid.replace( /[^a-z0-9]+/gi, "_" ) : "";
+    return (myid) ? "#" + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
 }
 
 $(document).ready(function() {

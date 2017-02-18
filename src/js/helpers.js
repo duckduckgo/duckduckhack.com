@@ -61,5 +61,5 @@ Handlebars.registerHelper('strip_label', function(label) {
 
 // Convert non alpha numeric characters to HTML ID friendly characters
 Handlebars.registerHelper('sanitize', function (obj) {
-    return obj.replace( /[^a-z0-9]+/gi, "_" );
+    return obj.replace(/\s/g, "_");
 });
