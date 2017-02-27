@@ -41,22 +41,18 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + "\n      </div>\n    </div>\n  </div>\n</li>";
 },"useData":true});
 
-this["Handlebars"]["templates"]["lang_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1;
+this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var alias1=container.escapeExpression;
 
   return "<div id=\""
-    + ((stack1 = (helpers.eq || (depth0 && depth0.eq) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,"C++",{"name":"eq","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
-    + "\" class=\"hide lang_group\">\n  <h4 class=\"f3 black-70\">"
-    + container.escapeExpression(container.lambda(depth0, depth0))
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
+    + "\" class=\"hide\">\n  <h4 class=\"f3 black-70\">"
+    + alias1(container.lambda(depth0, depth0))
     + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-50 w-75-l r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-50 w-25-l r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
-},"2":function(container,depth0,helpers,partials,data) {
-    return "Cplusplus";
-},"4":function(container,depth0,helpers,partials,data) {
-    return container.escapeExpression(container.lambda(depth0, depth0));
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.languages : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.topics : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 // Strip non-alphanumeric chars from a string and transform it to lowercase
 Handlebars.registerHelper('slug', function(txt) {
@@ -119,21 +115,11 @@ Handlebars.registerHelper('strip_label', function(label) {
     return result.trim();
 });
 
-var langs = [
-    "C",
-    "C++",
-    "CSS",
-    "Java",
-    "JavaScript",
-    "Perl",
-    "PHP",
-    "Python",
-    "R",
-    "Ruby",
-    "Swift"
-];
-
-// Determine Skill and Language from Issues labels
+// Convert non alpha numeric characters to HTML ID friendly characters
+Handlebars.registerHelper('sanitize', function (obj) {
+    return obj.replace(/\s/g, "_");
+});
+// Determine Skill and Topic from Issues labels
 function stripLabelVal(label) {
     var result = label.substring(label.indexOf(':') + 1, label.length);
     return result.trim();
@@ -142,7 +128,7 @@ function stripLabelVal(label) {
 // Pull out the info to display from labels:
 // - Difficulty and Skill columns
 // - Priority: High label
-// - Language
+// - Topic
 function labelsToColumns(issue) {
    issue.skill = [];
    
@@ -157,7 +143,7 @@ function labelsToColumns(issue) {
        } else if (name.match(/Skill/)) {
            issue.skill.push($.trim(stripLabelVal(name)));
        } else if (name.match(/Topic/)) {
-           issue.lang = $.trim(stripLabelVal(name));
+           issue.topic = $.trim(stripLabelVal(name));
        }
 
        if (issue.length - 1 === i) {
@@ -171,7 +157,7 @@ function labelsToColumns(issue) {
 // Main function iterating through the issues from GitHub API,
 // pulling out the important information 
 // and rendering each issue using the Handlebars template
-function groupIssuesByLanguage(issues) {
+function groupIssuesByTopic(issues) {
     $.each(issues, function(key, val) {
         issue = labelsToColumns(val);
 
@@ -179,32 +165,60 @@ function groupIssuesByLanguage(issues) {
     });
 }
 
-// Append the give issue to the appropriate Language list
+// Append the give issue to the appropriate Topic list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    issue.lang = (issue.lang === "C++")? "Cplusplus" : issue.lang;
-    var $lang_group = $("#" + issue.lang);
-    $lang_group.removeClass("hide");
-    $lang_group.children("ul").append(rendered_issue);
+    var $topic_group = $(sanitizeId(issue.topic));
+    $topic_group.removeClass("hide");
+    $topic_group.children("ul").append(rendered_issue);
 }
 
-// Render the containers for each Language list
-function renderLanguages() {
-    var lang_obj = {};
-    lang_obj.languages = langs;
+// Render the containers for each Topic list
+function renderTopics(topics) {
+    var topic_obj = {};
+    topic_obj.topics = topics;
     
-    var rendered_langs = Handlebars.templates.lang_groups(lang_obj);
-    $("#issues_list").html(rendered_langs);
+    var rendered_topics = Handlebars.templates.topic_groups(topic_obj);
+    $("#issues_list").html(rendered_topics);
+}
+
+// Generate a list of topics
+function generateTopics(issues) {
+    var re = new RegExp("Topic: (.*)"); // matches CSS in "Topic: CSS"
+    var topics = [];
+
+    $.each(issues, function (key, issue) {
+        // let's assume that we will never have more than one topic assigned to an issue
+        for (var i = issue.labels.length - 1; i >= 0; i--) {
+            var re_result = issue.labels[i].name.match(re);
+            if (re_result) {
+                var topic = re_result[1];
+                if ($.inArray(topic, topics) === -1) { // $.inArray returns index if found; -1 otherwise
+                    topics.push(topic);
+                }
+            }
+        }
+    });
+
+    topics.sort();
+    
+    return topics;
+}
+
+// The following function takes care of escaping these characters and places a "#" at the beginning of the ID string
+function sanitizeId(myid) {
+    // it is possible for a topic label to not exist
+    // replace all non alpha-numeric characters with _
+    return (myid) ? "#" + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
 }
 
 $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
     
     $.getJSON(url, function(data) {
-        renderLanguages();
-        groupIssuesByLanguage(data.items);
+        renderTopics(generateTopics(data.items));
+        groupIssuesByTopic(data.items);
     });
-
 });
 
 //! moment.js

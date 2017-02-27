@@ -1,5 +1,5 @@
-{{#each languages}}
-<div id="{{#eq this 'C++'}}Cplusplus{{else}}{{this}}{{/eq}}" class="hide lang_group">
+{{#each topics}}
+<div id="{{sanitize this}}" class="hide">
   <h4 class="f3 black-70">{{this}}</h4>
   <ul class="list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0">
     <li class="issue--item h3 pv3 bb b--black-10">
