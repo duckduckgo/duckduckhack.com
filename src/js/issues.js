@@ -8,6 +8,7 @@ function stripLabelVal(label) {
 // - Difficulty and Skill columns
 // - Priority: High label
 // - Topic
+// - Mission
 function labelsToColumns(issue) {
    issue.skill = [];
    
@@ -23,11 +24,17 @@ function labelsToColumns(issue) {
            issue.skill.push($.trim(stripLabelVal(name)));
        } else if (name.match(/Topic/)) {
            issue.topic = $.trim(stripLabelVal(name));
+       } else if (name.match(/Mission/)) {
+           issue.category = $.trim(stripLabelVal(name));
        }
 
        if (issue.length - 1 === i) {
            issue.last = true;
-       }   
+       }
+
+       if (!issue.category) {
+          issue.category = "null_category";
+       }
    }
 
    return issue;
@@ -47,23 +54,32 @@ function groupIssuesByTopic(issues) {
 // Append the give issue to the appropriate Topic list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    var $topic_group = $(sanitizeId(issue.topic));
+    var $topic_group = $(sanitizeId(issue.category) + " " + sanitizeId(issue.topic));
     $topic_group.removeClass("hide");
     $topic_group.children("ul").append(rendered_issue);
 }
 
 // Render the containers for each Topic list
-function renderTopics(topics) {
-    var topic_obj = {};
-    topic_obj.topics = topics;
-    
-    var rendered_topics = Handlebars.templates.topic_groups(topic_obj);
-    $("#issues_list").html(rendered_topics);
+function renderGroupings(topics, categories) {
+    var rendered_topics = Handlebars.templates.topic_groups({
+      topics: topics
+    }); // render a topics snippet to be used by each category
+
+    var rendered_categories = Handlebars.templates.categories({
+      categories: categories
+    }); // render the categories
+
+    $("#null_category").html(rendered_topics); // a bucket for all issues without a category
+
+    $("#issues_list").append(rendered_categories);
+    $.each(categories, function (key, category) {
+      $(sanitizeId(category)).append(rendered_topics);
+    });
 }
 
-// Generate a list of topics
-function generateTopics(issues) {
-    var re = new RegExp("Topic: (.*)"); // matches CSS in "Topic: CSS"
+// Generate a list of items from the issues based on any regular expression.
+// Will match against label names.
+function generateGroupings(re, issues) {
     var topics = [];
 
     $.each(issues, function (key, issue) {
@@ -91,11 +107,21 @@ function sanitizeId(myid) {
     return (myid) ? "#" + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
 }
 
+// Hide the loading element
+function dismissLoadingScreen() {
+  $('.is-loading').hide();
+}
+
 $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
     
     $.getJSON(url, function(data) {
-        renderTopics(generateTopics(data.items));
-        groupIssuesByTopic(data.items);
+      var issues = data.items;
+      var categories = generateGroupings(new RegExp("Mission: (.*)"), issues);
+      var topics = generateGroupings(new RegExp("Topic: (.*)"), issues);
+
+      dismissLoadingScreen();
+      renderGroupings(topics, categories);
+      groupIssuesByTopic(issues);
     });
 });
