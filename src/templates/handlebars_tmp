@@ -53,7 +53,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     + "\n      </div>\n      <div class=\"fl w-50 r-iblock tc overflow-hidden\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.skill : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
     + "\n      </div>\n    </div>\n  </div>\n</li>";
-},"useData":true};
+},"useData":true});
 
 this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.escapeExpression;
