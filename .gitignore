@@ -8,3 +8,5 @@ bower_components
 # jekyll site
 _site/
 
+# OSX
+.DS_Store
