@@ -1,4 +1,3 @@
-
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
@@ -13,8 +12,8 @@ module.exports = function(grunt) {
         'exec:bower',
         'exec:deleteBuildFiles',
         'handlebars:compile',
-	    'concat:js',
-        'concat:libs_build',
+        'concat:js',
+        'concat:libs_build'
     ];
 
     var js_files = [
@@ -22,10 +21,10 @@ module.exports = function(grunt) {
         'issues.js'
     ];
 
-    for(var file in js_files) {
+    for (var file in js_files) {
         js_files[file] = js_dir + js_files[file];
     }
-    
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         static_dir: static_dir,
@@ -35,10 +34,12 @@ module.exports = function(grunt) {
             tasks: {
                 options: {
                     filter: 'exclude',
-                    tasks: ['sass', 'diff'],
+                    tasks: [
+                        'sass', 'diff'
+                    ],
                     groups: {
-                        'Commit:' : ['exec:commit_static'],
-                        'Revert:' : ['exec:revert']
+                        'Commit:': ['exec:commit_static'],
+                        'Revert:': ['exec:revert']
                     }
                 }
             }
@@ -49,13 +50,18 @@ module.exports = function(grunt) {
          */
         concat: {
             js: {
-                src: [templates_dir + 'handlebars_tmp', js_files],
+                src: [
+                    templates_dir + 'handlebars_tmp',
+                    js_files
+                ],
                 dest: 'issues.js'
             },
-	        libs_build: {
-		        src: [ 'issues.js', moment],
-		        dest: 'issues.js'
-	        },
+            libs_build: {
+                src: [
+                    'issues.js', moment
+                ],
+                dest: 'issues.js'
+            }
         },
 
         /*
@@ -67,15 +73,14 @@ module.exports = function(grunt) {
                     namespace: "Handlebars.templates",
                     processName: function(filepath) {
                         var parts = filepath.split('/');
-                        return parts[parts.length - 1].replace('.handlebars','');
+                        return parts[parts.length - 1].replace('.handlebars', '');
                     }
                 },
                 files: {
-                    '<%= templates_dir %>/handlebars_tmp' : '<%= templates_dir %>/*.handlebars'
+                    '<%= templates_dir %>/handlebars_tmp': '<%= templates_dir %>/*.handlebars'
                 }
             }
         },
-
 
         /*
          * Removes dev versions of JS and CSS files
@@ -85,24 +90,21 @@ module.exports = function(grunt) {
                 trace: true,
                 fileList: [
                     templates_dir + 'handlebars_tmp',
-                    static_dir + 'js/issues.js',
+                    static_dir + 'js/issues.js'
                 ]
             }
         },
 
-	gitrm: {
+        gitrm: {
             old_releases: {
-                options: { 
+                options: {
                     force: 'true'
                 },
                 files: {
-                    src: [
-                        static_dir + 'js/issues.js',
-                    ]
+                    src: [static_dir + 'js/issues.js']
                 }
             }
         },
-
 
         /*
          * Removes console.log
@@ -112,14 +114,13 @@ module.exports = function(grunt) {
                 src: static_dir + 'js/issues.js'
             }
         },
-        
 
         exec: {
             revert: "./script/revert_pkg_version.pl",
             revert_release: "./script/revert_pkg_version.pl release",
             deleteBuildFiles: "mkdir -p build && rm -r build",
             bower: "bower install",
-	        commit_static: "git add root/static/* package.json && git commit -m 'Release DDH version: <%= pkg.version %>'",
+            commit_static: "git add root/static/* package.json && git commit -m 'Release DDH version: <%= pkg.version %>'"
         },
 
         /*
@@ -130,10 +131,9 @@ module.exports = function(grunt) {
                 files: ['package.json'],
                 commit: false,
                 createTag: false,
-                push: false,
+                push: false
             }
-        },
-
+        }
     });
 
     grunt.registerTask('build', 'Compiles templates, builds JS and CSS files.', build_tasks);
