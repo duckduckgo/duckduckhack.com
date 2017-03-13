@@ -58,9 +58,9 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.escapeExpression;
 
-  return "<div id=\""
+  return "<div class=\""
     + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
-    + "\" class=\"hide\">\n  <h4 class=\"f3 black-70\">"
+    + " hide\">\n  <h4 class=\"f3 black-70\">"
     + alias1(container.lambda(depth0, depth0))
     + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-50 w-75-l r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-50 w-25-l r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -143,7 +143,7 @@ function stripLabelVal(label) {
 // - Difficulty and Skill columns
 // - Priority: High label
 // - Topic
-// - Mission
+// - Category
 function labelsToColumns(issue) {
    issue.skill = [];
    
@@ -159,7 +159,7 @@ function labelsToColumns(issue) {
            issue.skill.push($.trim(stripLabelVal(name)));
        } else if (name.match(/Topic/)) {
            issue.topic = $.trim(stripLabelVal(name));
-       } else if (name.match(/Mission/)) {
+       } else if (name.match(/Category/)) {
            issue.category = $.trim(stripLabelVal(name));
        }
 
@@ -181,15 +181,16 @@ function labelsToColumns(issue) {
 function groupIssuesByTopic(issues) {
     $.each(issues, function(key, val) {
         issue = labelsToColumns(val);
-
-        renderIssue(issue);    
+        if (issue.topic) {
+          renderIssue(issue);    
+        }  
     });
 }
 
 // Append the give issue to the appropriate Topic list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    var $topic_group = $(sanitizeId(issue.category) + " " + sanitizeId(issue.topic));
+    var $topic_group = $(sanitize(issue.category, "#") + " " + sanitize(issue.topic, "."));
     $topic_group.removeClass("hide");
     $topic_group.children("ul").append(rendered_issue);
 }
@@ -208,7 +209,7 @@ function renderGroupings(topics, categories) {
 
     $("#issues_list").append(rendered_categories);
     $.each(categories, function (key, category) {
-      $(sanitizeId(category)).append(rendered_topics);
+      $(sanitize(category, "#")).append(rendered_topics);
     });
 }
 
@@ -236,10 +237,10 @@ function generateGroupings(re, issues) {
 }
 
 // The following function takes care of escaping these characters and places a "#" at the beginning of the ID string
-function sanitizeId(myid) {
+function sanitize(myid, prefix) {
     // it is possible for a topic label to not exist
     // replace all non alpha-numeric characters with _
-    return (myid) ? "#" + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
+    return (myid) ? prefix + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
 }
 
 // Hide the loading element
@@ -252,7 +253,7 @@ $(document).ready(function() {
     
     $.getJSON(url, function(data) {
       var issues = data.items;
-      var categories = generateGroupings(new RegExp("Mission: (.*)"), issues);
+      var categories = generateGroupings(new RegExp("Category: (.*)"), issues);
       var topics = generateGroupings(new RegExp("Topic: (.*)"), issues);
 
       dismissLoadingScreen();
