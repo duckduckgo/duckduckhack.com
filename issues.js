@@ -1,5 +1,18 @@
 this["Handlebars"] = this["Handlebars"] || {};
 this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
+this["Handlebars"]["templates"]["categories"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var alias1=container.escapeExpression;
+
+  return "  <div id=\""
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
+    + "\">\r\n    <h2 class=\"f2 black-80 bb b--black-10\">"
+    + alias1(container.lambda(depth0, depth0))
+    + "</h2>\r\n  </div>\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.categories : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"useData":true});
 
 this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     return "tag-"
@@ -44,9 +57,9 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
 this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.escapeExpression;
 
-  return "<div id=\""
+  return "<div class=\""
     + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
-    + "\" class=\"hide\">\n  <h4 class=\"f3 black-70\">"
+    + " hide\">\n  <h4 class=\"f3 black-70\">"
     + alias1(container.lambda(depth0, depth0))
     + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb4 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-50 w-75-l r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-50 w-25-l r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -129,6 +142,7 @@ function stripLabelVal(label) {
 // - Difficulty and Skill columns
 // - Priority: High label
 // - Topic
+// - Category
 function labelsToColumns(issue) {
    issue.skill = [];
    
@@ -144,11 +158,15 @@ function labelsToColumns(issue) {
            issue.skill.push($.trim(stripLabelVal(name)));
        } else if (name.match(/Topic/)) {
            issue.topic = $.trim(stripLabelVal(name));
+       } else if (name.match(/Category/)) {
+           issue.category = $.trim(stripLabelVal(name));
        }
 
        if (issue.length - 1 === i) {
            issue.last = true;
-       }   
+       }
+
+
    }
 
    return issue;
@@ -160,31 +178,61 @@ function labelsToColumns(issue) {
 function groupIssuesByTopic(issues) {
     $.each(issues, function(key, val) {
         issue = labelsToColumns(val);
-
-        renderIssue(issue);    
+        if (issue.topic) {
+          renderIssue(issue);    
+        }  
     });
 }
 
 // Append the give issue to the appropriate Topic list
 function renderIssue(issue) {
     var rendered_issue = Handlebars.templates.issues(issue);
-    var $topic_group = $(sanitizeId(issue.topic));
+    var $topic_group = $(sanitize(issue.category, "#") + " " + sanitize(issue.topic, "."));
     $topic_group.removeClass("hide");
     $topic_group.children("ul").append(rendered_issue);
 }
 
-// Render the containers for each Topic list
-function renderTopics(topics) {
-    var topic_obj = {};
-    topic_obj.topics = topics;
-    
-    var rendered_topics = Handlebars.templates.topic_groups(topic_obj);
-    $("#issues_list").html(rendered_topics);
+// Reorders the categories based on a hardcoded 'priority' category
+function reorderCategories(categories) {
+
+    var last_group = "Programming Mission"; // the category to be displayed last
+    var reordered_list = [];
+
+    // filter out the last_group task
+    for(var i = 0 ; i < categories.length ; i++ ) {
+      if( categories[i] != last_group ) {
+        reordered_list.push(categories[i]);
+      }
+    }
+
+    // create and return unordered list
+    reordered_list = reordered_list.concat(last_group);
+    return reordered_list; 
 }
 
-// Generate a list of topics
-function generateTopics(issues) {
-    var re = new RegExp("Topic: (.*)"); // matches CSS in "Topic: CSS"
+// Render the containers for each Topic list
+function renderGroupings(topics, category_list) {
+
+    // reorder the category list based on admin preferences
+    var categories = reorderCategories(category_list);
+
+    var rendered_topics = Handlebars.templates.topic_groups({
+      topics: topics
+    }); // render a topics snippet to be used by each category
+
+    var rendered_categories = Handlebars.templates.categories({
+      categories: categories
+    }); // render the categories
+
+    $("#issues_list").append(rendered_categories);
+    $.each(categories, function (key, category) {
+      $(sanitize(category, "#")).append(rendered_topics);
+    });
+}
+
+// Generate a list of items from the issues based on any regular expression.
+// Will match against label names.
+function generateGroupings(re, issues) {
     var topics = [];
 
     $.each(issues, function (key, issue) {
@@ -206,18 +254,29 @@ function generateTopics(issues) {
 }
 
 // The following function takes care of escaping these characters and places a "#" at the beginning of the ID string
-function sanitizeId(myid) {
+function sanitize(myid, prefix) {
     // it is possible for a topic label to not exist
     // replace all non alpha-numeric characters with _
-    return (myid) ? "#" + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
+    return (myid) ? prefix + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
+}
+
+// Hide the loading element
+function dismissLoadingScreen() {
+  $('.is-loading').hide();
 }
 
 $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
     
     $.getJSON(url, function(data) {
-        renderTopics(generateTopics(data.items));
-        groupIssuesByTopic(data.items);
+      var issues = data.items;
+
+      var categories = generateGroupings(new RegExp("Category: (.*)"), issues);
+      var topics = generateGroupings(new RegExp("Topic: (.*)"), issues);
+
+      dismissLoadingScreen();
+      renderGroupings(topics, categories);
+      groupIssuesByTopic(issues);
     });
 });
 
