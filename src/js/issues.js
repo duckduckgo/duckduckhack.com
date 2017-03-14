@@ -31,11 +31,7 @@ function labelsToColumns(issue) {
        if (issue.length - 1 === i) {
            issue.last = true;
        }
-
-       if (!issue.category) {
-          issue.category = "top_category";
-       }
-   }
+   } // for
 
    return issue;
 }

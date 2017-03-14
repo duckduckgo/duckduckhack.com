@@ -167,9 +167,7 @@ function labelsToColumns(issue) {
            issue.last = true;
        }
 
-       if (!issue.category) {
-          issue.category = "top_category";
-       }
+
    }
 
    return issue;
