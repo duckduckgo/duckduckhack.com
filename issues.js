@@ -1,6 +1,5 @@
 this["Handlebars"] = this["Handlebars"] || {};
 this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
-
 this["Handlebars"]["templates"]["categories"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.escapeExpression;
 
