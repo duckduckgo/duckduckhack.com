@@ -33,7 +33,7 @@ function labelsToColumns(issue) {
        }
 
        if (!issue.category) {
-          issue.category = "null_category";
+          issue.category = "top_category";
        }
    }
 
@@ -60,8 +60,30 @@ function renderIssue(issue) {
     $topic_group.children("ul").append(rendered_issue);
 }
 
+// Reorders the categories based on a hardcoded 'priority' category
+function reorderCategories(categories) {
+
+    var last_group = "Programming Mission"; // the category to be displayed last
+    var reordered_list = [];
+
+    // filter out the last_group task
+    for(var i = 0 ; i < categories.length ; i++ ) {
+      if( categories[i] != last_group ) {
+        reordered_list.push(categories[i]);
+      }
+    }
+
+    // create and return unordered list
+    reordered_list = reordered_list.concat(last_group);
+    return reordered_list; 
+}
+
 // Render the containers for each Topic list
-function renderGroupings(topics, categories) {
+function renderGroupings(topics, category_list) {
+
+    // reorder the category list based on admin preferences
+    var categories = reorderCategories(category_list);
+
     var rendered_topics = Handlebars.templates.topic_groups({
       topics: topics
     }); // render a topics snippet to be used by each category
@@ -69,8 +91,6 @@ function renderGroupings(topics, categories) {
     var rendered_categories = Handlebars.templates.categories({
       categories: categories
     }); // render the categories
-
-    $("#null_category").html(rendered_topics); // a bucket for all issues without a category
 
     $("#issues_list").append(rendered_categories);
     $.each(categories, function (key, category) {
@@ -118,6 +138,7 @@ $(document).ready(function() {
     
     $.getJSON(url, function(data) {
       var issues = data.items;
+
       var categories = generateGroupings(new RegExp("Category: (.*)"), issues);
       var topics = generateGroupings(new RegExp("Topic: (.*)"), issues);
 
