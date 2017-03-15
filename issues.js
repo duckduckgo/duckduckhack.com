@@ -6,7 +6,7 @@ this["Handlebars"]["templates"]["categories"] = Handlebars.template({"1":functio
 
   return "  <div id=\""
     + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
-    + "\">\r\n    <h2 class=\"f3 black-80 bb b--black-10\">"
+    + "\">\r\n    <h2 class=\"f3 mb1 black-80 bb b--black-10\">"
     + alias1(container.lambda(depth0, depth0))
     + "</h2>\n  </div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
