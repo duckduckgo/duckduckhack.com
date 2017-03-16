@@ -4,7 +4,7 @@ This repo contains the static content used to build [DuckDuckHack.com](DuckDuckH
 
 ## Setting up
 
-This project requires that you have [npm](https://www.npmjs.com/), [bower](https://bower.io/), [grunt](https://gruntjs.com/) and [jekyll](https://jekyllrb.com/) installed globally. You can set up and build the website using the following steps:
+This project requires that you have [npm](https://www.npmjs.com/), [bower](https://bower.io/) and [grunt](https://gruntjs.com/) installed globally. You can set up and build the website using the following steps:
 
 ```
 $ git clone https://github.com/duckduckgo/duckduckhack.com
@@ -12,7 +12,6 @@ $ cd duckduckhack.com/
 $ npm i
 $ bower install
 $ grunt
-$ jekyll s
 ```
 
 ## Resources
