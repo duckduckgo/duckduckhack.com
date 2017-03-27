@@ -1,6 +1,6 @@
 # Welcome to DuckDuckHack!
 
-This repo contains the static content used to build [DuckDuckHack.com](DuckDuckHack.com)
+This repo contains the static content used to build [DuckDuckHack.com](https://duckduckhack.com/)
 
 ## Setting up
 
