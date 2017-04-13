@@ -114,8 +114,8 @@ $(document).ready(function() {
     $.getJSON(url, function(data) {
       var issues = data.items;
 
-      var categories = generateGroupings(new RegExp("Category: (.*)"), issues);
-      var topics = generateGroupings(new RegExp("Topic: (.*)"), issues);
+      var categories = generateGroupings(/Category: (.*)/, issues);
+      var topics = generateGroupings(/Topic: (.*)/, issues);
 
       dismissLoadingScreen();
       renderGroupings(topics, categories);

@@ -146,7 +146,7 @@ function stripLabelVal(label) {
 // - Category
 function labelsToColumns(issue) {
    issue.skill = [];
-   
+
    for (var i = 0; i < issue.labels.length; i++) {
        var label = issue.labels[i];
        var name = label.name;
@@ -227,7 +227,7 @@ function generateGroupings(re, issues) {
     });
 
     topics.sort();
-    
+
     return topics;
 }
 
@@ -245,12 +245,12 @@ function dismissLoadingScreen() {
 
 $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
-    
+
     $.getJSON(url, function(data) {
       var issues = data.items;
 
-      var categories = generateGroupings(new RegExp("Category: (.*)"), issues);
-      var topics = generateGroupings(new RegExp("Topic: (.*)"), issues);
+      var categories = generateGroupings(/Category: (.*)/, issues);
+      var topics = generateGroupings(/Topic: (.*)/, issues);
 
       dismissLoadingScreen();
       renderGroupings(topics, categories);
