@@ -11,7 +11,7 @@ function stripLabelVal(label) {
 // - Category
 function labelsToColumns(issue) {
    issue.skill = [];
-   
+
    for (var i = 0; i < issue.labels.length; i++) {
        var label = issue.labels[i];
        var name = label.name;
@@ -37,14 +37,14 @@ function labelsToColumns(issue) {
 }
 
 // Main function iterating through the issues from GitHub API,
-// pulling out the important information 
+// pulling out the important information
 // and rendering each issue using the Handlebars template
 function groupIssuesByTopic(issues) {
     $.each(issues, function(key, val) {
         issue = labelsToColumns(val);
         if (issue.topic) {
-          renderIssue(issue);    
-        }  
+          renderIssue(issue);
+        }
     });
 }
 
@@ -71,7 +71,7 @@ function reorderCategories(categories) {
 
     // create and return unordered list
     reordered_list = reordered_list.concat(last_group);
-    return reordered_list; 
+    return reordered_list;
 }
 
 // Render the containers for each Topic list
@@ -113,7 +113,7 @@ function generateGroupings(re, issues) {
     });
 
     topics.sort();
-    
+
     return topics;
 }
 
@@ -131,7 +131,7 @@ function dismissLoadingScreen() {
 
 $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
-    
+
     $.getJSON(url, function(data) {
       var issues = data.items;
 
