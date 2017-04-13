@@ -172,14 +172,14 @@ function labelsToColumns(issue) {
 }
 
 // Main function iterating through the issues from GitHub API,
-// pulling out the important information 
+// pulling out the important information
 // and rendering each issue using the Handlebars template
 function groupIssuesByTopic(issues) {
     $.each(issues, function(key, val) {
         issue = labelsToColumns(val);
-        if (issue.topic) {
-          renderIssue(issue);    
-        }  
+        if (issue.topic && issue.category) {
+          renderIssue(issue);
+        }
     });
 }
 

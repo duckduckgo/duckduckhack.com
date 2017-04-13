@@ -42,7 +42,7 @@ function labelsToColumns(issue) {
 function groupIssuesByTopic(issues) {
     $.each(issues, function(key, val) {
         issue = labelsToColumns(val);
-        if (issue.topic) {
+        if (issue.topic && issue.category) {
           renderIssue(issue);
         }
     });
