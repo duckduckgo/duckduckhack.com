@@ -146,7 +146,7 @@ function stripLabelVal(label) {
 // - Category
 function labelsToColumns(issue) {
    issue.skill = [];
-   
+
    for (var i = 0; i < issue.labels.length; i++) {
        var label = issue.labels[i];
        var name = label.name;
@@ -172,14 +172,14 @@ function labelsToColumns(issue) {
 }
 
 // Main function iterating through the issues from GitHub API,
-// pulling out the important information 
+// pulling out the important information
 // and rendering each issue using the Handlebars template
 function groupIssuesByTopic(issues) {
     $.each(issues, function(key, val) {
         issue = labelsToColumns(val);
-        if (issue.topic) {
-          renderIssue(issue);    
-        }  
+        if (issue.topic && issue.category) {
+          renderIssue(issue);
+        }
     });
 }
 
@@ -191,29 +191,8 @@ function renderIssue(issue) {
     $topic_group.children("ul").append(rendered_issue);
 }
 
-// Reorders the categories based on a hardcoded 'priority' category
-function reorderCategories(categories) {
-
-    var last_group = "Programming Mission"; // the category to be displayed last
-    var reordered_list = [];
-
-    // filter out the last_group task
-    for(var i = 0 ; i < categories.length ; i++ ) {
-      if( categories[i] != last_group ) {
-        reordered_list.push(categories[i]);
-      }
-    }
-
-    // create and return unordered list
-    reordered_list = reordered_list.concat(last_group);
-    return reordered_list; 
-}
-
 // Render the containers for each Topic list
-function renderGroupings(topics, category_list) {
-
-    // reorder the category list based on admin preferences
-    var categories = reorderCategories(category_list);
+function renderGroupings(topics, categories) {
 
     var rendered_topics = Handlebars.templates.topic_groups({
       topics: topics
@@ -248,7 +227,7 @@ function generateGroupings(re, issues) {
     });
 
     topics.sort();
-    
+
     return topics;
 }
 
@@ -266,12 +245,12 @@ function dismissLoadingScreen() {
 
 $(document).ready(function() {
     var url = 'https://duckduckhack.com/open_issues/';
-    
+
     $.getJSON(url, function(data) {
       var issues = data.items;
 
-      var categories = generateGroupings(new RegExp("Category: (.*)"), issues);
-      var topics = generateGroupings(new RegExp("Topic: (.*)"), issues);
+      var categories = generateGroupings(/Category: (.*)/, issues);
+      var topics = generateGroupings(/Topic: (.*)/, issues);
 
       dismissLoadingScreen();
       renderGroupings(topics, categories);
