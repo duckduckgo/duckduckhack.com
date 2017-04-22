@@ -4087,6 +4087,8 @@ small, .t-s {
   margin-top: .2em; }
 .ddh--help .ddh--help__section.mw-center {
   max-width: 520px; }
+.ddh--help .ddh--help__section.mw-split {
+  max-width: 370px; }  
 .ddh--help .ddh--help__section {
   margin-bottom: 3em; }
   .ddh--help .ddh--help__section:last-of-type {
