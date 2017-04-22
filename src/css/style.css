@@ -3943,7 +3943,7 @@ small, .t-s {
 
 .ddh {
   text-align: center;
-  padding: 120px 0 120px 0;
+  padding: 100px 0 120px 0;
   line-height: 1.5; }
 
 .ddh--foot {
@@ -4085,6 +4085,8 @@ small, .t-s {
 .ddh--help .ddh__title {
   font-size: 2.5em;
   margin-top: .2em; }
+.ddh--help .ddh--help__section.mw-center {
+  max-width: 520px; }
 .ddh--help .ddh--help__section {
   margin-bottom: 3em; }
   .ddh--help .ddh--help__section:last-of-type {
@@ -10658,3 +10660,13 @@ img {
 
   .v-btm-l {
     vertical-align: bottom; } }
+
+.header-image {
+  width: 144px;
+  height: 144px;
+}
+
+.sub-image {
+  width: 108px;
+  height: 108px;
+}
