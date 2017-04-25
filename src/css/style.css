@@ -4083,7 +4083,7 @@ small, .t-s {
   background-color: #7db5e1; }
 
 .ddh--help .ddh__title {
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-top: .2em; }
 .ddh--help .ddh--help__section.mw-center {
   max-width: 520px; }
@@ -4096,7 +4096,7 @@ small, .t-s {
   .ddh--help .ddh--help__section > .ddgsi, .ddh--help .ddh--help__section .fa {
     font-size: 3em; }
 .ddh--help .ddh--help__link {
-  font-size: 1.2em;
+  font-size: 1.125em;
   margin-bottom: 0.5em; }
   .ddh--help .ddh--help__link > .ddgsi, .ddh--help .ddh--help__link .fa {
     color: #60a5da;
@@ -4104,8 +4104,11 @@ small, .t-s {
   .ddh--help .ddh--help__link a:visited {
     color: #60a5da; }
 .ddh--help .ddh--help__section > p {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 1em; }
+.ddh--help .ddh--help__button{
+  color: white;
+}
 
 .ddh__sub--link {
   color: #7db5e1; }
