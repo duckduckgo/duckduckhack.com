@@ -4105,7 +4105,8 @@ small, .t-s {
     color: #60a5da; }
 .ddh--help .ddh--help__section > p {
   font-size: 1em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  line-height: 1.625em; }
 .ddh--help .ddh--help__button{
   color: white;
 }
@@ -10669,9 +10670,11 @@ img {
 .header-image {
   width: 144px;
   height: 144px;
+  margin-bottom:20px;
 }
 
 .sub-image {
   width: 108px;
   height: 108px;
+  margin-bottom:20px;
 }
