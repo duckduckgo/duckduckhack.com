@@ -4114,6 +4114,14 @@ small, .t-s {
 .ddh--help .ddh--help__button{
   color: white;
 }
+.ddh--help .ddh--header__image {
+    width: 144px;
+    height: 144px;
+}
+.ddh--help .ddh--sub__image {
+    width: 108px;
+    height: 108px;
+}
 
 .ddh__sub--link {
   color: #7db5e1; }
