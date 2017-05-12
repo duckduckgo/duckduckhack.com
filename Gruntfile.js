@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 
     var build_tasks = [
         'exec:bower',
-        // 'exec:deleteBuildFiles',
+        'exec:deleteBuildFiles',
         'handlebars:compile',
         'concat:js',
         'concat:libs_build'
