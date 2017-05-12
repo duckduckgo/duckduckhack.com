@@ -4103,6 +4103,10 @@ small, .t-s {
     font-size: 1em; }
   .ddh--help .ddh--help__link a:visited {
     color: #60a5da; }
+  .ddh--help .btn--primary--alt a,
+  .ddh--help .btn--primary--alt a:visited {
+    color: white;
+  }
 .ddh--help .ddh--help__section > p {
   font-size: 1em;
   margin-bottom: 1em;
