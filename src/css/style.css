@@ -39,14 +39,10 @@ ol, ul {
    list-style-type: decimal; }
 
 .contributing ul ul, .contributing ol ul {
-   list-style-type: circle;
-   list-style-position: inside;
-   margin-left: 15px; }
+   list-style-type: circle; }
 
 .contributing ol ol, .contributing ul ol {
-   list-style-type: lower-latin;
-   list-style-position: inside;
-   margin-left: 15px; }
+   list-style-type: lower-latin; }
 
 .contributing code {
     font-size: .8em;
