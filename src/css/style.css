@@ -48,6 +48,9 @@ ol, ul {
    list-style-position: inside;
    margin-left: 15px; }
 
+.contributing code {
+    font-size: .8em;
+    padding: 0 0.3em .2em; }
 
 table {
   border-collapse: collapse;
