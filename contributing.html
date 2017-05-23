@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 
@@ -45,7 +44,7 @@
                 </div>
             </nav>
 
-            <section class="ph2 ph5-m ph5-l ph5-ns">
+            <section class="ph2 ph5-m ph7-l ph7-ns">
                 <section class="mb4">
                     <div>
                         <h1 class="r-iblock f2 mr2 black-70 pb0 mb0">Contributing</h1>
@@ -56,9 +55,10 @@
 
                 <div class="contributing">
 
-                    <p>We're an open source community dedicated to improving search results with <em>Instant Answers</em>. Instant Answers use the Web's most trusted APIs and data to solve searches in zero or few clicks. Together and openly, we can create the best search engine for every type of search. We hope you'll join us!</p>
+                    <p>We're an open source community dedicated to improving search results with <em>Instant Answers</em>. Instant Answers use the Web's most trusted APIs and data to solve searches in zero or few clicks. Together and openly, we can create the best search
+                        engine for every type of search. We hope you'll join us!</p>
 
-                    <h3>Contents</h3>
+                    <h3 class="bb b--black-10 pb0 mb3 mt4">Contents</h3>
 
                     <ul>
                         <li>
@@ -89,9 +89,10 @@
                         </li>
                     </ul>
 
-                    <h3 id="our-core-values">Our Core Values</h3>
+                    <h3 class="bb b--black-10 pb0 mb3 mt4" id="our-core-values">Our Core Values</h3>
 
-                    <p>We are open source to the core. By collaborating with our users we can crowdsource the highest quality Instant Answers. Contributing to DuckDuckHack has a direct impact on the end user. In light of this, we ask you to keep our core values in mind. In everything we do, we:</p>
+                    <p>We are open source to the core. By collaborating with our users we can crowdsource the highest quality Instant Answers. Contributing to DuckDuckHack has a direct impact on the end user. In light of this, we ask you to keep our core values in mind.
+                        In everything we do, we:</p>
 
                     <ul>
                         <li>Build Trust</li>
@@ -99,7 +100,7 @@
                         <li>Validate Direction</li>
                     </ul>
 
-                    <h3 id="reporting-issues">Reporting Issues</h3>
+                    <h3 class="bb b--black-10 pb0 mb3 mt4" id="reporting-issues">Reporting Issues</h3>
 
                     <p>Reporting issues is a great opportunity to highlight problems or improvements to the community. We have an established practice we adhere to, and we encourage you to follow these to ensure that it is dealt with swiftly and appropriately.</p>
 
@@ -110,73 +111,77 @@
                         <li>Mention the maintainer and other developers of interests to so they are made aware.</li>
                     </ol>
 
-                    <h3 id="pull-requests">Pull Requests</h3>
+                    <h3 class="bb b--black-10 pb0 mb3 mt4" id="pull-requests">Pull Requests</h3>
 
-                    <p>When submitting a pull request, the following guidelines help speed up the review process:<p>
+                    <p>When submitting a pull request, the following guidelines help speed up the review process:
+                        <p>
 
-                    <h4 id="new-instant-answers">New Instant Answers</h4>
+                            <h6 class="pb0 b" id="new-instant-answers">New Instant Answers</h4>
 
-                    <ol>
-                        <li>New IAs should be titled as follows: <strong><code>New {IA TOPIC} {IA TYPE}</code></strong>. For example, <code>New Instagram Spice</code> or <code>New Firefox Cheat Sheet</code></li>
+                            <ol>
+                                <li>New IAs should be titled as follows: <strong><code>New {IA TOPIC} {IA TYPE}</code></strong>. For example, <code>New Instagram Spice</code> or <code>New Firefox Cheat Sheet</code></li>
 
-                        <li>Paste the relevant <a href="https://duck.co/ia/new_ia">Instant Answer Page URL</a> in the description field. This will automatically link the PR to the Instant Answer.</li>
-                    </ol>
+                                <li>Paste the relevant <a href="https://duck.co/ia/new_ia">Instant Answer Page URL</a> in the description field. This will automatically link the PR to the Instant Answer.</li>
+                            </ol>
 
-                    <img src="images/screenshots/calculator.png" alt="">
+                            <img src="images/screenshots/calculator.png" alt="">
 
-                        
-                    <h4 id="improvements">Improvements</h4>
 
-                    <ol>
-                        <li>Fixes should be titled as follows: <strong><code>{IA NAME}: Brief explanation</code></strong>. For example: <code>PeopleInSpace: Use smaller local image, fallback to API when needed.</code></li>
+                            <h6 class="pb0 b" id="improvements">Improvements</h4>
 
-                        <img src="images/screenshots/github_pr.png" alt="Github PR Template">
+                            <ol>
+                                <li>Fixes should be titled as follows: <strong><code>{IA NAME}: Brief explanation</code></strong>. For example: <code>PeopleInSpace: Use smaller local image, fallback to API when needed.</code></li>
 
-                        <li>Paste the relevant <a href="https://duck.co/ia/new_ia">Instant Answer Page URL</a> in the description field. This will automatically link the PR to the Instant Answer.</li>
-                        
-                        <li>Include the issue number in the description (conveniently, this will automatically resolve the issue upon merging). Describe your motivation, thought process, and solution in the description. For example:</li>
+                                <img src="images/screenshots/github_pr.png" alt="Github PR Template">
 
-                    </ol>
+                                <li>Paste the relevant <a href="https://duck.co/ia/new_ia">Instant Answer Page URL</a> in the description field. This will automatically link the PR to the Instant Answer.</li>
 
-                    <blockquote>
-                        "<strong>Fixes #2038.</strong> The images used by the API are very large and don't change often. I've put a smaller version of each image (and a 2x version for retina screens) in the share directory. The callback will try and load a local image based on the astronaut's name and fallback to using the API's image if one does not exist."
-                    </blockquote>
+                                <li>Include the issue number in the description (conveniently, this will automatically resolve the issue upon merging). Describe your motivation, thought process, and solution in the description. For example:</li>
 
-                    <blockquote> 
-                        <strong>IMPORTANT:</strong> Don't worry if you get an initial error regarding failing Travis tests. The reason is that your IA page hasn't yet been moved out of the "Planning" status - which only community leaders/staff can do. As long as the ID in your IA page matches the ID in your code, and you've pasted the URL to your IA page, you can ignore this initial error.
-                    </blockquote>
+                            </ol>
 
-                    <h3 id="reviewing-pull-requests">Reviewing Pull Requests</h3>
+                            <blockquote>
+                                "<strong>Fixes #2038.</strong> The images used by the API are very large and don't change often. I've put a smaller version of each image (and a 2x version for retina screens) in the share directory. The callback will try and load a local image
+                                based on the astronaut's name and fallback to using the API's image if one does not exist."
+                            </blockquote>
 
-                    <p>Reviewing Pull Requests is another impactful way to contribute to DuckDuckHack. Community developers benefit and value feedback from each other, and non-technical users. Please **be friendly**, **be timely** if requested for a review, and <strong>seek help</strong> if you're uncomfortable with any of the above.</p>
+                            <blockquote>
+                                <strong>IMPORTANT:</strong> Don't worry if you get an initial error regarding failing Travis tests. The reason is that your IA page hasn't yet been moved out of the "Planning" status - which only community leaders/staff can do. As long as the
+                                ID in your IA page matches the ID in your code, and you've pasted the URL to your IA page, you can ignore this initial error.
+                            </blockquote>
 
-                    <p>Some questions to keep in mind before approving and/or merging:</p>
+                            <h3 class="bb b--black-10 pb0 mb3 mt4" id="reviewing-pull-requests">Reviewing Pull Requests</h3>
 
-                    <ul>
-                        <li>Does this PR solve the problem?</li>
-                        <li>Has every new line of code been checked?</li>
-                        <li>What is not clear from the code?</li>
-                        <li>Is this code commented appropriately?</li>
-                        <li>Has this been tested holistically to ensure no harm is done?</li>
-                        <li>Are there any quick wins that improve the implementation?</li>
-                    </ul>
+                            <p>Reviewing Pull Requests is another impactful way to contribute to DuckDuckHack. Community developers benefit and value feedback from each other, and non-technical users. Please **be friendly**, **be timely** if requested for a review, and <strong>seek help</strong>                                if you're uncomfortable with any of the above.</p>
 
-                    <h3 id="not-following-these-guidelines">Not following these guidelines?</h3>
+                            <p>Some questions to keep in mind before approving and/or merging:</p>
 
-                    <p>DuckDuckHack's guidelines are important and have been enforced for a reason. If you are reading this, you have probably been linked to this paragraph. Not following the above guidelines costs both staff and volunteers time which results in a loss of productivity.</p>
+                            <ul>
+                                <li>Does this PR solve the problem?</li>
+                                <li>Has every new line of code been checked?</li>
+                                <li>What is not clear from the code?</li>
+                                <li>Is this code commented appropriately?</li>
+                                <li>Has this been tested holistically to ensure no harm is done?</li>
+                                <li>Are there any quick wins that improve the implementation?</li>
+                            </ul>
 
-                    <p>Please read the above literature, and act appropriately.</p>
+                            <h3 class="bb b--black-10 pb0 mb3 mt4" id="not-following-these-guidelines">Not following these guidelines?</h3>
 
-                    <p>Once you have made the requested adjustments, please ping a community leader to reopen or remove the <code>on-hold</code> status of your issue / pull request. If you are not sure, we will be happy to help.</p>
+                            <p>DuckDuckHack's guidelines are important and have been enforced for a reason. If you are reading this, you have probably been linked to this paragraph. Not following the above guidelines costs both staff and volunteers time which results in a loss
+                                of productivity.</p>
 
-                    <h3 id="not-sure">Not Sure?</h3>
+                            <p>Please read the above literature, and act appropriately.</p>
 
-                    <ul>
-                        <li>Join the <a href="https://quackslack.herokuapp.com/">DuckDuckHack Slack channel</a> to ask questions</li>
-                        <li>Join the <a href="https://forum.duckduckhack.com/">DuckDuckHack Forum</a> to discuss project planning</li>
-                        <li>Read the <a href="https://docs.duckduckhack.com/">documentation</a> for technical help</li>
-                        <li>View the list of <a href="https://duck.co/ia">all live Goodie Instant Answers</a> to see more examples</li>
-                    </ul>
+                            <p>Once you have made the requested adjustments, please ping a community leader to reopen or remove the <code>on-hold</code> status of your issue / pull request. If you are not sure, we will be happy to help.</p>
+
+                            <h3 class="bb b--black-10 pb0 mb3 mt4" id="not-sure">Not Sure?</h3>
+
+                            <ul>
+                                <li>Join the <a href="https://quackslack.herokuapp.com/">DuckDuckHack Slack channel</a> to ask questions</li>
+                                <li>Join the <a href="https://forum.duckduckhack.com/">DuckDuckHack Forum</a> to discuss project planning</li>
+                                <li>Read the <a href="https://docs.duckduckhack.com/">documentation</a> for technical help</li>
+                                <li>View the list of <a href="https://duck.co/ia">all live Goodie Instant Answers</a> to see more examples</li>
+                            </ul>
 
                 </div>
             </section>
