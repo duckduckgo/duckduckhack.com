@@ -25,6 +25,33 @@ html {
 ol, ul {
   list-style: none; }
 
+.contributing {
+  font-size: 1.2em; }
+
+.contributing ul, .contributing ol {
+    padding-left: 1.5em;
+}
+
+.contributing ul {
+   list-style-type: disc; }
+
+.contributing ol {
+   list-style-type: decimal; }
+
+.contributing ul ul, .contributing ol ul {
+   list-style-type: circle;
+   list-style-position: inside;
+   margin-left: 15px; }
+
+.contributing ol ol, .contributing ul ol {
+   list-style-type: lower-latin;
+   list-style-position: inside;
+   margin-left: 15px; }
+
+.contributing code {
+    font-size: .8em;
+    padding: 0 0.3em .2em; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -906,26 +933,26 @@ small, .t-s {
 
     Large (l) and Extra-Large (xl) are 'min-width' media queries,
     meaning they'll only appear on screens that are big enough.
-    
+
     Medium (m), Small (s), and Extra-Small (xs) are max-width queries,
     meaning that they only appear on screens that are small enough.
-    
+
     The 'density' queries are kind of heavy-duty, so use extra-sparingly. :)
-    
+
     For high pixel-density images, you can use (retinahd), (retina) or (hdpi).
-    
-    
+
+
     Usage:  @include media-query(size){ [styles here] }
 */
 /*
     DuckDuckGo Icons!
-    
+
     Requires that you compile the icon font yourself and
     serve it via @font-face under the name 'ddg-serp-icons'
 */
 /*
     Buttons
-    (Most of the basics are handled by litestrap - this is for custom stuff)    
+    (Most of the basics are handled by litestrap - this is for custom stuff)
 */
 .btn, .button,
 .btn--icon,
@@ -3496,25 +3523,25 @@ small, .t-s {
 */
 /*
 	Example Media Query Block:
-	
-	Note that Large is above Extra-Large, 
+
+	Note that Large is above Extra-Large,
 	so that the extra large styles will override the large ones.
 	(CSS is read and applied top to bottom).
-	
+
 @media only screen and (min-width: $media--l) {}
-	
+
 @media only screen and (min-width: $media--xl) {}
-	
+
 @media only screen and (max-width: $media--m) {}
-		
+
 @media only screen and (max-width: $media--s) {}
-	
+
 @media only screen and (max-width: $media--xs) {}
 
 */
-/* 
-   'Gutter' Widths 
-    The SERP layout has a fixed-size left gutter.  
+/*
+   'Gutter' Widths
+    The SERP layout has a fixed-size left gutter.
 	Internal pages also use this gutter width on the right.
     Adjust that size, and the header (menu) gutter here.
 */
@@ -3526,7 +3553,7 @@ small, .t-s {
 /*
 	Content Controllers
 */
-/* 
+/*
 	Fixed Header Sizes
 
 	the "default" is to have a fixed-position header,
@@ -3537,12 +3564,12 @@ small, .t-s {
 */
 /*
 	Text Styling
-	
+
 	.tx- and .hd- prefixes live here and are common text changes.
-	
+
 	This kind of thing is usually used to rapid-dev static pages.
 	Using different prefixes from litestrap for more distinction on where they might be modified.
-	
+
 	.tx - text
 	.hd - heading
 */
@@ -3581,7 +3608,7 @@ small, .t-s {
 
 /*
 	Slider
-	
+
 	Used via extends here because each slider on static pages
 	are a little bit different in styling and function.
 */
@@ -3640,7 +3667,7 @@ small, .t-s {
   height: 1em;
   line-height: 1em; }
 
-/* 
+/*
 	Width Control
 */
 .cw, .cw--c {
@@ -3648,10 +3675,10 @@ small, .t-s {
   position: relative;
   padding: 0 7px;
   max-width: 1008px;
-  /* 
+  /*
   	Left alignment is the default in the new design, and we're disabling center-align
   	.cw is a content-wrapper, and is normally set to margin: 0 auto;
-  	- reset that margin, and everything floats left! 
+  	- reset that margin, and everything floats left!
   */
   margin-left: 0;
   margin-right: auto; }
@@ -3661,7 +3688,7 @@ small, .t-s {
 
 /*
 	'Block' Sections
-	
+
 	Full-bleed sections to break of the content of a static page.
 */
 .blk {

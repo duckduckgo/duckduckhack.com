@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>DuckDuckHack - Contributing to DuckDuckGo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+    <link rel="stylesheet" href="src/css/style.css" type="text/css">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@duckduckhack">
+    <meta property="og:url" content="https://duckduckhack.com/issues">
+    <meta property="og:title" content="DuckDuckHack Tasks">
+    <meta property="og:description" content="View GitHub tasks across all DuckDuckHack repos.">
+    <meta property="og:image" content="https://duckduckgo.com/assets/logo_social-media.png">
+    <meta property="og:site_name" content="DuckDuckHack">
+    <meta name="description" content="View GitHub tasks across all DuckDuckHack repos." />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#4495d4">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="DuckDuckHack">
+    <meta name="application-name" content="DuckDuckHack">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="content-wrap">
+            <nav class="db dt-l w-100 border-box pa3 ph5-l bb b--black-10">
+                <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="/" title="Home">
+                    <img src="images/logo.svg" class="dib w3 h3 br-100" alt="Site Name">
+                </a>
+                <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+                    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="/" title="DuckDuckHack">DuckDuckHack</a>
+                    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="https://forum.duckduckhack.com/t/duckduckhack-getting-started/53" title="Getting Started">Forum</a>
+                    <a class="link dim dark-gray f6 f5-l dib" href="https://quackslack.herokuapp.com/" title="Join Slack">Join Slack</a>
+                </div>
+            </nav>
+
+            <section class="ph2 ph5-m ph7-l ph7-ns">
+                <section class="mb4">
+                    <div>
+                        <h1 class="r-iblock f2 mr2 black-70 pb0 mb0">Contributing</h1>
+                    </div>
+
+                    <p class="measure f4 black-50">The DuckDuckHack contributing guidelines</p>
+                </section>
+
+                <div class="contributing">
+
+                    <p>We're an open source community dedicated to improving search results with <em>Instant Answers</em>. Instant Answers use the Web's most trusted APIs and data to solve searches in zero or few clicks. Together and openly, we can create the best search
+                        engine for every type of search. We hope you'll join us!</p>
+
+                    <h3 class="bb b--black-10 pb0 mb3 mt4">Contents</h3>
+
+                    <ul>
+                        <li>
+                            <a href="#our-core-values">Our Core Values</a>
+                        </li>
+                        <li>
+                            <a href="#reporting-issues">Reporting Issues</a>
+                        </li>
+                        <li>
+                            <a href="#pull-requests">Making Pull Requests</a>
+                            <ul>
+                                <li>
+                                    <a href="#new-instant-answers">New Instant Answers</a>
+                                </li>
+                                <li>
+                                    <a href="#improvements">Improvements</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#reviewing-pull-requests">Reviewing Pull Requests</a>
+                        </li>
+                        <li>
+                            <a href="#not-following-these-guidelines">Not following these guidelines?</a>
+                        </li>
+                        <li>
+                            <a href="#not-sure">Not Sure?</a>
+                        </li>
+                    </ul>
+
+                    <h3 class="bb b--black-10 pb0 mb3 mt4" id="our-core-values">Our Core Values</h3>
+
+                    <p>We are open source to the core. By collaborating with our users we can crowdsource the highest quality Instant Answers. Contributing to DuckDuckHack has a direct impact on the end user. In light of this, we ask you to keep our core values in mind.
+                        In everything we do, we:</p>
+
+                    <ul>
+                        <li>Build Trust</li>
+                        <li>Question Assumptions</li>
+                        <li>Validate Direction</li>
+                    </ul>
+
+                    <h3 class="bb b--black-10 pb0 mb3 mt4" id="reporting-issues">Reporting Issues</h3>
+
+                    <p>Reporting issues is a great opportunity to highlight problems or improvements to the community. We have an established practice we adhere to, and we encourage you to follow these to ensure that it is dealt with swiftly and appropriately.</p>
+
+                    <ol>
+                        <li>Use the Issues Template provided for you when opening an issue.</li>
+                        <li>Be as descriptive as possible. How can another person reproduce this issue?</li>
+                        <li>If it's an issue with an Instant Answer, make sure it belongs to that Github Repository.</li>
+                        <li>Mention the maintainer and other developers of interests to so they are made aware.</li>
+                    </ol>
+
+                    <h3 class="bb b--black-10 pb0 mb3 mt4" id="pull-requests">Pull Requests</h3>
+
+                    <p>When submitting a pull request, the following guidelines help speed up the review process:
+                        <p>
+
+                            <h6 class="pb0 b" id="new-instant-answers">New Instant Answers</h4>
+
+                            <ol>
+                                <li>New IAs should be titled as follows: <strong><code>New {IA TOPIC} {IA TYPE}</code></strong>. For example, <code>New Instagram Spice</code> or <code>New Firefox Cheat Sheet</code></li>
+
+                                <li>Paste the relevant <a href="https://duck.co/ia/new_ia">Instant Answer Page URL</a> in the description field. This will automatically link the PR to the Instant Answer.</li>
+                            </ol>
+
+                            <img src="images/screenshots/calculator.png" alt="">
+
+
+                            <h6 class="pb0 b" id="improvements">Improvements</h4>
+
+                            <ol>
+                                <li>Fixes should be titled as follows: <strong><code>{IA NAME}: Brief explanation</code></strong>. For example: <code>PeopleInSpace: Use smaller local image, fallback to API when needed.</code></li>
+
+                                <img src="images/screenshots/github_pr.png" alt="Github PR Template">
+
+                                <li>Paste the relevant <a href="https://duck.co/ia/new_ia">Instant Answer Page URL</a> in the description field. This will automatically link the PR to the Instant Answer.</li>
+
+                                <li>Include the issue number in the description (conveniently, this will automatically resolve the issue upon merging). Describe your motivation, thought process, and solution in the description. For example:</li>
+
+                            </ol>
+
+                            <blockquote>
+                                "<strong>Fixes #2038.</strong> The images used by the API are very large and don't change often. I've put a smaller version of each image (and a 2x version for retina screens) in the share directory. The callback will try and load a local image
+                                based on the astronaut's name and fallback to using the API's image if one does not exist."
+                            </blockquote>
+
+                            <blockquote>
+                                <strong>IMPORTANT:</strong> Don't worry if you get an initial error regarding failing Travis tests. The reason is that your IA page hasn't yet been moved out of the "Planning" status - which only community leaders/staff can do. As long as the
+                                ID in your IA page matches the ID in your code, and you've pasted the URL to your IA page, you can ignore this initial error.
+                            </blockquote>
+
+                            <h3 class="bb b--black-10 pb0 mb3 mt4" id="reviewing-pull-requests">Reviewing Pull Requests</h3>
+
+                            <p>Reviewing Pull Requests is another impactful way to contribute to DuckDuckHack. Community developers benefit and value feedback from each other, and non-technical users. Please <strong>be friendly</strong>, <strong>be timely</strong> if requested for a review, and <strong>seek help</strong>                                if you're uncomfortable with any of the above.</p>
+
+                            <p>Some questions to keep in mind before approving and/or merging:</p>
+
+                            <ul>
+                                <li>Does this PR solve the problem?</li>
+                                <li>Has every new line of code been checked?</li>
+                                <li>What is not clear from the code?</li>
+                                <li>Is this code commented appropriately?</li>
+                                <li>Has this been tested holistically to ensure no harm is done?</li>
+                                <li>Are there any quick wins that improve the implementation?</li>
+                            </ul>
+
+                            <h3 class="bb b--black-10 pb0 mb3 mt4" id="not-following-these-guidelines">Not following these guidelines?</h3>
+
+                            <p>DuckDuckHack's guidelines are important and have been enforced for a reason. If you are reading this, you have probably been linked to this paragraph. Not following the above guidelines costs both staff and volunteers time which results in a loss
+                                of productivity.</p>
+
+                            <p>Please read the above literature, and act appropriately.</p>
+
+                            <p>Once you have made the requested adjustments, please ping a community leader to reopen or remove the <code>on-hold</code> status of your issue / pull request. If you are not sure, we will be happy to help.</p>
+
+                            <h3 class="bb b--black-10 pb0 mb3 mt4" id="not-sure">Not Sure?</h3>
+
+                            <ul>
+                                <li>Join the <a href="https://quackslack.herokuapp.com/">DuckDuckHack Slack channel</a> to ask questions</li>
+                                <li>Join the <a href="https://forum.duckduckhack.com/">DuckDuckHack Forum</a> to discuss project planning</li>
+                                <li>Read the <a href="https://docs.duckduckhack.com/">documentation</a> for technical help</li>
+                                <li>View the list of <a href="https://duck.co/ia">all live Goodie Instant Answers</a> to see more examples</li>
+                            </ul>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <div class="blk  blk--foot  blk--foot--nav mt5">
+        <div class="cw--c">
+            <div class="blk--foot__nav-col  third  thirty--screen-s">
+                <h5 class="blk--foot__nav-head">Resources</h5>
+                <ul>
+                    <li><a href="https://forum.duckduckhack.com/t/duckduckhack-getting-started/53">Forum</a></li>
+                    <li><a href="https://duckduckhack.com/issues.html">DuckDuckHack Issues</a></li>
+                    <li><a href="https://docs.duckduckhack.com">Documentation</a></li>
+                    <li><a href="https://duck.co/ia">All Instant Answers</a></li>
+                    <li><a href="https://duck.co/ia/new_ia">Create New IA Wizard</a></li>
+                    <li><a href="https://quackslack.herokuapp.com/">Join Slack</a></li>
+
+                    <!-- li><a href="https://duckduckgo.com/spread">Spread</a></li -->
+                </ul>
+            </div>
+            <div class="blk--foot__nav-col  third  thirty--screen-s">
+                <h5 class="blk--foot__nav-head">Follow</h5>
+                <ul>
+                    <li><a href="https://spreadprivacy.com/">Blog</a></li>
+                    <li><a href="https://twitter.com/duckduckgo">Twitter</a></li>
+                    <li><a href="https://dribbble.com/duckduckgo">Dribbble</a></li>
+                    <li><a href="http://www.reddit.com/r/duckduckgo">Reddit</a></li>
+                    <li><a href="https://github.com/duckduckgo">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="blk--foot__nav-col  third  thirty--screen-s">
+                <h5 class="blk--foot__nav-head">More</h5>
+                <ul>
+                    <li><a href="https://duck.co/help/">Help</a></li>
+                    <li><a href="https://duckduckgo.com/privacy">Privacy</a></li>
+                    <li><a href="https://duck.co/help/company/press">Press</a></li>
+                    <li><a href="https://duckduckgo.com/hiring/">Jobs</a></li>
+                    <li><a href="https://duckduckgo.com/traffic">Traffic</a></li>
+                    <li><a href="https://duck.co/translate">Translate</a></li>
+                    <li><a href="http://www.meetup.com/topics/duckduckgo/">Meetup Groups</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="blk  blk--foot">
+        <div class="cw--c">
+            <p>&copy; <a href="https://duckduckgo.com">DuckDuckGo</a>. The search engine that doesn't track you.</p>
+        </div>
+    </div>
+    </div>
+    <script src="src/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="src/js/handlebars.min.js" type="text/javascript"></script>
+    <script src="issues.js" type="text/javascript"></script>
+</body>
+
+</html>
