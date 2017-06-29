@@ -160,7 +160,7 @@ $midnight-light: #2C4B62;
 
 .ddh {
     text-align: center;
-    padding: 120px 0 120px 0;
+    padding: 100px 0 120px 0;
     line-height: 1.5;
 }
 
@@ -176,7 +176,7 @@ $midnight-light: #2C4B62;
 		
     letter-spacing: $ddh-title-kerning;
     margin-bottom: 0.4em;
-    font-size: 2.75em;
+    font-size: 1.5em;
     line-height: 1em;
 }
 	
@@ -360,7 +360,7 @@ $midnight-light: #2C4B62;
     }
 
     .ddh--help__link {
-        font-size: 1.2em;
+        font-size: 1.125em;
         margin-bottom: 0.5em;
         
         & > .ddgsi, .fa {
@@ -374,8 +374,24 @@ $midnight-light: #2C4B62;
     }
 
     .ddh--help__section > p {
-        font-size: 1.2em;
+        font-size: 1em;
         margin-bottom: 1em;
+        line-height: 1.625em;
+    }
+
+    .btn--primary--alt a,
+    .btn--primary--alt a:visited {
+        color: white;
+    }
+
+    .ddh--header__image {
+        width: 144px;
+        height: 144px;
+    }
+
+    .ddh--sub__image {
+        width: 108px;
+        height: 108px;
     }
 }
 
