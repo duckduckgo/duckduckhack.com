@@ -4121,6 +4121,7 @@ small, .t-s {
 .ddh--help .ddh--sub__image {
     width: 108px;
     height: 108px;
+    margin-bottom:20px;
 }
 
 .ddh__sub--link {
@@ -10682,11 +10683,5 @@ img {
 .header-image {
   width: 144px;
   height: 144px;
-  margin-bottom:20px;
-}
-
-.sub-image {
-  width: 108px;
-  height: 108px;
   margin-bottom:20px;
 }
