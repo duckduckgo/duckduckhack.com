@@ -4110,6 +4110,9 @@ small, .t-s {
   margin-top: .2em; }
 .ddh--help .ddh--help__section.mw-center {
   max-width: 520px; }
+.ddh--help .ddh--help__section.mw-center p {
+  font-size: 18px;
+  line-height: 28px; }
 .ddh--help .ddh--help__section.mw-split {
   max-width: 370px; }  
 .ddh--help .ddh--help__section {
@@ -4119,21 +4122,24 @@ small, .t-s {
   .ddh--help .ddh--help__section > .ddgsi, .ddh--help .ddh--help__section .fa {
     font-size: 3em; }
 .ddh--help .ddh--help__link {
-  font-size: 1.125em;
+  font-size: 18px;
   margin-bottom: 0.5em; }
   .ddh--help .ddh--help__link > .ddgsi, .ddh--help .ddh--help__link .fa {
     color: #60a5da;
     font-size: 1em; }
   .ddh--help .ddh--help__link a:visited {
     color: #60a5da; }
+  
+  .ddh--help .btn--primary--alt a {
+    font-weight: 400; }
   .ddh--help .btn--primary--alt a,
   .ddh--help .btn--primary--alt a:visited {
     color: white;
   }
 .ddh--help .ddh--help__section > p {
-  font-size: 1em;
+  font-size: 16px;
   margin-bottom: 1em;
-  line-height: 1.625em; }
+  line-height: 26px; }
 .ddh--help .ddh--help__button{
   color: white;
 }
