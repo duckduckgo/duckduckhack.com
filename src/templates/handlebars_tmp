@@ -5,19 +5,19 @@ this["Handlebars"]["templates"]["categories"] = Handlebars.template({"1":functio
     var alias1=container.escapeExpression;
 
   return "  <div id=\""
-    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"sanitize","hash":{},"data":data}))
     + "\">\r\n    <h2 class=\"f3 mb1 black-80 bb b--black-10\">"
     + alias1(container.lambda(depth0, depth0))
     + "</h2>\n  </div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.categories : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.categories : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     return "tag-"
-    + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
+    + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
 },"3":function(container,depth0,helpers,partials,data) {
     return "\n        <div class=\"t-xxxs r-iblock\">\n          <div class=\"r-iblock btn bg-light-red b--light-red white high-priority\" style=\"vertical-align: initial;\">High Priority</div>\n        </div>\n";
@@ -25,7 +25,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     var helper;
 
   return "        <div class=\"r-iblock black-70\">"
-    + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"difficulty","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"difficulty","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
     return "        <span class=\"black-20\">—</span> ";
@@ -33,10 +33,10 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     var helper;
 
   return "        <div class=\"r-iblock black-70\">"
-    + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"skill","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"skill","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<li class=\"issue--item h3 pv3 bb b--black-10 bg-white "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
@@ -59,12 +59,12 @@ this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":funct
     var alias1=container.escapeExpression;
 
   return "<div class=\""
-    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"sanitize","hash":{},"data":data}))
     + " hide\">\n  <h4 class=\"f4 black-70\">"
     + alias1(container.lambda(depth0, depth0))
     + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb3 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-50 w-60-l r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-50 w-40-l r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.topics : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.topics : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});

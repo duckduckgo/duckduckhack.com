@@ -5,19 +5,19 @@ this["Handlebars"]["templates"]["categories"] = Handlebars.template({"1":functio
     var alias1=container.escapeExpression;
 
   return "  <div id=\""
-    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"sanitize","hash":{},"data":data}))
     + "\">\r\n    <h2 class=\"f3 mb1 black-80 bb b--black-10\">"
     + alias1(container.lambda(depth0, depth0))
     + "</h2>\n  </div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.categories : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.categories : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     return "tag-"
-    + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
+    + container.escapeExpression((helpers.slug || (depth0 && depth0.slug) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.name : depth0),{"name":"slug","hash":{},"data":data}))
     + " ";
 },"3":function(container,depth0,helpers,partials,data) {
     return "\n        <div class=\"t-xxxs r-iblock\">\n          <div class=\"r-iblock btn bg-light-red b--light-red white high-priority\" style=\"vertical-align: initial;\">High Priority</div>\n        </div>\n";
@@ -25,7 +25,7 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     var helper;
 
   return "        <div class=\"r-iblock black-70\">"
-    + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"difficulty","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.difficulty || (depth0 != null ? depth0.difficulty : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"difficulty","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
     return "        <span class=\"black-20\">—</span> ";
@@ -33,10 +33,10 @@ this["Handlebars"]["templates"]["issues"] = Handlebars.template({"1":function(co
     var helper;
 
   return "        <div class=\"r-iblock black-70\">"
-    + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"skill","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(((helper = (helper = helpers.skill || (depth0 != null ? depth0.skill : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"skill","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<li class=\"issue--item h3 pv3 bb b--black-10 bg-white "
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.labels : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
@@ -59,14 +59,14 @@ this["Handlebars"]["templates"]["topic_groups"] = Handlebars.template({"1":funct
     var alias1=container.escapeExpression;
 
   return "<div class=\""
-    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},depth0,{"name":"sanitize","hash":{},"data":data}))
+    + alias1((helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"sanitize","hash":{},"data":data}))
     + " hide\">\n  <h4 class=\"f4 black-70\">"
     + alias1(container.lambda(depth0, depth0))
     + "</h4>\n  <ul class=\"list pl0 ml0 center ba b--black-10 br1 mb3 pb0 bg-black-05 pt0\">\n    <li class=\"issue--item h3 pv3 bb b--black-10\">\n      <div>\n        <div class=\"fl w-50 w-60-l r-iblock pl4\">\n          <div class=\"r-iblock one-line w-100\">\n          </div>\n        </div>\n        <div class=\"fl w-50 w-40-l r-iblock\">\n          <div class=\"fl w-50 r-iblock tc\">\n            Difficulty\n          </div>\n          <div class=\"fl w-50 r-iblock tc\">\n            Skill\n          </div>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.topics : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.topics : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 // Strip non-alphanumeric chars from a string and transform it to lowercase
 Handlebars.registerHelper('slug', function(txt) {
@@ -133,131 +133,6 @@ Handlebars.registerHelper('strip_label', function(label) {
 Handlebars.registerHelper('sanitize', function (obj) {
     return obj.replace(/\s/g, "_");
 });
-// Determine Skill and Topic from Issues labels
-function stripLabelVal(label) {
-    var result = label.substring(label.indexOf(':') + 1, label.length);
-    return result.trim();
-}
-
-// Pull out the info to display from labels:
-// - Difficulty and Skill columns
-// - Priority: High label
-// - Topic
-// - Category
-function labelsToColumns(issue) {
-   issue.skill = [];
-
-   for (var i = 0; i < issue.labels.length; i++) {
-       var label = issue.labels[i];
-       var name = label.name;
-
-       if (name === "Priority: High") {
-           issue.high_priority = true;
-       } else if (name.match(/Difficulty/)) {
-           issue.difficulty = name.match(/Low/) ? "Easy" : "Hard";
-       } else if (name.match(/Skill/)) {
-           issue.skill.push($.trim(stripLabelVal(name)));
-       } else if (name.match(/Topic/)) {
-           issue.topic = $.trim(stripLabelVal(name));
-       } else if (name.match(/Category/)) {
-           issue.category = $.trim(stripLabelVal(name));
-       }
-
-       if (issue.length - 1 === i) {
-           issue.last = true;
-       }
-   } // for
-
-   return issue;
-}
-
-// Main function iterating through the issues from GitHub API,
-// pulling out the important information
-// and rendering each issue using the Handlebars template
-function groupIssuesByTopic(issues) {
-    $.each(issues, function(key, val) {
-        issue = labelsToColumns(val);
-        if (issue.topic && issue.category) {
-          renderIssue(issue);
-        }
-    });
-}
-
-// Append the give issue to the appropriate Topic list
-function renderIssue(issue) {
-    var rendered_issue = Handlebars.templates.issues(issue);
-    var $topic_group = $(sanitize(issue.category, "#") + " " + sanitize(issue.topic, "."));
-    $topic_group.removeClass("hide");
-    $topic_group.children("ul").append(rendered_issue);
-}
-
-// Render the containers for each Topic list
-function renderGroupings(topics, categories) {
-
-    var rendered_topics = Handlebars.templates.topic_groups({
-      topics: topics
-    }); // render a topics snippet to be used by each category
-
-    var rendered_categories = Handlebars.templates.categories({
-      categories: categories
-    }); // render the categories
-
-    $("#issues_list").append(rendered_categories);
-    $.each(categories, function (key, category) {
-      $(sanitize(category, "#")).append(rendered_topics);
-    });
-}
-
-// Generate a list of items from the issues based on any regular expression.
-// Will match against label names.
-function generateGroupings(re, issues) {
-    var topics = [];
-
-    $.each(issues, function (key, issue) {
-        // let's assume that we will never have more than one topic assigned to an issue
-        for (var i = issue.labels.length - 1; i >= 0; i--) {
-            var re_result = issue.labels[i].name.match(re);
-            if (re_result) {
-                var topic = re_result[1];
-                if ($.inArray(topic, topics) === -1) { // $.inArray returns index if found; -1 otherwise
-                    topics.push(topic);
-                }
-            }
-        }
-    });
-
-    topics.sort();
-
-    return topics;
-}
-
-// The following function takes care of escaping these characters and places a "#" at the beginning of the ID string
-function sanitize(myid, prefix) {
-    // it is possible for a topic label to not exist
-    // replace all non alpha-numeric characters with _
-    return (myid) ? prefix + myid.replace( /(\+|#|-)/g, "\\$1" ).replace( /\s/g, "_") : "";
-}
-
-// Hide the loading element
-function dismissLoadingScreen() {
-  $('.is-loading').hide();
-}
-
-$(document).ready(function() {
-    var url = 'https://duckduckhack.com/open_issues/';
-
-    $.getJSON(url, function(data) {
-      var issues = data.items;
-
-      var categories = generateGroupings(/Category: (.*)/, issues);
-      var topics = generateGroupings(/Topic: (.*)/, issues);
-
-      dismissLoadingScreen();
-      renderGroupings(topics, categories);
-      groupIssuesByTopic(issues);
-    });
-});
-
 //! moment.js
 //! version : 2.16.0
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors

@@ -23,7 +23,13 @@ html {
   line-height: 1; }
 
 ol, ul {
-  list-style: none; }
+  padding-left: 40px; }
+
+.blk--foot--nav ol, 
+.blk--foot--nav ul {
+  list-style: none;
+  padding: 0;
+}
 
 .contributing {
   font-size: 1.2em; }
@@ -10714,4 +10720,12 @@ img {
   width: 144px;
   height: 144px;
   margin-bottom:20px;
+}
+
+img#logo {
+  width: 15%;
+}
+
+body {
+  font-size: 17px;
 }
