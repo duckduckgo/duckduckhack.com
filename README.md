@@ -1,22 +1,13 @@
-# Welcome to DuckDuckHack!
+# This repo is now archived
 
-This repo contains the static content used to build [DuckDuckHack.com](https://duckduckhack.com/)
+DuckDuckHack went on maintenance mode in 2015 and we aren't in a position to continue it. This repo hasn't been maintained subsequently and so we are archiving it.
 
-## Setting up
+## Need to report a bug?
 
-This project requires that you have [npm](https://www.npmjs.com/), [bower](https://bower.io/) and [grunt](https://gruntjs.com/) installed globally. You can set up and build the website using the following steps:
+If you find a bug or relevancy issue, the **best** way to report this is via the Feedback button on the DuckDuckGo.com search results page. These issues are compiled and reviewed daily.
 
-```
-$ git clone https://github.com/duckduckgo/duckduckhack.com
-$ cd duckduckhack.com/
-$ npm i
-$ bower install
-$ grunt
-```
+## Have a suggestion or idea?
 
-## Resources
-- Join the [DuckDuckHack Slack channel](https://quackslack.herokuapp.com/) to ask questions
-- Join the [DuckDuckHack Forum](https://forum.duckduckhack.com/) to discuss project planning and Instant Answer metrics
-- Read the [Goodie documentation](https://docs.duckduckhack.com/walkthroughs/calculation.html) for technical help
-- View the list of [all live Goodie Instant Answers](https://duck.co/ia?repo=goodies&topic=programming) to see more examples
+The **best** way to report these is also via the Feedback button on the DuckDuckGo.com search results page.
 
+You can also share your thoughts with our community on [Reddit](https://www.reddit.com/r/duckduckgo/).
